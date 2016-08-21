@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "MimeTypes": [
+            "application/octet-stream"
+        ],
+        "Name": "'Encrypt' service menu",
+        "ServiceTypes": [
+            "KFileItemAction/Plugin"
+        ]
+    },
+    "MimeType": "application/octet-stream;",
+    "X-KDE-Require": "Write"
+}
