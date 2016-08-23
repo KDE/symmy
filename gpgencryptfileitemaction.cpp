@@ -36,7 +36,6 @@ GpgEncryptFileItemAction::GpgEncryptFileItemAction(QObject *parent, const QVaria
 
 QList<QAction*> GpgEncryptFileItemAction::actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget)
 {
-    auto actions = QList<QAction*> {};
     const auto icon = QIcon::fromTheme(QStringLiteral("document-encrypt"));
 
     auto encryptAction = new QAction(icon, i18nc("@action:inmenu Encrypt action in Dolphin context menu", "Encrypt"), parentWidget);
@@ -48,8 +47,7 @@ QList<QAction*> GpgEncryptFileItemAction::actions(const KFileItemListProperties 
         encryptAction->setEnabled(false);
     }
 
-    actions << encryptAction;
-    return actions;
+    return {encryptAction};
 }
 
 void GpgEncryptFileItemAction::slotEncrypt(const QList<QUrl> &urls)

@@ -37,7 +37,6 @@ GpgDecryptFileItemAction::GpgDecryptFileItemAction(QObject *parent, const QVaria
 
 QList<QAction*> GpgDecryptFileItemAction::actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget)
 {
-    auto actions = QList<QAction*> {};
     const auto icon = QIcon::fromTheme(QStringLiteral("document-decrypt"));
 
     auto decryptionAction = new QAction(icon, i18nc("@action:inmenu Decrypt action in Dolphin context menu", "Decrypt"), parentWidget);
@@ -49,8 +48,7 @@ QList<QAction*> GpgDecryptFileItemAction::actions(const KFileItemListProperties 
         decryptionAction->setEnabled(false);
     }
 
-    actions << decryptionAction;
-    return actions;
+    return {decryptionAction};
 }
 
 void GpgDecryptFileItemAction::slotDecrypt(const QList<QUrl> &urls)
