@@ -21,6 +21,7 @@
 
 #include <QAction>
 #include <QDebug>
+#include <QMimeDatabase>
 #include <QSaveFile>
 #include <QUrl>
 
@@ -36,11 +37,19 @@ GpgEncryptFileItemAction::GpgEncryptFileItemAction(QObject *parent, const QVaria
 
 QList<QAction*> GpgEncryptFileItemAction::actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget)
 {
+    const auto urls = fileItemInfos.urlList();
+    for (const auto &url : urls) {
+        const auto mimeType = QMimeDatabase().mimeTypeForUrl(url).name();
+        if (mimeType == QLatin1String("application/pgp-encrypted") or mimeType == QLatin1String("inode/directory")) {
+            return {};
+        }
+    }
+
     const auto icon = QIcon::fromTheme(QStringLiteral("document-encrypt"));
 
     auto encryptAction = new QAction(icon, i18nc("@action:inmenu Encrypt action in Dolphin context menu", "Encrypt"), parentWidget);
     connect(encryptAction, &QAction::triggered, this, [=]() {
-        slotEncrypt(fileItemInfos.urlList());
+        slotEncrypt(urls);
     });
 
     if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {
