@@ -42,6 +42,7 @@ private slots:
 
 private:
     static void encrypt(const QString &fileName);
+    static bool isAsciiArmor(gpgme_data_t cipherText);
 };
 
 #endif

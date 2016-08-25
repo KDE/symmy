@@ -94,8 +94,7 @@ void GpgEncryptFileItemAction::encrypt(const QString &fileName)
             qDebug() << "Encryption failed";
         } else {
             auto ciphertextFilename = fileName;
-            // FIXME: why does gpgme_get_armor(context) return false if 'armor' is set in gpg.conf?
-            ciphertextFilename += gpgme_get_armor(context) ? QLatin1String(".asc") : QLatin1String(".gpg");
+            ciphertextFilename += isAsciiArmor(cipherText) ? QLatin1String(".asc") : QLatin1String(".gpg");
 
             if (not dataToFile(cipherText, ciphertextFilename)) {
                 qDebug() << "Failed to save ciphertext to disk";
@@ -106,6 +105,17 @@ void GpgEncryptFileItemAction::encrypt(const QString &fileName)
     gpgme_data_release(plainText);
     gpgme_data_release(cipherText);
     gpgme_release(context);
+}
+
+// Workaround for https://bugs.gnupg.org/gnupg/issue2446
+bool GpgEncryptFileItemAction::isAsciiArmor(gpgme_data_t cipherText)
+{
+    gpgme_data_seek(cipherText, 0, SEEK_SET);
+
+    char header[22];
+    gpgme_data_read(cipherText, header, 22);
+
+    return QString::fromLatin1(header) == QLatin1String("-----BEGIN PGP MESSAGE");
 }
 
 #include "gpgencryptfileitemaction.moc"
