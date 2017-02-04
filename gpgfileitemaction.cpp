@@ -22,6 +22,11 @@
 #include <QDebug>
 #include <QSaveFile>
 
+namespace
+{
+    const auto BUFF_SIZE = 4096;
+}
+
 GpgFileItemActionPlugin::GpgFileItemActionPlugin(QObject *parent)
     : KAbstractFileItemActionPlugin(parent)
 {}
@@ -41,8 +46,9 @@ bool GpgFileItemActionPlugin::dataToFile(gpgme_data_t data, const QString &fileN
     // Ensure cursor is at initial position
     gpgme_data_seek(data, 0, SEEK_SET);
 
-    char buffer[4096];
-    while (auto bytes = gpgme_data_read(data, buffer, sizeof(buffer) / sizeof(buffer[0]))) {
+    QByteArray buffer;
+    buffer.resize(BUFF_SIZE);
+    while (auto bytes = gpgme_data_read(data, buffer.data(), buffer.size())) {
         if (saveFile.write(buffer, bytes) != bytes) {
             qDebug() << saveFile.errorString();
             saveFile.cancelWriting();
@@ -64,8 +70,9 @@ bool GpgFileItemActionPlugin::fileToData(QFile &file, gpgme_data_t data)
         return false;
     }
 
-    char buffer[4096];
-    while (auto bytes = file.read(buffer, sizeof(buffer) / sizeof(buffer[0]))) {
+    QByteArray buffer;
+    buffer.resize(BUFF_SIZE);
+    while (auto bytes = file.read(buffer.data(), buffer.size())) {
         if (bytes == -1 or gpgme_data_write(data, buffer, bytes) != bytes) {
             qWarning() << "Write error for plaintext of" << file.fileName();
             return false;
