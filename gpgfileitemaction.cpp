@@ -48,7 +48,7 @@ bool GpgFileItemActionPlugin::dataToFile(gpgme_data_t data, const QString &fileN
 
     QByteArray buffer;
     buffer.resize(BUFF_SIZE);
-    while (auto bytes = gpgme_data_read(data, buffer.data(), buffer.size())) {
+    while (const auto bytes = gpgme_data_read(data, buffer.data(), buffer.size())) {
         if (bytes == -1 or saveFile.write(buffer, bytes) != bytes) {
             qWarning() << "Could not write ciphertext to disk";
             saveFile.cancelWriting();
@@ -72,7 +72,7 @@ bool GpgFileItemActionPlugin::fileToData(QFile &file, gpgme_data_t data)
 
     QByteArray buffer;
     buffer.resize(BUFF_SIZE);
-    while (auto bytes = file.read(buffer.data(), buffer.size())) {
+    while (const auto bytes = file.read(buffer.data(), buffer.size())) {
         if (bytes == -1 or gpgme_data_write(data, buffer, bytes) != bytes) {
             qWarning() << "Write error for plaintext of" << file.fileName();
             return false;
