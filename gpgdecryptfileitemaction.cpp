@@ -97,8 +97,8 @@ void GpgDecryptFileItemAction::decrypt(const QString &fileName)
 QString GpgDecryptFileItemAction::plaintextFilename(const QString &ciphertextFilename)
 {
     auto fileName = ciphertextFilename;
-    auto pgpMime = QMimeDatabase().mimeTypeForName(QStringLiteral("application/pgp-encrypted"));
-    for (const auto &suffix : pgpMime.suffixes()) {
+    const auto pgpSuffixes = QMimeDatabase().mimeTypeForName(QStringLiteral("application/pgp-encrypted")).suffixes();
+    for (const auto &suffix : pgpSuffixes) {
         if (fileName.endsWith(suffix)) {
             fileName.chop(suffix.length() + 1); // dot is not included in the suffix
             break;
