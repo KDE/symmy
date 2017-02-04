@@ -85,7 +85,7 @@ void GpgDecryptFileItemAction::decrypt(const QString &fileName)
         } else if (gpgme_op_decrypt(context, cipherText, plainText)) {
             qDebug() << "Decryption failed";
         } else if (not dataToFile(plainText, plaintextFilename(fileName))) {
-            qDebug() << "Failed to save ciphertext to disk";
+            qDebug() << "Failed to save plaintext to disk";
         }
     }
 

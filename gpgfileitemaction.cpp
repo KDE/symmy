@@ -50,7 +50,7 @@ bool GpgFileItemActionPlugin::dataToFile(gpgme_data_t data, const QString &fileN
     buffer.resize(BUFF_SIZE);
     while (const auto bytes = gpgme_data_read(data, buffer.data(), buffer.size())) {
         if (bytes == -1 or saveFile.write(buffer, bytes) != bytes) {
-            qWarning() << "Could not write ciphertext to disk";
+            qWarning() << "Could not write data to" << fileName;
             saveFile.cancelWriting();
             return false;
         }
