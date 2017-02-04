@@ -42,8 +42,7 @@ bool GpgFileItemActionPlugin::dataToFile(gpgme_data_t data, const QString &fileN
     gpgme_data_seek(data, 0, SEEK_SET);
 
     char buffer[4096];
-    auto bytes = 0;
-    while ((bytes = gpgme_data_read(data, buffer, sizeof(buffer) / sizeof(buffer[0])))) {
+    while (auto bytes = gpgme_data_read(data, buffer, sizeof(buffer) / sizeof(buffer[0]))) {
         if (saveFile.write(buffer, bytes) != bytes) {
             qDebug() << saveFile.errorString();
             saveFile.cancelWriting();
@@ -66,10 +65,10 @@ bool GpgFileItemActionPlugin::fileToData(QFile &file, gpgme_data_t data)
     }
 
     char buffer[4096];
-    auto bytes = 0;
-    while ((bytes = file.read(buffer, sizeof(buffer) / sizeof(buffer[0])))) {
-        if (gpgme_data_write(data, buffer, bytes) != bytes) {
+    while (auto bytes = file.read(buffer, sizeof(buffer) / sizeof(buffer[0]))) {
+        if (bytes == -1 or gpgme_data_write(data, buffer, bytes) != bytes) {
             qWarning() << "Write error for plaintext of" << file.fileName();
+            return false;
         }
     }
 
