@@ -1,3 +1,5 @@
+include_directories(${CMAKE_BINARY_DIR})
+
 add_executable(symmy main.cpp decryptjob.cpp encryptjob.cpp job.cpp)
 
 target_link_libraries(symmy

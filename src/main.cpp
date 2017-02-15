@@ -19,6 +19,7 @@
 
 #include "decryptjob.h"
 #include "encryptjob.h"
+#include "symmyversion.h"
 
 #include <KAboutData>
 #include <KLocalizedString>
@@ -30,9 +31,8 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-    auto aboutData = KAboutData {QStringLiteral("symmy"), i18nc("display name for 'symmy' binary", "Symmy"), QStringLiteral("0.0.1"),
-                         i18n("Encrypt/decrypt a file using GPG symmetric encryption"), KAboutLicense::GPL,
-                         i18n("(c) 2017 Elvis Angelaccio")};
+    auto aboutData = KAboutData {QStringLiteral("symmy"), i18nc("display name for 'symmy' binary", "Symmy"), QStringLiteral(SYMMY_VERSION_STRING),
+                                 i18n("Encrypt/decrypt a file using GPG symmetric encryption"), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
     aboutData.addAuthor(i18n("Elvis Angelaccio"), {}, QStringLiteral("elvis.angelaccio@kde.org"));
     KAboutData::setApplicationData(aboutData);
 

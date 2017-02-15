@@ -3,10 +3,12 @@ project(symmy)
 cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 set (CMAKE_CXX_STANDARD 11)
 
+set(PROJECT_VERSION 0.70.0)
+
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-include(ECMMarkNonGuiExecutable)
+include(ECMSetupVersion)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -26,6 +28,10 @@ find_package(KF5 REQUIRED COMPONENTS
 
 find_package(Gpgmepp "1.7.1" CONFIG REQUIRED)
 find_package(QGpgme "1.7.1" CONFIG REQUIRED)
+
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX SYMMY
+    VERSION_HEADER symmyversion.h)
 
 add_subdirectory(src)
 add_subdirectory(plugins)
