@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Elvis Angelaccio <elvis.angelaccio@kde.org>
+ * Copyright (C) 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -17,32 +17,37 @@
  *
  */
 
-#ifndef GPGDECRYPTFILEITEMACTION_H
-#define GPGDECRYPTFILEITEMACTION_H
+#pragma once
 
-#include "gpgfileitemaction.h"
+#include "job.h"
 
-#include <QUrl>
+#include <gpgme++/error.h>
+#include <gpgme++/decryptionresult.h>
 
-class QAction;
-class QWidget;
+class QFile;
+class QTemporaryFile;
 
-class GpgDecryptFileItemAction : public GpgFileItemActionPlugin
+namespace Symmy
 {
 
-Q_OBJECT
+class DecryptJob : public Job
+{
+    Q_OBJECT
 
 public:
-    GpgDecryptFileItemAction(QObject *parent, const QVariantList &args);
+    explicit DecryptJob(const QString &ciphertextFilename);
+    virtual ~DecryptJob();
 
-    virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
+    QString ciphertextFilename() const override;
+    QString plaintextFilename() const override;
 
 private slots:
-    void slotDecrypt(const QList<QUrl> &urls);
+    void doWork() override;
+    void slotResult(const GpgME::DecryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
 
 private:
-    static void decrypt(const QString &fileName);
-    static QString plaintextFilename(const QString &ciphertextFilename);
+    std::shared_ptr<QFile> m_ciphertext;
+    std::shared_ptr<QTemporaryFile> m_plaintext;
 };
 
-#endif
+}

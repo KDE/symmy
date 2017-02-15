@@ -1,3 +1,0 @@
-* Encryption/Decryption should go in another thread, otherwise Dolphin will freeze with huge files.
-* Introduce EncryptJob/DecryptJob, so it will be possible to track/stop the encryption/decryption of huge files.
-* Use KIO::copy() in GpgFileItemActionPlugin::dataToFile(), so it will take care of checking if files already exist, etc.

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Elvis Angelaccio <elvis.angelaccio@kde.org>
+ * Copyright (C) 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -17,33 +17,22 @@
  *
  */
 
-#ifndef GPGFILEITEMACTION_H
-#define GPGFILEITEMACTION_H
-
-#include <QFile>
+#pragma once
 
 #include <KAbstractFileItemActionPlugin>
 
-#include <gpgme.h>
+#include <QUrl>
 
 class QAction;
 class QWidget;
 
-class GpgFileItemActionPlugin : public KAbstractFileItemActionPlugin
+class EncryptFileItemAction : public KAbstractFileItemActionPlugin
 {
-
-Q_OBJECT
+    Q_OBJECT
 
 public:
-    GpgFileItemActionPlugin(QObject *parent);
+    EncryptFileItemAction(QObject *parent, const QVariantList &args);
+    virtual ~EncryptFileItemAction();
 
-    virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) = 0;
-
-protected:
-    static bool dataToFile(gpgme_data_t data, const QString &fileName);
-    // TODO: isn't this the same as gpgme_data_new_from_file?
-    static bool fileToData(QFile &file, gpgme_data_t data);
-    static bool initGpgme();
+    virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
 };
-
-#endif

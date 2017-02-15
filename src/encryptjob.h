@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Elvis Angelaccio <elvis.angelaccio@kde.org>
+ * Copyright (C) 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -17,32 +17,39 @@
  *
  */
 
-#ifndef GPGENCRYPTFILEITEMACTION_H
-#define GPGENCRYPTFILEITEMACTION_H
+#pragma once
 
-#include "gpgfileitemaction.h"
+#include "job.h"
 
-#include <QUrl>
+#include <gpgme++/error.h>
+#include <gpgme++/encryptionresult.h>
 
-class QAction;
-class QWidget;
+class QFile;
+class QTemporaryFile;
 
-class GpgEncryptFileItemAction : public GpgFileItemActionPlugin
+namespace Symmy
 {
 
-Q_OBJECT
+class EncryptJob : public Job
+{
+    Q_OBJECT
 
 public:
-    GpgEncryptFileItemAction(QObject *parent, const QVariantList &args);
+    explicit EncryptJob(const QString &plaintextFilename);
+    virtual ~EncryptJob();
 
-    virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
+    QString ciphertextFilename() const override;
+    QString plaintextFilename() const override;
 
 private slots:
-    void slotEncrypt(const QList<QUrl> &urls);
+    void doWork() override;
+    void slotResult(const GpgME::EncryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
 
 private:
-    static void encrypt(const QString &fileName);
-    static bool isAsciiArmor(gpgme_data_t cipherText);
+    bool isAsciiArmor();
+
+    std::shared_ptr<QFile> m_plaintext;
+    std::shared_ptr<QTemporaryFile> m_ciphertext;
 };
 
-#endif
+}
