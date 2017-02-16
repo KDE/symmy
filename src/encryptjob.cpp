@@ -20,6 +20,7 @@
 #include "encryptjob.h"
 
 #include <KIO/CopyJob>
+#include <KLocalizedString>
 
 #include <QDebug>
 #include <QTemporaryFile>
@@ -81,6 +82,9 @@ void EncryptJob::doWork()
     });
 
     qDebug() << "Starting encryption job...";
+    emit description(this, i18nc("description of an encryption job", "Encrypting"),
+                     qMakePair(i18nc("Filename used as input of the encryption algorithm", "Plaintext"), plaintextFilename()),
+                     qMakePair(i18nc("Filename created by the encryption algorithm", "Ciphertext"), ciphertextFilename()));
     encryptJob->start({}, m_plaintext, m_ciphertext, Context::None);
 }
 

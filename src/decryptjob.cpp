@@ -20,6 +20,7 @@
 #include "decryptjob.h"
 
 #include <KIO/CopyJob>
+#include <KLocalizedString>
 
 #include <QDebug>
 #include <QMimeDatabase>
@@ -91,6 +92,9 @@ void DecryptJob::doWork()
     });
 
     qDebug() << "Starting decryption job...";
+    emit description(this, i18nc("description of a decryption job", "Decrypting"),
+                     qMakePair(i18nc("Filename used as input of the decryption algorithm", "Ciphertext"), ciphertextFilename()),
+                     qMakePair(i18nc("Filename created by the decryption algorithm", "Plaintext"), plaintextFilename()));
     decryptJob->start(m_ciphertext, m_plaintext);
 }
 
