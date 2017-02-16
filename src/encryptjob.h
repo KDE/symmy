@@ -46,8 +46,6 @@ private slots:
     void slotResult(const GpgME::EncryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
 
 private:
-    bool isAsciiArmor();
-
     std::shared_ptr<QFile> m_plaintext;
     std::shared_ptr<QTemporaryFile> m_ciphertext;
 };

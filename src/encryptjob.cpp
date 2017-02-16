@@ -97,23 +97,8 @@ void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const 
         return;
     }
 
-    // Workaround for https://bugs.gnupg.org/gnupg/issue2446
-    const auto destFilename = isAsciiArmor() ? plaintextFilename() + QLatin1String(".asc") : ciphertextFilename();
-
-    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), QUrl::fromLocalFile(destFilename));
+    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), QUrl::fromLocalFile(ciphertextFilename()));
     connect(job, &KJob::result, this, &EncryptJob::emitResult);
-}
-
-bool EncryptJob::isAsciiArmor()
-{
-    if (not m_ciphertext->open()) {
-        return false;
-    }
-
-    const auto header = m_ciphertext->peek(22);
-    m_ciphertext->close();
-
-    return header == QByteArrayLiteral("-----BEGIN PGP MESSAGE");
 }
 
 }
