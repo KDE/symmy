@@ -10,8 +10,3 @@ Requirements
 * KIO
 * gpgme >= 1.7.1. (for QGpgME)
 
-TODO
-=====
-
-Possibly add workaround for https://bugreports.qt.io/browse/QTBUG-58938
-
