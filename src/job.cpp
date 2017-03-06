@@ -30,7 +30,7 @@
 namespace Symmy
 {
 
-Job::Job() : KJob(nullptr)
+Job::Job() : KJob {nullptr}
 {
     setCapabilities(Killable);
     KIO::getJobTracker()->registerJob(this);
@@ -38,7 +38,6 @@ Job::Job() : KJob(nullptr)
 
 Job::~Job()
 {
-    qDebug() << Q_FUNC_INFO;
 }
 
 void Job::start()

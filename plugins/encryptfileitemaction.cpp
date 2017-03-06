@@ -35,17 +35,13 @@ EncryptFileItemAction::EncryptFileItemAction(QObject *parent, const QVariantList
     : KAbstractFileItemActionPlugin {parent}
 {}
 
-EncryptFileItemAction::~EncryptFileItemAction()
-{
-    qDebug() << Q_FUNC_INFO;
-}
-
 QList<QAction*> EncryptFileItemAction::actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget)
 {
     const auto urls = fileItemInfos.urlList();
+    QMimeDatabase mimeDb;
     for (const auto &url : urls) {
-        const auto mimeType = QMimeDatabase().mimeTypeForUrl(url).name();
-        if (mimeType == QLatin1String("application/pgp-encrypted") or mimeType == QLatin1String("inode/directory")) {
+        const auto mimeType = mimeDb.mimeTypeForUrl(url).name();
+        if (mimeType == QLatin1String {"application/pgp-encrypted"} or mimeType == QLatin1String {"inode/directory"}) {
             return {};
         }
     }

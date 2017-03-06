@@ -20,7 +20,6 @@
 #include "decryptfileitemaction.h"
 
 #include <QAction>
-#include <QDebug>
 #include <QUrl>
 
 #include <KFileItemListProperties>

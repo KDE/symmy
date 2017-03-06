@@ -45,12 +45,11 @@ EncryptJob::EncryptJob(const QString &plaintextFilename) : Job {}
 
 EncryptJob::~EncryptJob()
 {
-    qDebug() << Q_FUNC_INFO;
 }
 
 QString EncryptJob::ciphertextFilename() const
 {
-    return plaintextFilename() + QLatin1String(".gpg");
+    return plaintextFilename() + QLatin1String {".gpg"};
 }
 
 QString EncryptJob::plaintextFilename() const

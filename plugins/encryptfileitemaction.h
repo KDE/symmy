@@ -32,7 +32,6 @@ class EncryptFileItemAction : public KAbstractFileItemActionPlugin
 
 public:
     EncryptFileItemAction(QObject *parent, const QVariantList &args);
-    virtual ~EncryptFileItemAction();
 
     virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
 };

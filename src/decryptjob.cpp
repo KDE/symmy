@@ -46,7 +46,6 @@ DecryptJob::DecryptJob(const QString &ciphertextFilename) : Job {}
 
 DecryptJob::~DecryptJob()
 {
-    qDebug() << Q_FUNC_INFO;
 }
 
 QString DecryptJob::ciphertextFilename() const
@@ -57,7 +56,7 @@ QString DecryptJob::ciphertextFilename() const
 QString DecryptJob::plaintextFilename() const
 {
     auto filename = ciphertextFilename();
-    const auto pgpSuffixes = QMimeDatabase().mimeTypeForName(QStringLiteral("application/pgp-encrypted")).suffixes();
+    const auto pgpSuffixes = QMimeDatabase{}.mimeTypeForName(QStringLiteral("application/pgp-encrypted")).suffixes();
     for (const auto &suffix : pgpSuffixes) {
         if (filename.endsWith(suffix)) {
             filename.chop(suffix.length() + 1); // dot is not included in the suffix
