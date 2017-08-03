@@ -36,7 +36,7 @@ class EncryptJob : public Job
 
 public:
     explicit EncryptJob(const QString &plaintextFilename);
-    virtual ~EncryptJob();
+    ~EncryptJob() override;
 
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;

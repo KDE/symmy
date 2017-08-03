@@ -36,7 +36,7 @@ class DecryptJob : public Job
 
 public:
     explicit DecryptJob(const QString &ciphertextFilename);
-    virtual ~DecryptJob();
+    ~DecryptJob() override;
 
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;

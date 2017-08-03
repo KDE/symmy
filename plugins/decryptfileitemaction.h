@@ -33,5 +33,5 @@ class DecryptFileItemAction : public KAbstractFileItemActionPlugin
 public:
     DecryptFileItemAction(QObject *parent, const QVariantList &args);
 
-    virtual QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
+    QList<QAction*> actions(const KFileItemListProperties &fileItemInfos, QWidget *parentWidget) override;
 };

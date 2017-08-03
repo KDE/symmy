@@ -37,14 +37,14 @@ class Job : public KJob
 
 public:
     explicit Job();
-    virtual ~Job();
+    ~Job() override;
 
-    virtual void start() override;
+    void start() override;
     virtual QString ciphertextFilename() const = 0;
     virtual QString plaintextFilename() const = 0;
 
 protected:
-    virtual bool doKill() override;
+    bool doKill() override;
     void setJob(QGpgME::Job *job);
 
 private slots:
