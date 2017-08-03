@@ -10,3 +10,8 @@ Requirements
 * KIO
 * gpgme >= 1.7.1. (for QGpgME)
 
+TODO
+=====
+
+Custom password dialog instead of the built-in pinentry dialog.
+
