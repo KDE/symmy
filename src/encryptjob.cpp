@@ -92,6 +92,7 @@ void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const 
     qDebug() << "Encryption job finished, ciphertext size:" << m_ciphertext->size();
 
     if (m_ciphertext->size() == 0) {
+        setError(KilledJobError);
         emitResult();
         return;
     }

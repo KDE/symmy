@@ -102,6 +102,7 @@ void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const 
     qDebug() << "Decryption job finished, plaintext size:" << m_plaintext->size();
 
     if (m_plaintext->size() == 0) {
+        setError(KilledJobError);
         emitResult();
         return;
     }
