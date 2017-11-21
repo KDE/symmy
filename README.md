@@ -9,8 +9,3 @@ Requirements
 
 * KIO
 * gpgme >= 1.7.1. (for QGpgME)
-
-TODO
-=====
-
-* Alternative to "Symmy" in the window title of the password dialog?
