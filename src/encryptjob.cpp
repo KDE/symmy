@@ -58,10 +58,8 @@ QString EncryptJob::plaintextFilename() const
     return m_plaintext->fileName();
 }
 
-char *EncryptJob::getPassphrase(const char *, const char *, bool previousWasBad, bool &)
+char *EncryptJob::getPassphrase(const char *, const char *, bool, bool &)
 {
-    qDebug() << "Previously failed to retrieve passphrase?" << previousWasBad;
-
     char *ret;
     gpgrt_asprintf(&ret, "%s", qUtf8Printable(passphrase()));
     return ret;

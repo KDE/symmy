@@ -42,7 +42,7 @@ public:
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;
 
-    char *getPassphrase(const char *, const char *, bool previousWasBad, bool &) override;
+    char *getPassphrase(const char *, const char *, bool, bool &) override;
 
 private slots:
     void doWork() override;
