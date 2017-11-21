@@ -23,6 +23,8 @@
 
 #include <QPointer>
 
+#include <gpgme++/interfaces/passphraseprovider.h>
+
 namespace QGpgME
 {
 class Job;
@@ -31,7 +33,7 @@ class Job;
 namespace Symmy
 {
 
-class Job : public KJob
+class Job : public KJob,  public GpgME::PassphraseProvider
 {
     Q_OBJECT
 
@@ -39,6 +41,7 @@ public:
     explicit Job();
     ~Job() override;
 
+    char *getPassphrase(const char *, const char *, bool, bool &) override;
     void start() override;
     virtual QString ciphertextFilename() const = 0;
     virtual QString plaintextFilename() const = 0;

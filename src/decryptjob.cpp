@@ -69,13 +69,6 @@ QString DecryptJob::plaintextFilename() const
     return filename;
 }
 
-char *DecryptJob::getPassphrase(const char *, const char *, bool, bool &)
-{
-    char *ret;
-    gpgrt_asprintf(&ret, "%s", qUtf8Printable(passphrase()));
-    return ret;
-}
-
 void DecryptJob::doWork()
 {
     if (not m_ciphertext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {

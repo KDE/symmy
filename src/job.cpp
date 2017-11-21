@@ -40,6 +40,13 @@ Job::~Job()
 {
 }
 
+char *Job::getPassphrase(const char *, const char *, bool, bool &)
+{
+    char *ret;
+    gpgrt_asprintf(&ret, "%s", qUtf8Printable(passphrase()));
+    return ret;
+}
+
 void Job::start()
 {
     QTimer::singleShot(0, this, &Job::doWork);
