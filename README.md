@@ -13,5 +13,4 @@ Requirements
 TODO
 =====
 
-* Show error if passphrase is wrong.
 * Alternative to "Symmy" in the window title of the password dialog?

@@ -138,7 +138,8 @@ void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const 
     qDebug() << "Decryption job finished, plaintext size:" << m_plaintext->size();
 
     if (m_plaintext->size() == 0) {
-        setError(KilledJobError);
+        setError(UserDefinedError);
+        setErrorText(i18n("Wrong decryption key."));
         emitResult();
         return;
     }
