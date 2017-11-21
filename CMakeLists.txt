@@ -18,14 +18,14 @@ include(FeatureSummary)
 string(REPLACE "-fno-operator-names" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
 find_package(Qt5 CONFIG REQUIRED
-  Core
-  Gui
-  Widgets)
+    Core
+    Gui
+    Widgets)
 
 find_package(KF5 REQUIRED COMPONENTS
-  KIO
-  I18n
-  WidgetsAddons)
+    KIO
+    I18n
+    WidgetsAddons)
 
 find_package(Gpgmepp "1.7.1" CONFIG REQUIRED)
 find_package(QGpgme "1.7.1" CONFIG REQUIRED)
