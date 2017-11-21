@@ -27,7 +27,8 @@
 
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QDebug>
+
+#include <iostream>
 
 int main(int argc, char **argv)
 {
@@ -53,7 +54,7 @@ int main(int argc, char **argv)
     aboutData.processCommandLine(&parser);
 
     if (parser.isSet(QStringLiteral("encrypt")) and parser.isSet(QStringLiteral("decrypt"))) {
-        qCritical() << "Error: either --encrypt or --decrypt, not both.";
+        std::cerr << qPrintable(i18nc("--encrypt and --decrypt are CLI args, don't translate them", "Error: either --encrypt or --decrypt, not both.")) << '\n';
         parser.showHelp(-1);
     }
 
