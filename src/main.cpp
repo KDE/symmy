@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 {
     QApplication app {argc, argv};
     auto aboutData = KAboutData {QStringLiteral("symmy"), i18nc("display name for 'symmy' binary", "GPG Symmetric Encryption Frontend"), QStringLiteral(SYMMY_VERSION_STRING),
-                                 i18n("Encrypt/decrypt a file using GPG symmetric encryption"), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
+                                 i18n("Encrypt/decrypt a file using GPG symmetric encryption."), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
     aboutData.addAuthor(i18n("Elvis Angelaccio"), {}, QStringLiteral("elvis.angelaccio@kde.org"));
     KAboutData::setApplicationData(aboutData);
 
@@ -43,9 +43,9 @@ int main(int argc, char **argv)
     parser.addVersionOption();
     parser.addPositionalArgument(QStringLiteral("[file]"), i18n("File to encrypt or decrypt."));
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("e"), QStringLiteral("encrypt")},
-                                         i18n("Encrypt the given filename (default if no options)")});
+                                         i18n("Encrypt the given filename (default if no options).")});
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("d"), QStringLiteral("decrypt")},
-                                         i18n("Decrypt the given filename")});
+                                         i18n("Decrypt the given filename.")});
 
     app.setQuitOnLastWindowClosed(false);
 
