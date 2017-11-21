@@ -61,4 +61,19 @@ void Job::setJob(QGpgME::Job *job)
     m_job = job;
 }
 
+QGpgME::Job *Job::job()
+{
+    return m_job;
+}
+
+void Job::setPassphrase(const QString &passphrase)
+{
+    m_passphrase = passphrase;
+}
+
+QString Job::passphrase() const
+{
+    return m_passphrase;
+}
+
 }

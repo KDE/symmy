@@ -21,6 +21,7 @@
 
 #include <KIO/CopyJob>
 #include <KLocalizedString>
+#include <KPasswordDialog>
 
 #include <QDebug>
 #include <QTemporaryFile>
@@ -57,6 +58,15 @@ QString EncryptJob::plaintextFilename() const
     return m_plaintext->fileName();
 }
 
+char *EncryptJob::getPassphrase(const char *, const char *, bool previousWasBad, bool &)
+{
+    qDebug() << "Previously failed to retrieve passphrase?" << previousWasBad;
+
+    char *ret;
+    gpgrt_asprintf(&ret, "%s", qUtf8Printable(passphrase()));
+    return ret;
+}
+
 void EncryptJob::doWork()
 {
     if (not m_plaintext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
@@ -72,7 +82,19 @@ void EncryptJob::doWork()
     }
 
     auto encryptJob = openpgp()->encryptJob(false, false);
+    auto context = QGpgME::Job::context(encryptJob);
+    context->setPassphraseProvider(this);
+    context->setPinentryMode(GpgME::Context::PinentryLoopback);
+
     setJob(encryptJob);
+
+    auto passwordDialog = new KPasswordDialog {};
+    passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as encryption key."));
+
+    connect(passwordDialog, &QDialog::accepted, this, &EncryptJob::slotAccepted);
+    connect(passwordDialog, &QDialog::rejected, this, &EncryptJob::slotRejected);
+    connect(passwordDialog, &QDialog::finished, passwordDialog, &QObject::deleteLater);
+    connect(passwordDialog, &KPasswordDialog::gotPassword, this, &Job::setPassphrase);
 
     connect(encryptJob, &QGpgME::EncryptJob::result, this, &EncryptJob::slotResult);
     connect(encryptJob, &QGpgME::EncryptJob::progress, this, [this](const QString &, int current, int total) {
@@ -80,11 +102,24 @@ void EncryptJob::doWork()
         setPercent(static_cast<unsigned long>(100 * ratio));
     });
 
-    qDebug() << "Starting encryption job...";
     emit description(this, i18nc("description of an encryption job", "Encrypting"),
                      qMakePair(i18nc("Filename used as input of the encryption algorithm", "Plaintext"), plaintextFilename()),
                      qMakePair(i18nc("Filename created by the encryption algorithm", "Ciphertext"), ciphertextFilename()));
-    encryptJob->start({}, m_plaintext, m_ciphertext, Context::None);
+
+    passwordDialog->open();
+}
+
+void EncryptJob::slotAccepted()
+{
+    qDebug() << "Got a passhprase, starting encryption job...";
+    qobject_cast<QGpgME::EncryptJob*>(job())->start({}, m_plaintext, m_ciphertext, Context::None);
+}
+
+void EncryptJob::slotRejected()
+{
+    qDebug() << "Passphrase dialog rejected.";
+    setError(KilledJobError);
+    emitResult();
 }
 
 void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const QString &, const Error &)

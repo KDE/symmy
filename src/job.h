@@ -19,9 +19,9 @@
 
 #pragma once
 
-#include <QPointer>
-
 #include <KJob>
+
+#include <QPointer>
 
 namespace QGpgME
 {
@@ -42,16 +42,22 @@ public:
     void start() override;
     virtual QString ciphertextFilename() const = 0;
     virtual QString plaintextFilename() const = 0;
+    QString passphrase() const;
+
+public slots:
+    void setPassphrase(const QString &passphrase);
 
 protected:
     bool doKill() override;
     void setJob(QGpgME::Job *job);
+    QGpgME::Job *job();
 
 private slots:
     virtual void doWork() = 0;
 
 private:
     QPointer<QGpgME::Job> m_job;
+    QString m_passphrase;
 };
 
 }

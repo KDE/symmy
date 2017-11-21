@@ -23,6 +23,7 @@
 
 #include <gpgme++/error.h>
 #include <gpgme++/decryptionresult.h>
+#include <gpgme++/interfaces/passphraseprovider.h>
 
 class QFile;
 class QTemporaryFile;
@@ -30,7 +31,7 @@ class QTemporaryFile;
 namespace Symmy
 {
 
-class DecryptJob : public Job
+class DecryptJob : public Job, public GpgME::PassphraseProvider
 {
     Q_OBJECT
 
@@ -41,8 +42,12 @@ public:
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;
 
+    char *getPassphrase(const char *, const char *, bool previousWasBad, bool &) override;
+
 private slots:
     void doWork() override;
+    void slotAccepted();
+    void slotRejected();
     void slotResult(const GpgME::DecryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
 
 private:

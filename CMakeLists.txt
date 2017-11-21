@@ -24,7 +24,8 @@ find_package(Qt5 CONFIG REQUIRED
 
 find_package(KF5 REQUIRED COMPONENTS
   KIO
-  I18n)
+  I18n
+  WidgetsAddons)
 
 find_package(Gpgmepp "1.7.1" CONFIG REQUIRED)
 find_package(QGpgme "1.7.1" CONFIG REQUIRED)

@@ -13,5 +13,5 @@ Requirements
 TODO
 =====
 
-Custom password dialog instead of the built-in pinentry dialog.
-
+* Show error if passphrase is wrong.
+* Alternative to "Symmy" in the window title of the password dialog?
