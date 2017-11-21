@@ -101,8 +101,8 @@ void EncryptJob::doWork()
     });
 
     emit description(this, i18nc("description of an encryption job", "Encrypting"),
-                     qMakePair(i18nc("Filename used as input of the encryption algorithm", "Plaintext"), plaintextFilename()),
-                     qMakePair(i18nc("Filename created by the encryption algorithm", "Ciphertext"), ciphertextFilename()));
+                     qMakePair(i18nc("File used as input of the encryption algorithm", "Plaintext"), plaintextFilename()),
+                     qMakePair(i18nc("File created by the encryption algorithm", "Ciphertext"), ciphertextFilename()));
 
     passwordDialog->open();
 }
