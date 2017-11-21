@@ -1,6 +1,17 @@
 include_directories(${CMAKE_BINARY_DIR})
 
-add_executable(symmy main.cpp decryptjob.cpp encryptjob.cpp job.cpp)
+set(symmy_SRCS
+    main.cpp
+    decryptjob.cpp
+    encryptjob.cpp
+    job.cpp)
+
+ecm_qt_declare_logging_category(symmy_SRCS
+    HEADER symmydebug.h
+    IDENTIFIER SYMMY
+    CATEGORY_NAME org.kde.symmy)
+
+add_executable(symmy ${symmy_SRCS})
 
 target_link_libraries(symmy
     Qt5::Widgets

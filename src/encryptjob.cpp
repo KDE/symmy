@@ -18,12 +18,12 @@
  */
 
 #include "encryptjob.h"
+#include "symmydebug.h"
 
 #include <KIO/CopyJob>
 #include <KLocalizedString>
 #include <KPasswordDialog>
 
-#include <QDebug>
 #include <QTemporaryFile>
 #include <QTimer>
 
@@ -61,13 +61,13 @@ QString EncryptJob::plaintextFilename() const
 void EncryptJob::doWork()
 {
     if (not m_plaintext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
-        qDebug() << "Could not open plaintext file" << m_plaintext->fileName();
+        qCDebug(SYMMY) << "Could not open plaintext file" << m_plaintext->fileName();
         emitResult();
         return;
     }
 
     if (not m_ciphertext->open()) {
-        qDebug() << "Could not open ciphertext file" << m_ciphertext->fileName();
+        qCDebug(SYMMY) << "Could not open ciphertext file" << m_ciphertext->fileName();
         emitResult();
         return;
     }
@@ -102,20 +102,20 @@ void EncryptJob::doWork()
 
 void EncryptJob::slotAccepted()
 {
-    qDebug() << "Got a passhprase, starting encryption job...";
+    qCDebug(SYMMY) << "Got a passhprase, starting encryption job...";
     qobject_cast<QGpgME::EncryptJob*>(job())->start({}, m_plaintext, m_ciphertext, Context::None);
 }
 
 void EncryptJob::slotRejected()
 {
-    qDebug() << "Passphrase dialog rejected.";
+    qCDebug(SYMMY) << "Passphrase dialog rejected.";
     setError(KilledJobError);
     emitResult();
 }
 
 void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const QString &, const Error &)
 {
-    qDebug() << "Encryption job finished, ciphertext size:" << m_ciphertext->size();
+    qCDebug(SYMMY) << "Encryption job finished, ciphertext size:" << m_ciphertext->size();
 
     if (m_ciphertext->size() == 0) {
         setError(KilledJobError);

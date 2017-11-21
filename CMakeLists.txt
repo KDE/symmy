@@ -7,10 +7,12 @@ project(symmy VERSION ${SYMMY_VERSION})
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-include(ECMSetupVersion)
+
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(ECMSetupVersion)
+include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 
 # ecm >= 5.31 disables alternative operators, but we use them.

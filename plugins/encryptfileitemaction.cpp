@@ -20,7 +20,6 @@
 #include "encryptfileitemaction.h"
 
 #include <QAction>
-#include <QDebug>
 #include <QMimeDatabase>
 #include <QUrl>
 

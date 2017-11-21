@@ -18,11 +18,11 @@
  */
 
 #include "job.h"
+#include "symmydebug.h"
 
 #include <KIO/JobTracker>
 #include <KJobTrackerInterface>
 
-#include <QDebug>
 #include <QTimer>
 
 #include <QGpgME/Job>
@@ -58,7 +58,7 @@ bool Job::doKill()
         return false;
     }
 
-    qDebug() << "Going to stop" << m_job->metaObject()->className();
+    qCDebug(SYMMY) << "Going to stop" << m_job->metaObject()->className();
     m_job->slotCancel();
     return true;
 }

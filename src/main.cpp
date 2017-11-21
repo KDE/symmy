@@ -19,6 +19,7 @@
 
 #include "decryptjob.h"
 #include "encryptjob.h"
+#include "symmydebug.h"
 #include "symmyversion.h"
 
 #include <KAboutData>
@@ -63,17 +64,17 @@ int main(int argc, char **argv)
     const auto file = parser.positionalArguments().at(0);
 
     if (parser.isSet(QStringLiteral("encrypt")) or not parser.isSet(QStringLiteral("decrypt"))) {
-        qDebug() << "Going to encrypt:" << file;
+        qCDebug(SYMMY) << "Going to encrypt:" << file;
         auto job = new Symmy::EncryptJob {file};
         QObject::connect(job, &KJob::result, &app, &QCoreApplication::quit, Qt::QueuedConnection);
         job->start();
     } else {
-        qDebug() << "Going to decrypt:" << file;
+        qCDebug(SYMMY) << "Going to decrypt:" << file;
         auto job = new Symmy::DecryptJob {file};
         QObject::connect(job, &KJob::result, &app, &QCoreApplication::quit, Qt::QueuedConnection);
         job->start();
     }
 
-    qDebug() << "Starting event loop...";
+    qCDebug(SYMMY) << "Starting event loop...";
     return app.exec();
 }
