@@ -53,6 +53,7 @@ private slots:
     void slotAccepted();
     void slotRejected();
     void slotStart();
+    void slotPercent(KJob *, unsigned long percent);
 
 private:
     void startSubjob();

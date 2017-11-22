@@ -102,11 +102,15 @@ void CompositeJob::slotResult(KJob *job)
 void CompositeJob::slotAccepted()
 {
     for (const auto &filename : filenames()) {
+        Symmy::Job *job = nullptr;
         if (task() == Task::Encryption) {
-            addSubjob(new Symmy::EncryptJob(m_passwordDialog->password(), filename));
+            job = new Symmy::EncryptJob(m_passwordDialog->password(), filename);
         } else {
-            addSubjob(new Symmy::DecryptJob(m_passwordDialog->password(), filename));
+            job = new Symmy::DecryptJob(m_passwordDialog->password(), filename);
         }
+
+        addSubjob(job);
+        connect(job, SIGNAL(percent(KJob*, unsigned long)), this, SLOT(slotPercent(KJob*, unsigned long)));
     }
 
     qCDebug(SYMMY) << "Got a passphrase, starting first subjob...";
@@ -142,6 +146,11 @@ void CompositeJob::slotStart()
     connect(m_passwordDialog, &QDialog::finished, m_passwordDialog, &QObject::deleteLater);
 
     m_passwordDialog->open();
+}
+
+void CompositeJob::slotPercent(KJob *, unsigned long percent)
+{
+    setPercent(percent);
 }
 
 void CompositeJob::startSubjob()
