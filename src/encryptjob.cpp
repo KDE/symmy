@@ -80,7 +80,9 @@ void EncryptJob::doWork()
     setJob(encryptJob);
 
     auto passwordDialog = new KPasswordDialog {};
-    passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as encryption key."));
+    passwordDialog->setPrompt(xi18nc("@info",
+                                     "Please supply a password or passphrase to be used as encryption key for plaintext:<nl/><filename>%1</filename>.",
+                                     plaintextFilename()));
 
     connect(passwordDialog, &QDialog::accepted, this, &EncryptJob::slotAccepted);
     connect(passwordDialog, &QDialog::rejected, this, &EncryptJob::slotRejected);

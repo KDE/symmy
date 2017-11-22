@@ -91,7 +91,9 @@ void DecryptJob::doWork()
     setJob(decryptJob);
 
     auto passwordDialog = new KPasswordDialog {};
-    passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as decryption key."));
+    passwordDialog->setPrompt(xi18nc("@info",
+                                     "Please supply a password or passphrase to be used as decryption key for ciphertext:<nl/><filename>%1</filename>.",
+                                     ciphertextFilename()));
 
     connect(passwordDialog, &QDialog::accepted, this, &DecryptJob::slotAccepted);
     connect(passwordDialog, &QDialog::rejected, this, &DecryptJob::slotRejected);
