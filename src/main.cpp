@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     parser.addVersionOption();
     parser.addPositionalArgument(QStringLiteral("files"), i18n("List of files to encrypt or decrypt."));
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("e"), QStringLiteral("encrypt")},
-                                         i18n("Encrypt the given list of files (default if no options).")});
+                                         i18n("Encrypt the given list of files (this is the default if there are no other options).")});
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("d"), QStringLiteral("decrypt")},
                                          i18n("Decrypt the given list of files.")});
 
