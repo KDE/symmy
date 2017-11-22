@@ -50,7 +50,7 @@ EncryptJob::~EncryptJob()
 
 QString EncryptJob::ciphertextFilename() const
 {
-    return plaintextFilename() + QLatin1String {".gpg"};
+    return QStringLiteral("%1.gpg").arg(plaintextFilename());
 }
 
 QString EncryptJob::plaintextFilename() const
