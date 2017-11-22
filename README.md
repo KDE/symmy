@@ -14,4 +14,4 @@ Requirements
 Limitations
 ===========
 
-Currently symmy shows a password dialog for each file to be encrypted or decrypted. This can be annoying when working with many files.
+Currently symmy can only encrypt or decrypt local files.

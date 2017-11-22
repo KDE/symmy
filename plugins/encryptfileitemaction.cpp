@@ -49,7 +49,7 @@ QList<QAction*> EncryptFileItemAction::actions(const KFileItemListProperties &fi
 
     auto encryptAction = new QAction {icon, i18nc("@action:inmenu Encrypt action in Dolphin context menu", "Encrypt"), parentWidget};
     connect(encryptAction, &QAction::triggered, this, [=]() {
-        KRun::run(QStringLiteral("symmy --encrypt %f"), urls, parentWidget);
+        KRun::run(QStringLiteral("symmy --encrypt %F"), urls, parentWidget);
     });
 
     if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {

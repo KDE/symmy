@@ -35,7 +35,7 @@ class DecryptJob : public Job
     Q_OBJECT
 
 public:
-    explicit DecryptJob(const QString &ciphertextFilename);
+    explicit DecryptJob(const QString &passphrase, const QString &ciphertextFilename);
     ~DecryptJob() override;
 
     QString ciphertextFilename() const override;
@@ -43,8 +43,6 @@ public:
 
 private slots:
     void doWork() override;
-    void slotAccepted();
-    void slotRejected();
     void slotResult(const GpgME::DecryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
 
 private:

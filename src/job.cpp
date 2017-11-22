@@ -20,9 +20,6 @@
 #include "job.h"
 #include "symmydebug.h"
 
-#include <KIO/JobTracker>
-#include <KJobTrackerInterface>
-
 #include <QTimer>
 
 #include <QGpgME/Job>
@@ -30,10 +27,10 @@
 namespace Symmy
 {
 
-Job::Job() : KJob {nullptr}
+Job::Job(const QString &passphrase)
+    : KJob {}
+    , m_passphrase {passphrase}
 {
-    setCapabilities(Killable);
-    KIO::getJobTracker()->registerJob(this);
 }
 
 Job::~Job()
@@ -66,16 +63,6 @@ bool Job::doKill()
 void Job::setJob(QGpgME::Job *job)
 {
     m_job = job;
-}
-
-QGpgME::Job *Job::job()
-{
-    return m_job;
-}
-
-void Job::setPassphrase(const QString &passphrase)
-{
-    m_passphrase = passphrase;
 }
 
 QString Job::passphrase() const

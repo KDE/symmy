@@ -19,35 +19,50 @@
 
 #pragma once
 
-#include "job.h"
+#include <KCompositeJob>
 
-#include <gpgme++/error.h>
-#include <gpgme++/encryptionresult.h>
-
-class QFile;
-class QTemporaryFile;
+class KPasswordDialog;
 
 namespace Symmy
 {
 
-class EncryptJob : public Job
+class CompositeJob : public KCompositeJob
 {
     Q_OBJECT
 
 public:
-    explicit EncryptJob(const QString &passphrase, const QString &plaintextFilename);
-    ~EncryptJob() override;
 
-    QString ciphertextFilename() const override;
-    QString plaintextFilename() const override;
+    enum class Task
+    {
+        Encryption,
+        Decryption
+    };
+
+    explicit CompositeJob(const QStringList &filenames, Task task);
+    ~CompositeJob() override;
+
+    void start() override;
+
+protected:
+    bool doKill() override;
+
+protected slots:
+    void slotResult(KJob *job) override;
 
 private slots:
-    void doWork() override;
-    void slotResult(const GpgME::EncryptionResult &, const QByteArray &, const QString & = {}, const GpgME::Error & = {});
+    void slotAccepted();
+    void slotRejected();
+    void slotStart();
 
 private:
-    std::shared_ptr<QFile> m_plaintext;
-    std::shared_ptr<QTemporaryFile> m_ciphertext;
+    void startSubjob();
+    QStringList filenames() const;
+    Task task() const;
+
+    QStringList m_filenames;
+    QStringList m_failedDecryptions;
+    Task m_task;
+    KPasswordDialog *m_passwordDialog = nullptr;
 };
 
 }

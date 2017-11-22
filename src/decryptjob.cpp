@@ -21,12 +21,9 @@
 #include "symmydebug.h"
 
 #include <KIO/CopyJob>
-#include <KLocalizedString>
-#include <KPasswordDialog>
 
 #include <QMimeDatabase>
 #include <QTemporaryFile>
-#include <QTimer>
 
 #include <QGpgME/DecryptJob>
 #include <QGpgME/Protocol>
@@ -40,7 +37,7 @@ using namespace QGpgME;
 namespace Symmy
 {
 
-DecryptJob::DecryptJob(const QString &ciphertextFilename) : Job {}
+DecryptJob::DecryptJob(const QString &passphrase, const QString &ciphertextFilename) : Job {passphrase}
 {
     m_ciphertext = std::make_shared<QFile>(ciphertextFilename);
     m_plaintext = std::make_shared<QTemporaryFile>(plaintextFilename());
@@ -90,40 +87,13 @@ void DecryptJob::doWork()
 
     setJob(decryptJob);
 
-    auto passwordDialog = new KPasswordDialog {};
-    passwordDialog->setPrompt(xi18nc("@info",
-                                     "Please supply a password or passphrase to be used as decryption key for ciphertext:<nl/><filename>%1</filename>.",
-                                     ciphertextFilename()));
-
-    connect(passwordDialog, &QDialog::accepted, this, &DecryptJob::slotAccepted);
-    connect(passwordDialog, &QDialog::rejected, this, &DecryptJob::slotRejected);
-    connect(passwordDialog, &QDialog::finished, passwordDialog, &QObject::deleteLater);
-    connect(passwordDialog, &KPasswordDialog::gotPassword, this, &Job::setPassphrase);
-
     connect(decryptJob, &QGpgME::DecryptJob::result, this, &DecryptJob::slotResult);
     connect(decryptJob, &QGpgME::Job::progress, this, [this](const QString &, int current, int total) {
         const auto ratio = static_cast<float>(current) / total;
         setPercent(static_cast<unsigned long>(100 * ratio));
     });
 
-    emit description(this, i18nc("description of a decryption job", "Decrypting"),
-                     qMakePair(i18nc("File used as input of the decryption algorithm", "Ciphertext"), ciphertextFilename()),
-                     qMakePair(i18nc("File created by the decryption algorithm", "Plaintext"), plaintextFilename()));
-
-    passwordDialog->open();
-}
-
-void DecryptJob::slotAccepted()
-{
-    qCDebug(SYMMY) << "Got a passhprase, starting decryption job...";
-    qobject_cast<QGpgME::DecryptJob*>(job())->start(m_ciphertext, m_plaintext);
-}
-
-void DecryptJob::slotRejected()
-{
-    qCDebug(SYMMY) << "Passphrase dialog rejected.";
-    setError(KilledJobError);
-    emitResult();
+    decryptJob->start(m_ciphertext, m_plaintext);
 }
 
 void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const QString &, const Error &)
@@ -132,7 +102,6 @@ void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const 
 
     if (m_plaintext->size() == 0) {
         setError(UserDefinedError);
-        setErrorText(i18n("Wrong decryption key."));
         emitResult();
         return;
     }

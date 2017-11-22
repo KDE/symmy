@@ -39,7 +39,7 @@ QList<QAction*> DecryptFileItemAction::actions(const KFileItemListProperties &fi
 
     auto decryptionAction = new QAction {icon, i18nc("@action:inmenu Decrypt action in Dolphin context menu", "Decrypt"), parentWidget};
     connect(decryptionAction, &QAction::triggered, this, [=]() {
-        KRun::run(QStringLiteral("symmy --decrypt %f"), fileItemInfos.urlList(), parentWidget);
+        KRun::run(QStringLiteral("symmy --decrypt %F"), fileItemInfos.urlList(), parentWidget);
     });
 
     if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {

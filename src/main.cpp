@@ -17,8 +17,7 @@
  *
  */
 
-#include "decryptjob.h"
-#include "encryptjob.h"
+#include "compositejob.h"
 #include "symmydebug.h"
 #include "symmyversion.h"
 
@@ -34,18 +33,18 @@ int main(int argc, char **argv)
 {
     QApplication app {argc, argv};
     auto aboutData = KAboutData {QStringLiteral("symmy"), i18nc("display name for 'symmy' binary", "GPG Symmetric Encryption Frontend"), QStringLiteral(SYMMY_VERSION_STRING),
-                                 i18n("Encrypt/decrypt a file using GPG symmetric encryption."), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
+                                 i18n("Encrypt/decrypt one ore more files using GPG symmetric encryption."), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
     aboutData.addAuthor(i18n("Elvis Angelaccio"), {}, QStringLiteral("elvis.angelaccio@kde.org"));
     KAboutData::setApplicationData(aboutData);
 
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addVersionOption();
-    parser.addPositionalArgument(QStringLiteral("[file]"), i18n("File to encrypt or decrypt."));
+    parser.addPositionalArgument(QStringLiteral("files"), i18n("List of files to encrypt or decrypt."));
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("e"), QStringLiteral("encrypt")},
-                                         i18n("Encrypt the given filename (default if no options).")});
+                                         i18n("Encrypt the given list of files (default if no options).")});
     parser.addOption(QCommandLineOption {QStringList {QStringLiteral("d"), QStringLiteral("decrypt")},
-                                         i18n("Decrypt the given filename.")});
+                                         i18n("Decrypt the given list of files.")});
 
     app.setQuitOnLastWindowClosed(false);
 
@@ -58,20 +57,20 @@ int main(int argc, char **argv)
         parser.showHelp(-1);
     }
 
-    if (parser.positionalArguments().count() != 1) {
+    if (parser.positionalArguments().isEmpty()) {
         parser.showHelp(-1);
     }
 
-    const auto file = parser.positionalArguments().at(0);
+    const auto files = parser.positionalArguments();
 
     if (parser.isSet(QStringLiteral("encrypt")) or not parser.isSet(QStringLiteral("decrypt"))) {
-        qCDebug(SYMMY) << "Going to encrypt:" << file;
-        auto job = new Symmy::EncryptJob {file};
+        qCDebug(SYMMY) << "Going to encrypt:" << files;
+        auto job = new Symmy::CompositeJob {files, Symmy::CompositeJob::Task::Encryption};
         QObject::connect(job, &KJob::result, &app, &QCoreApplication::quit, Qt::QueuedConnection);
         job->start();
     } else {
-        qCDebug(SYMMY) << "Going to decrypt:" << file;
-        auto job = new Symmy::DecryptJob {file};
+        qCDebug(SYMMY) << "Going to decrypt:" << files;
+        auto job = new Symmy::CompositeJob {files, Symmy::CompositeJob::Task::Decryption};
         QObject::connect(job, &KJob::result, &app, &QCoreApplication::quit, Qt::QueuedConnection);
         job->start();
     }

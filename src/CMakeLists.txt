@@ -2,6 +2,7 @@ include_directories(${CMAKE_BINARY_DIR})
 
 set(symmy_SRCS
     main.cpp
+    compositejob.cpp
     decryptjob.cpp
     encryptjob.cpp
     job.cpp)

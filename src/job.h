@@ -38,7 +38,7 @@ class Job : public KJob,  public GpgME::PassphraseProvider
     Q_OBJECT
 
 public:
-    explicit Job();
+    explicit Job(const QString &passphrase);
     ~Job() override;
 
     char *getPassphrase(const char *, const char *, bool, bool &) override;
@@ -47,13 +47,9 @@ public:
     virtual QString plaintextFilename() const = 0;
     QString passphrase() const;
 
-public slots:
-    void setPassphrase(const QString &passphrase);
-
 protected:
     bool doKill() override;
     void setJob(QGpgME::Job *job);
-    QGpgME::Job *job();
 
 private slots:
     virtual void doWork() = 0;
