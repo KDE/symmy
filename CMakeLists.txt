@@ -24,6 +24,7 @@ find_package(Qt5 CONFIG REQUIRED
     Widgets)
 
 find_package(KF5 REQUIRED COMPONENTS
+    DocTools
     KIO
     I18n
     WidgetsAddons)
@@ -35,6 +36,7 @@ ecm_setup_version(PROJECT
     VARIABLE_PREFIX SYMMY
     VERSION_HEADER symmyversion.h)
 
+add_subdirectory(doc)
 add_subdirectory(src)
 add_subdirectory(plugins)
 
