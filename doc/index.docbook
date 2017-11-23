@@ -80,6 +80,12 @@
         If you need to send the key to another person, you should do so over a secure channel (for example, by meeting in person).
       </para>
     </sect2>
+    <sect2 id="gpg-requirement">
+      <title>GPG Requirement</title>
+      <para>
+      &symmy; uses GPG to perform the actual encryption, so it assumes that the <application>gpg-agent</application> process is running and properly configured.
+      </para>
+    </sect2>
     <sect2 id="managing_encryption">
       <title>Manage an Encryption Operation</title>
       <para>

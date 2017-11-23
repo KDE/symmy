@@ -62,11 +62,17 @@ bool CompositeJob::doKill()
 
 void CompositeJob::slotResult(KJob *job)
 {
-    if (job->error() and task() == Task::Decryption) {
-        qCDebug(SYMMY) << "Job failed with code" << job->error() << "and error" << job->errorText();
-        auto decryptJob = qobject_cast<Symmy::DecryptJob*>(job);
+    if (job->error() == KJob::UserDefinedError) {
+        qCDebug(SYMMY) << "Job failed:" << job->errorText();
+        if (task() == Task::Encryption) {
+            setError(KJob::UserDefinedError);
+            KMessageBox::error(nullptr, xi18nc("@info", "Encryption operation failed. Please check whether the <application>gpg-agent</application> process is running."));
+            emitResult();
+            return;
+        }
 
-        if (decryptJob and decryptJob->error() != KJob::KilledJobError) {
+        auto decryptJob = qobject_cast<Symmy::DecryptJob*>(job);
+        if (decryptJob) {
             qCDebug(SYMMY) << "Subjob failed to decrypt" << decryptJob->ciphertextFilename();
             m_failedDecryptions << decryptJob->ciphertextFilename();
         }
@@ -83,16 +89,13 @@ void CompositeJob::slotResult(KJob *job)
     qCDebug(SYMMY) << "Composite job finished";
 
     if (!m_failedDecryptions.isEmpty()) {
-        if (m_failedDecryptions.size() == 1) {
-            KMessageBox::error(nullptr, xi18nc("@info", "Could not decrypt the following ciphertext:<nl/><filename>%1</filename>", m_failedDecryptions.at(0)));
-        } else {
-            KMessageBox::errorList(nullptr, i18n("Could not decrypt the following ciphertexts:"), m_failedDecryptions);
-        }
-
         // Nothing was decrypted, mark the composite job as failed.
         if (m_failedDecryptions.size() == filenames().size()) {
             setError(KJob::UserDefinedError);
-            setErrorText(i18n("Wrong decryption key."));
+            KMessageBox::error(nullptr, xi18nc("@info", "Decryption operation failed. Please check whether the decryption key is correct.<nl/>"
+                                                        "You should also check whether the <application>gpg-agent</application> process is running."));
+        } else {
+            KMessageBox::errorList(nullptr, xi18nc("@info", "Could not decrypt the following ciphertexts.<nl/>Please check whether the decryption key is correct."), m_failedDecryptions);
         }
     }
 
