@@ -100,7 +100,7 @@
     <title>Decrypt Files</title>
     <para>
     You can decrypt one or more encrypted files by selecting them in Dolphin or Plasma Folder View and clicking the <guimenuitem>Decrypt</guimenuitem> entry in the context menu.
-    Note that this entry will be visibile only when selecting encrypted files.
+    Note that this entry will be visible only when selecting encrypted files.
     </para>
     <sect2 id="decryption_key">
       <title>Type the Decryption Key</title>
