@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % English "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title>Symmy User's Manual</title>
+<author>
+&Elvis.Angelaccio;
+&Elvis.Angelaccio.mail;
+<personblurb><para>Authored this program and this man page</para></personblurb>
+</author>
+<date>2017-11-25</date>
+<releaseinfo>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle><command>symmy</command></refentrytitle>
+<manvolnum>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname><command>symmy</command></refname>
+<refpurpose>Frontend for the symmetric encryption functionality of GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis>
+<command>symmy</command>
+<arg rep="repeat"><replaceable>OPTIONS</replaceable></arg>
+<arg rep="repeat"><replaceable>FILES</replaceable></arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title>DESCRIPTION</title>
+<para>
+<command>symmy</command> is a simple application that can be used to encrypt or decrypt one or more files using the symmetric encryption functionality of GPG.
+A file encrypted by <command>symmy</command> can be decrypted by anyone who has access to the GPG program and the encryption key.
+</para>
+<para>
+<command>symmy</command> can also be used from &dolphin; or &plasma; Folder View thanks to the <guimenuitem>Encrypt</guimenuitem> and <guimenuitem>Decrypt</guimenuitem> items in the context menu.
+</para>
+</refsect1>
+
+<refsect1>
+<title>ENCRYPTION</title>
+<para>
+You can encrypt one or more files by writing their paths after the <option>encrypt</option> option.
+You can also select them in &dolphin; or &plasma; Folder View and click the <guimenuitem>Encrypt</guimenuitem> entry in the context menu.
+</para>
+<para>
+Note that you cannot encrypt a folder. If you need to do that, you should compress the folder and then encrypt the resulting archive.
+It's also not possible to encrypt remote files or files that are already encrypted.
+</para>
+
+<refsect2>
+<title>Choosing an Encryption Key</title>
+<para>
+<command>symmy</command> will ask you a password (or passphrase) that will be used as encryption key for <emphasis>all</emphasis> the selected files.
+You should choose a strong encryption key and you should store it in a secure place (such as a password manager).
+If you need to send the key to another person, you should do so over a secure channel (for example, by meeting in person).
+</para>
+</refsect2>
+
+<refsect2>
+<title>GPG Requirement</title>
+<para>
+<command>symmy</command> uses GPG to perform the actual encryption, so it assumes that the <command>gpg-agent</command> process is running and properly configured.
+</para>
+</refsect2>
+
+<refsect2>
+<title>Managing an Encryption Operation</title>
+<para>
+The encryption operation will take some time depending on the number of files and on their size.
+You can track the progress of the operation from the notification applet provided by &plasma;.
+From the notification plasmoid you can also abort the encryption operation if necessary.
+</para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title>DECRYPTION</title>
+<para>
+You can decrypt one or more encrypted files by writing their paths after the <option>decrypt</option> option.
+You can also select them in &dolphin; or &plasma; Folder View and click the <guimenuitem>Decrypt</guimenuitem> entry in the context menu.
+Note that this entry will be visible only when selecting encrypted files.
+</para>
+
+<refsect2>
+<title>Managing a Decryption Operation</title>
+<para>
+The decryption operation will take some time depending on the number of files and on their size.
+You can track the progress of the operation from the notification applet provided by &plasma;.
+From the notification plasmoid you can also abort the decryption operation if necessary.
+</para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title>OPTIONS</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option>-e, --encrypt</option>
+</term>
+<listitem>
+<para>
+Encrypts the given list of files after asking a passphrase. This option is implicitly set if there are no other options.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option>-d, --decrypt</option>
+</term>
+<listitem>
+<para>
+Decrypts the given list of files after asking the decryption key. Note that <option>encrypt</option> and <option>decrypt</option> are mutually exclusive.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option>-h, --help</option>
+</term>
+<listitem>
+<para>
+Shows a brief synopsis and description of the command line options.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option>-v, --version</option>
+</term>
+<listitem>
+<para>
+Shows the version of this program.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option>--author</option>
+</term>
+<listitem>
+<para>
+Shows information about the author of this program.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option>--license</option>
+</term>
+<listitem>
+<para>
+Shows information about the license of this program.
+</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>

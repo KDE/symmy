@@ -4,9 +4,10 @@ set (CMAKE_CXX_STANDARD 11)
 set(SYMMY_VERSION 0.70.0)
 project(symmy VERSION ${SYMMY_VERSION})
 
-find_package(ECM REQUIRED NO_MODULE)
-set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+set(KF5_MIN_VERSION 5.27.0)
 
+find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -23,7 +24,7 @@ find_package(Qt5 CONFIG REQUIRED
     Gui
     Widgets)
 
-find_package(KF5 REQUIRED COMPONENTS
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     KIO
     I18n
