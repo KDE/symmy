@@ -5,6 +5,7 @@ set(SYMMY_VERSION 0.70.0)
 project(symmy VERSION ${SYMMY_VERSION})
 
 set(KF5_MIN_VERSION 5.27.0)
+set(GPGME_MIN_VERSION 1.7.1)
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -30,8 +31,8 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     WidgetsAddons)
 
-find_package(Gpgmepp "1.7.1" CONFIG REQUIRED)
-find_package(QGpgme "1.7.1" CONFIG REQUIRED)
+find_package(Gpgmepp ${GPGME_MIN_VERSION} CONFIG REQUIRED)
+find_package(QGpgme ${GPGME_MIN_VERSION} CONFIG REQUIRED)
 
 ecm_setup_version(PROJECT
     VARIABLE_PREFIX SYMMY
