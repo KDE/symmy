@@ -1,7 +1,7 @@
 Symmy
 =====
 
-symmy is a tiny CLI application that nicely wraps GPG symmetric encryption.
+Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.
 It also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.
 You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.
 

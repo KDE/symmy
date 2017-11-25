@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="console-application">
+  <id>org.kde.symmy</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Symmy</name>
+  <summary>Frontend for the symmetric encryption functionality of GPG</summary>
+  <description>
+    <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
+    <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
+    <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
+  </description>
+  <provides>
+    <binary>symmy</binary>
+  </provides>
+  <update_contact>elvis.angelaccio_at_kde.org</update_contact>
+  <project_group>KDE</project_group>
+</component>
