@@ -4,6 +4,13 @@
             "application/octet-stream"
         ],
         "Name": "'Encrypt' service menu",
+        "Name[ca@valencia]": "Menú de servei «Encripta»",
+        "Name[ca]": "Menú de servei «Encripta»",
+        "Name[es]": "Menú de servicio «Cifrar»",
+        "Name[nl]": "Servicemenu 'Versleutelen'",
+        "Name[pt]": "Menu do serviço 'Encriptar'",
+        "Name[uk]": "Службове меню «Зашифрувати»",
+        "Name[x-test]": "xx'Encrypt' service menuxx",
         "ServiceTypes": [
             "KFileItemAction/Plugin"
         ]
