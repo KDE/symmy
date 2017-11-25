@@ -113,7 +113,7 @@ void CompositeJob::slotAccepted()
         }
 
         addSubjob(job);
-        connect(job, SIGNAL(percent(KJob*, unsigned long)), this, SLOT(slotPercent(KJob*, unsigned long)));
+        connect(job, SIGNAL(percent(KJob*,ulong)), this, SLOT(slotPercent(KJob*,ulong)));
     }
 
     qCDebug(SYMMY) << "Got a passphrase, starting first subjob...";
