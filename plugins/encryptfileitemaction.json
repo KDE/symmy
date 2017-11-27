@@ -9,6 +9,8 @@
         "Name[es]": "Menú de servicio «Cifrar»",
         "Name[nl]": "Servicemenu 'Versleutelen'",
         "Name[pt]": "Menu do serviço 'Encriptar'",
+        "Name[sk]": "Servisná ponuka 'Šifrovať'",
+        "Name[sv]": "'Tjänstmeny 'Kryptera'",
         "Name[uk]": "Службове меню «Зашифрувати»",
         "Name[x-test]": "xx'Encrypt' service menuxx",
         "ServiceTypes": [
