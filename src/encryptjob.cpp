@@ -96,7 +96,11 @@ void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const 
         return;
     }
 
-    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), QUrl::fromLocalFile(ciphertextFilename()));
+    auto ciphertextPath = m_ciphertext->fileName();
+    // Drop the ".XXXXXX" suffix of QTemporaryFile.
+    ciphertextPath.chop(7);
+    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_ciphertext->fileName()) << "to" << QUrl::fromLocalFile(ciphertextPath);
+    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), QUrl::fromLocalFile(ciphertextPath));
     connect(job, &KJob::result, this, &EncryptJob::emitResult);
 }
 

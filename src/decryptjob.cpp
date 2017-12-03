@@ -106,7 +106,11 @@ void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const 
         return;
     }
 
-    auto job = KIO::move(QUrl::fromLocalFile(m_plaintext->fileName()), QUrl::fromLocalFile(plaintextFilename()));
+    auto plaintextPath = m_plaintext->fileName();
+    // Drop the ".XXXXXX" suffix of QTemporaryFile.
+    plaintextPath.chop(7);
+    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_plaintext->fileName()) << "to" << QUrl::fromLocalFile(plaintextPath);
+    auto job = KIO::move(QUrl::fromLocalFile(m_plaintext->fileName()), QUrl::fromLocalFile(plaintextPath));
     connect(job, &KJob::result, this, &DecryptJob::emitResult);
 }
 
