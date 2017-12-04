@@ -38,6 +38,8 @@ ecm_setup_version(PROJECT
     VARIABLE_PREFIX SYMMY
     VERSION_HEADER symmyversion.h)
 
+add_definitions(-DTRANSLATION_DOMAIN=\"symmy\")
+
 add_subdirectory(desktop)
 add_subdirectory(doc)
 add_subdirectory(src)
