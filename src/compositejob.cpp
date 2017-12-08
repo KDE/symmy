@@ -26,6 +26,7 @@
 #include <KJobTrackerInterface>
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <KNewPasswordDialog>
 #include <KPasswordDialog>
 
 #include <QTimer>
@@ -107,9 +108,9 @@ void CompositeJob::slotAccepted()
     for (const auto &filename : filenames()) {
         Symmy::Job *job = nullptr;
         if (task() == Task::Encryption) {
-            job = new Symmy::EncryptJob(m_passwordDialog->password(), filename);
+            job = new Symmy::EncryptJob(qobject_cast<KNewPasswordDialog*>(m_passwordDialog)->password(), filename);
         } else {
-            job = new Symmy::DecryptJob(m_passwordDialog->password(), filename);
+            job = new Symmy::DecryptJob(qobject_cast<KPasswordDialog*>(m_passwordDialog)->password(), filename);
         }
 
         addSubjob(job);
@@ -137,11 +138,15 @@ void CompositeJob::slotStart()
     qCDebug(SYMMY) << "Starting composite job...";
     emit description(this, i18n("Asking Passphrase"));
 
-    m_passwordDialog = new KPasswordDialog {};
     if (task() == Task::Encryption) {
-        m_passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as encryption key."));
+        auto passwordDialog = new KNewPasswordDialog {};
+        passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as encryption key."));
+        passwordDialog->setAllowEmptyPasswords(false);
+        m_passwordDialog = passwordDialog;
     } else {
-        m_passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as decryption key."));
+        auto passwordDialog = new KPasswordDialog {};
+        passwordDialog->setPrompt(i18n("Please supply a password or passphrase to be used as decryption key."));
+        m_passwordDialog = passwordDialog;
     }
 
     connect(m_passwordDialog, &QDialog::accepted, this, &CompositeJob::slotAccepted);
