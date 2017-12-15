@@ -20,6 +20,7 @@
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
   <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
+  <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
   <summary xml:lang="sk">Frontend pre dynamické šifrovanie GPG</summary>
@@ -31,6 +32,7 @@
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordes que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
+    <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
     <p xml:lang="pt">O Symmy é uma aplicação simples da linha de comandos que envolve de forma amigável a funcionalidade de encriptação do GPG.</p>
     <p xml:lang="sk">Symmy je jednoduchá konzolová aplikácia ktorá pekne zalomí symetrickú funkcionalitu GPG.</p>
@@ -41,6 +43,7 @@
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="ca-valencia">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="en-GB">Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
+    <p xml:lang="es">Symmy también proporciona integración con los gestores de archivos con interfaz gráfica, como Dolphin (acciones de menú de contexto «Cifrar» y «Descifrar»), así como integración con las notificaciones de Plasma.</p>
     <p xml:lang="nl">Symmy biedt ook integratie met GUI bestandsbeheerders zoals Dolphin (versleuteling- en ontcijferingacties in het contextmenu), evenals integratie met Plasma-meldingen.</p>
     <p xml:lang="pt">O Symmy também oferece a integração com os gestor de ficheiros gráficos, como o  Dolphin (acções do menu de contexto 'Encriptar' e 'Descodificar'), assim como a integração com as notificações do Plasma.</p>
     <p xml:lang="sk">Symmy poskytuje aj integráciu s GUI súborovými správcami ako Dolphin (kontextové akcie šifrovanie a dešifrovanie) ako aj integráciu s Plasma pripomienkami.</p>
@@ -51,6 +54,7 @@
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
     <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
+    <p xml:lang="es">Puede seguir el progreso de un trabajo de cifrado o de descifrado, o matarlo, usando el plasmoide de notificaciones.</p>
     <p xml:lang="nl">U kunt de voortgang van een taak voor versleutelen/ontcijferen volgen of afbreken, met de plasmoid voor meldingen.</p>
     <p xml:lang="pt">Poderá seguir a evolução de uma tarefa de encriptação/descodificação ou interrompê-la, usando o plasmóide de notificações.</p>
     <p xml:lang="sk">Môžete sledovať priebeh šifrovania a dešifrovania alebo úlohu zrušiť pomocou plazmoidu notifikácií.</p>
