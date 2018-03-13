@@ -33,7 +33,7 @@
   <description>
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
-    <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordes que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
+    <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
