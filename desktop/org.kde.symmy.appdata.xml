@@ -19,6 +19,7 @@
   <name xml:lang="sv">Symmy</name>
   <name xml:lang="uk">Symmy</name>
   <name xml:lang="x-test">xxSymmyxx</name>
+  <name xml:lang="zh-CN">Symmy</name>
   <summary>Frontend for the symmetric encryption functionality of GPG</summary>
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
   <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
