@@ -27,7 +27,7 @@
   <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
   <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
-  <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG.</summary>
+  <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
