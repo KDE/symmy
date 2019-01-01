@@ -12,6 +12,7 @@
   <name xml:lang="es">Symmy</name>
   <name xml:lang="fi">Symmy</name>
   <name xml:lang="gl">Symmy</name>
+  <name xml:lang="id">Symmy</name>
   <name xml:lang="it">Symmy</name>
   <name xml:lang="nl">Symmy</name>
   <name xml:lang="pl">Symmy</name>
@@ -31,6 +32,7 @@
   <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
   <summary xml:lang="fi">GPG:n symmetrisen salauksen käyttöliittymä</summary>
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
+  <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
   <summary xml:lang="it">Interfaccia per la funzionalità di cifratura simmetrica di GPG</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
@@ -47,6 +49,7 @@
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
     <p xml:lang="gl">Symmy é un aplicativo sinxelo da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
+    <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang menge-wrap secara baik si fungsionalitas enkripsi simetris GPG.</p>
     <p xml:lang="it">Symmy è una semplice applicazione da riga di comando che racchiude perfettamente la funzionalità di crittografia simmetrica di GPG.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
     <p xml:lang="pl">Symmy jest prostą aplikacją wiersza poleceń, która ładnie owija funkcjonalności symetrycznego szyfrowania GPG.</p>
@@ -62,6 +65,7 @@
     <p xml:lang="es">Symmy también proporciona integración con los gestores de archivos con interfaz gráfica, como Dolphin (acciones de menú de contexto «Cifrar» y «Descifrar»), así como integración con las notificaciones de Plasma.</p>
     <p xml:lang="fi">Symmy tarjoaa myös integroinnin graafisiin tiedostonhallintaohjelmiin kuten Dolphiniin (Salaa- ja Pura salaus -kontekstivalikkotoiminnot) sekä Plasma-ilmoituksiin.</p>
     <p xml:lang="gl">Symmy tamén fornece integración con xestores de ficheiros gráficos como Dolphin (as accións «Cifrar» e «Descifrar» do menú de contexto) e coas notificacións de Plasma.</p>
+    <p xml:lang="id">Symmy juga menyediakan integrasi dengan pengelola file GUI sepertihalnya Dolphin (aksi menu konteks Enkripsi dan Dekripsi), serta integrasi dengan notifikasi Plasma.</p>
     <p xml:lang="it">Symmy fornisce anche un'integrazione con gestori di file grafici come Dolphin (azioni Cifra e Decifra dal menu contestuale) ed anche un'integrazione con le notifiche di Plasma.</p>
     <p xml:lang="nl">Symmy biedt ook integratie met GUI bestandsbeheerders zoals Dolphin (versleuteling- en ontcijferingacties in het contextmenu), evenals integratie met Plasma-meldingen.</p>
     <p xml:lang="pl">Symmy zapewnia także integrację z graficznymi przeglądarkami plików takimi jak Dolphin (menu podręczne szyfrowania i odszyfrowywania), a także z powiadomieniami Plazmy.</p>
@@ -77,6 +81,7 @@
     <p xml:lang="es">Puede seguir el progreso de un trabajo de cifrado o de descifrado, o matarlo, usando el plasmoide de notificaciones.</p>
     <p xml:lang="fi">Salaus- tai purkutyön edistymistä voi seurata tai työn tappaa ilmoitussovelmasta.</p>
     <p xml:lang="gl">Pode facer un seguimento do progreso dunha tarefa de cifraxe ou descifraxe ou cancelara mediante o plasmoide de notificacións.</p>
+    <p xml:lang="id">Kamu bisa melacak progres tugas enkripsi/dekripsi atau mematikannya, menggunakan plasmoid notifikasi.</p>
     <p xml:lang="it">Puoi vedere i progressi di un lavoro di cifratura o di decifratura oppure ucciderlo usando il plasmoide di notifica.</p>
     <p xml:lang="nl">U kunt de voortgang van een taak voor versleutelen/ontcijferen volgen of afbreken, met de plasmoid voor meldingen.</p>
     <p xml:lang="pl">Możesz śledzić postęp zadania szyfrowania/odszyfrowywania lub je przerwać przy użyciu plazmoidu powiadomień.</p>
