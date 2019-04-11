@@ -96,4 +96,9 @@
   </provides>
   <update_contact>elvis.angelaccio_at_kde.org</update_contact>
   <project_group>KDE</project_group>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/symmy/symmy.png</image>
+    </screenshot>
+  </screenshots>
 </component>
