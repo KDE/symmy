@@ -14,6 +14,7 @@
   <name xml:lang="gl">Symmy</name>
   <name xml:lang="id">Symmy</name>
   <name xml:lang="it">Symmy</name>
+  <name xml:lang="ko">Symmy</name>
   <name xml:lang="nl">Symmy</name>
   <name xml:lang="pl">Symmy</name>
   <name xml:lang="pt">Symmy</name>
@@ -34,6 +35,7 @@
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
   <summary xml:lang="it">Interfaccia per la funzionalità di cifratura simmetrica di GPG</summary>
+  <summary xml:lang="ko">GPG의 대칭 암호화 기능을 위한 프론트엔드</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
@@ -51,6 +53,7 @@
     <p xml:lang="gl">Symmy é un aplicativo sinxelo da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
     <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang menge-wrap secara baik si fungsionalitas enkripsi simetris GPG.</p>
     <p xml:lang="it">Symmy è una semplice applicazione da riga di comando che racchiude perfettamente la funzionalità di crittografia simmetrica di GPG.</p>
+    <p xml:lang="ko">Symmy는 멋지게 GPG의 대칭 암호화 기능을 래핑하는 간단한 명령 줄 응용프로그램입니다.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
     <p xml:lang="pl">Symmy jest prostą aplikacją wiersza poleceń, która ładnie owija funkcjonalności symetrycznego szyfrowania GPG.</p>
     <p xml:lang="pt">O Symmy é uma aplicação simples da linha de comandos que envolve de forma amigável a funcionalidade de encriptação do GPG.</p>
@@ -67,6 +70,7 @@
     <p xml:lang="gl">Symmy tamén fornece integración con xestores de ficheiros gráficos como Dolphin (as accións «Cifrar» e «Descifrar» do menú de contexto) e coas notificacións de Plasma.</p>
     <p xml:lang="id">Symmy juga menyediakan integrasi dengan pengelola file GUI sepertihalnya Dolphin (aksi menu konteks Enkripsi dan Dekripsi), serta integrasi dengan notifikasi Plasma.</p>
     <p xml:lang="it">Symmy fornisce anche un'integrazione con gestori di file grafici come Dolphin (azioni Cifra e Decifra dal menu contestuale) ed anche un'integrazione con le notifiche di Plasma.</p>
+    <p xml:lang="ko">또한 Symmy는 Dolphin(암호화 및 복호화 작업 컨텍스트 메뉴)과 같은 GUI 파일 관리자와의 통합은 물론 Plasma 알림과의 통합을 제공합니다.</p>
     <p xml:lang="nl">Symmy biedt ook integratie met GUI bestandsbeheerders zoals Dolphin (versleuteling- en ontcijferingacties in het contextmenu), evenals integratie met Plasma-meldingen.</p>
     <p xml:lang="pl">Symmy zapewnia także integrację z graficznymi przeglądarkami plików takimi jak Dolphin (menu podręczne szyfrowania i odszyfrowywania), a także z powiadomieniami Plazmy.</p>
     <p xml:lang="pt">O Symmy também oferece a integração com os gestor de ficheiros gráficos, como o  Dolphin (acções do menu de contexto 'Encriptar' e 'Descodificar'), assim como a integração com as notificações do Plasma.</p>
@@ -83,6 +87,7 @@
     <p xml:lang="gl">Pode facer un seguimento do progreso dunha tarefa de cifraxe ou descifraxe ou cancelara mediante o plasmoide de notificacións.</p>
     <p xml:lang="id">Kamu bisa melacak progres tugas enkripsi/dekripsi atau mematikannya, menggunakan plasmoid notifikasi.</p>
     <p xml:lang="it">Puoi vedere i progressi di un lavoro di cifratura o di decifratura oppure ucciderlo usando il plasmoide di notifica.</p>
+    <p xml:lang="ko">알림 plasmoid를 사용하여 암호화/복호화 작업의 진행 상황을 추적하거나 종료할 수 있습니다.</p>
     <p xml:lang="nl">U kunt de voortgang van een taak voor versleutelen/ontcijferen volgen of afbreken, met de plasmoid voor meldingen.</p>
     <p xml:lang="pl">Możesz śledzić postęp zadania szyfrowania/odszyfrowywania lub je przerwać przy użyciu plazmoidu powiadomień.</p>
     <p xml:lang="pt">Poderá seguir a evolução de uma tarefa de encriptação/descodificação ou interrompê-la, usando o plasmóide de notificações.</p>
