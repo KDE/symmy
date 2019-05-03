@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Qt;KDE;
+Comment=
+GenericName=Frontend for the symmetric encryption functionality of GPG
+Icon=security-high
+Name=Symmy
+StartupNotify=false
+Terminal=false
+Type=Application
