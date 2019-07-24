@@ -28,7 +28,7 @@
   <name xml:lang="zh-CN">Symmy</name>
   <summary>Frontend for the symmetric encryption functionality of GPG</summary>
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
-  <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
+  <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètrica del GPG</summary>
   <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
   <summary xml:lang="de">Benutzeroberfläche für die symmetrische GPG-Verschlüsselung</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
@@ -49,7 +49,7 @@
   <description>
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
-    <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
+    <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptació simètrica del GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
@@ -85,7 +85,7 @@
     <p xml:lang="x-test">xxSymmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.xx</p>
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
-    <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
+    <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, usant el plasmoide de les notificacions.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="es">Puede seguir el progreso de un trabajo de cifrado o de descifrado, o matarlo, usando el plasmoide de notificaciones.</p>
     <p xml:lang="fi">Salaus- tai purkutyön edistymistä voi seurata tai työn tappaa ilmoitussovelmasta.</p>
