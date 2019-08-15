@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">Symmy</name>
   <name xml:lang="cs">Symmy</name>
   <name xml:lang="de">Symmy</name>
+  <name xml:lang="el">Symmy</name>
   <name xml:lang="en-GB">Symmy</name>
   <name xml:lang="es">Symmy</name>
   <name xml:lang="fi">Symmy</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètrica del GPG</summary>
   <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
   <summary xml:lang="de">Benutzeroberfläche für die symmetrische GPG-Verschlüsselung</summary>
+  <summary xml:lang="el">Περιβάλλον χρήσης για τη λειτουργία συμμετρικής κρυπτογραφίας του GPG</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
   <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
   <summary xml:lang="fi">GPG:n symmetrisen salauksen käyttöliittymä</summary>
@@ -52,6 +54,7 @@
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptació simètrica del GPG.</p>
+    <p xml:lang="el">Το Symmy είναι μια απλή εφαρμογή από τη γραμμή εντολών, η οποία καλύπτει κομψά τη λειτουργία συμμετρικής κρυπτογραφίας του GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
@@ -71,6 +74,7 @@
     <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="ca-valencia">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
+    <p xml:lang="el">Το Symmy παρέχει και ενσωμάτωση με γραφικού περιβάλλοντος διαχειριστές αρχείων όπως το Dolphin (ενέργειες κρυπτογράφησης και αποκρυπτογράφησης), καθώς επίσης και ενσωμάτωση με τις ειδοποιήσεις Plasma.</p>
     <p xml:lang="en-GB">Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="es">Symmy también proporciona integración con los gestores de archivos con interfaz gráfica, como Dolphin (acciones de menú de contexto «Cifrar» y «Descifrar»), así como integración con las notificaciones de Plasma.</p>
     <p xml:lang="fi">Symmy tarjoaa myös integroinnin graafisiin tiedostonhallintaohjelmiin kuten Dolphiniin (Salaa- ja Pura salaus -kontekstivalikkotoiminnot) sekä Plasma-ilmoituksiin.</p>
@@ -90,6 +94,7 @@
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
     <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, usant el plasmoide de les notificacions.</p>
+    <p xml:lang="el">Μπορείτε να παρακολουθείτε την πρόοδο μιας εργασίας (απο)κρυπτογράφησης ή να τη διαγράψετε με χρήση του πλασμοειδούς για τις ειδοποιήσεις.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="es">Puede seguir el progreso de un trabajo de cifrado o de descifrado, o matarlo, usando el plasmoide de notificaciones.</p>
     <p xml:lang="fi">Salaus- tai purkutyön edistymistä voi seurata tai työn tappaa ilmoitussovelmasta.</p>
