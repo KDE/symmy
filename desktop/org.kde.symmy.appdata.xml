@@ -54,6 +54,7 @@
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="ca-valencia">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptació simètrica del GPG.</p>
+    <p xml:lang="de">Symmy ist ein einfaches Befehlszeilenprogramm für die symmetrische GPG-Verschlüsselung.</p>
     <p xml:lang="el">Το Symmy είναι μια απλή εφαρμογή από τη γραμμή εντολών, η οποία καλύπτει κομψά τη λειτουργία συμμετρικής κρυπτογραφίας του GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
@@ -74,6 +75,7 @@
     <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="ca-valencia">El Symmy també proporciona la integració amb els gestors de fitxers IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
+    <p xml:lang="de">Symmy kann über die Kontextmenüeinträge Verschlüsseln/Entschlüsseln in Dateiverwaltungsprogramme wie Dolphin und in Plasma-Benachrichtigungen integriert werden.</p>
     <p xml:lang="el">Το Symmy παρέχει και ενσωμάτωση με γραφικού περιβάλλοντος διαχειριστές αρχείων όπως το Dolphin (ενέργειες κρυπτογράφησης και αποκρυπτογράφησης), καθώς επίσης και ενσωμάτωση με τις ειδοποιήσεις Plasma.</p>
     <p xml:lang="en-GB">Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="es">Symmy también proporciona integración con los gestores de archivos con interfaz gráfica, como Dolphin (acciones de menú de contexto «Cifrar» y «Descifrar»), así como integración con las notificaciones de Plasma.</p>
@@ -94,6 +96,7 @@
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, usant el plasmoide de les notificacions.</p>
     <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, usant el plasmoide de les notificacions.</p>
+    <p xml:lang="de">Mit dem Benachrichtigungs-Plasmoid können Sie eine Verschlüsselung oder Entschlüsselung überwachen oder abbrechen.</p>
     <p xml:lang="el">Μπορείτε να παρακολουθείτε την πρόοδο μιας εργασίας (απο)κρυπτογράφησης ή να τη διαγράψετε με χρήση του πλασμοειδούς για τις ειδοποιήσεις.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="es">Puede seguir el progreso de un trabajo de cifrado o de descifrado, o matarlo, usando el plasmoide de notificaciones.</p>
