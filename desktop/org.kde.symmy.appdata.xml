@@ -66,7 +66,7 @@
     <p xml:lang="gl">Symmy é unha aplicación sinxela da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
     <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang mengemas secara baik si fungsionalitas enkripsi simetris GPG.</p>
     <p xml:lang="it">Symmy è una semplice applicazione da riga di comando che racchiude perfettamente la funzionalità di crittografia simmetrica di GPG.</p>
-    <p xml:lang="ko">Symmy는 멋지게 GPG의 대칭 암호화 기능을 래핑하는 간단한 명령 줄 응용프로그램입니다.</p>
+    <p xml:lang="ko">Symmy는 멋지게 GPG의 대칭 암호화 기능을 래핑하는 간단한 명령줄 프로그램입니다.</p>
     <p xml:lang="lt">Symmy yra paprasta komandų eilutės programa, kuri gražiai apgaubia GPG simetrinio šifravimo funkcionalumą.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
     <p xml:lang="pl">Symmy jest prostą aplikacją wiersza poleceń, która ładnie owija funkcjonalności symetrycznego szyfrowania GPG.</p>
@@ -110,7 +110,7 @@
     <p xml:lang="gl">Pode facer un seguimento do progreso dunha tarefa de cifraxe ou descifraxe ou cancelara mediante o plasmoide de notificacións.</p>
     <p xml:lang="id">Kamu bisa melacak progres tugas enkripsi/dekripsi atau mematikannya, menggunakan plasmoid notifikasi.</p>
     <p xml:lang="it">Puoi vedere i progressi di un lavoro di cifratura o di decifratura oppure ucciderlo usando il plasmoide di notifica.</p>
-    <p xml:lang="ko">알림 plasmoid를 사용하여 암호화/복호화 작업의 진행 상황을 추적하거나 종료할 수 있습니다.</p>
+    <p xml:lang="ko">알림 Plasmoid를 사용하여 암호화/복호화 작업의 진행 상황을 추적하거나 종료할 수 있습니다.</p>
     <p xml:lang="lt">Galite sekti šifravimo/iššifravimo darbą arba jį nutraukti, naudodami pranešimų Plasma įskiepį.</p>
     <p xml:lang="nl">U kunt de voortgang van een taak voor versleutelen/ontcijferen volgen of afbreken, met de plasmoid voor meldingen.</p>
     <p xml:lang="pl">Możesz śledzić postęp zadania szyfrowania/odszyfrowywania lub je przerwać przy użyciu plazmoidu powiadomień.</p>
