@@ -25,6 +25,7 @@
   <name xml:lang="pt-BR">Symmy</name>
   <name xml:lang="ru">Symmy</name>
   <name xml:lang="sk">Symmy</name>
+  <name xml:lang="sl">Symmy</name>
   <name xml:lang="sv">Symmy</name>
   <name xml:lang="uk">Symmy</name>
   <name xml:lang="x-test">xxSymmyxx</name>
@@ -50,6 +51,7 @@
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
   <summary xml:lang="pt-BR">Interface para a funcionalidade de criptografia simétrica do GPG</summary>
   <summary xml:lang="sk">Frontend pre dynamické šifrovanie GPG</summary>
+  <summary xml:lang="sl">Začelje za simetrično šifriranje funkcionalnosti GPG</summary>
   <summary xml:lang="sv">Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG</summary>
   <summary xml:lang="uk">Оболонка до можливостей з симетричного шифрування у GPG</summary>
   <summary xml:lang="x-test">xxFrontend for the symmetric encryption functionality of GPGxx</summary>
@@ -74,6 +76,7 @@
     <p xml:lang="pt">O Symmy é uma aplicação simples da linha de comandos que envolve de forma amigável a funcionalidade de encriptação do GPG.</p>
     <p xml:lang="pt-BR">O Symmy é um aplicativo em linha de comando que envolve a funcionalidade de criptografia simétrica do GPG.</p>
     <p xml:lang="sk">Symmy je jednoduchá konzolová aplikácia ktorá pekne zalomí symetrickú funkcionalitu GPG.</p>
+    <p xml:lang="sl">Symmy je preprosta aplikacija v ukazni vrstici, ki prijazno ponuja simetrično šifriranje funkcionalnosti GPG.</p>
     <p xml:lang="sv">Symmy är ett enkelt kommandoradsprogram som omsluter den symmetriska krypteringsfunktionaliteten i GPG på ett snyggt sätt.</p>
     <p xml:lang="uk">Symmy — проста програма із інтерфейсом командного рядка, яка є зручною обгорткою до функціональних можливостей із симетричного шифрування GPG.</p>
     <p xml:lang="x-test">xxSymmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.xx</p>
@@ -97,6 +100,7 @@
     <p xml:lang="pt">O Symmy também oferece a integração com os gestor de ficheiros gráficos, como o  Dolphin (acções do menu de contexto 'Encriptar' e 'Descodificar'), assim como a integração com as notificações do Plasma.</p>
     <p xml:lang="pt-BR">O Symmy também fornece integração com gerenciadores de arquivos como o Dolphin (ações do menu de contexto para criptografar e descriptografar), bem como integração com as notificações do Plasma.</p>
     <p xml:lang="sk">Symmy poskytuje aj integráciu s GUI súborovými správcami ako Dolphin (kontextové akcie šifrovanie a dešifrovanie) ako aj integráciu s Plasma pripomienkami.</p>
+    <p xml:lang="sl">Symmy omogoča tudi povezovanje z upravitelji datotek GUI, kot so Dolphin (dejanja kontekstnega menija Encrypt in Decrypt), pa tudi integracijo z obvestili v plazmi.</p>
     <p xml:lang="sv">Symmy erbjuder också integrering med grafiska filhanterare som Dolphin (sammanhangsberoende menyalternativ Kryptera och Avkryptera), samt integrering med underrättelser i Plasma.</p>
     <p xml:lang="uk">У Symmy передбачено можливості інтеграції до програм із графічним інтерфейсом для керування файлами, зокрема Dolphin (пункти контекстного меню «Зашифрувати» і «Розшифрувати»), а також інтеграцію із системою сповіщень Плазми.</p>
     <p xml:lang="x-test">xxSymmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.xx</p>
@@ -120,6 +124,7 @@
     <p xml:lang="pt">Poderá seguir a evolução de uma tarefa de encriptação/descodificação ou interrompê-la, usando o plasmóide de notificações.</p>
     <p xml:lang="pt-BR">Você pode acompanhar o progresso da tarefa de descriptografar/criptografar ou encerrar o processo usando o plasmoide na notificação.</p>
     <p xml:lang="sk">Môžete sledovať priebeh šifrovania a dešifrovania alebo úlohu zrušiť pomocou plazmoidu notifikácií.</p>
+    <p xml:lang="sl">S plazmoidom za obveščanja lahko sledite napredku opravila šifriranja/dešifriranja ali ga prekinete.</p>
     <p xml:lang="sv">Förloppet för krypterings- eller avkrypteringsjobb går att följa och de kan avbrytas med Plasmoiden för underrättelser.</p>
     <p xml:lang="uk">Ви зможете стежити за поступом завдання із шифрування або розшифровування і переривати його за допомогою плазмоїда сповіщень.</p>
     <p xml:lang="x-test">xxYou can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.xx</p>
