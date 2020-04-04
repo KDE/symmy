@@ -44,7 +44,7 @@
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
   <summary xml:lang="it">Interfaccia per la funzionalità di cifratura simmetrica di GPG</summary>
-  <summary xml:lang="ko">GPG의 대칭 암호화 기능을 위한 프론트엔드</summary>
+  <summary xml:lang="ko">GPG의 대칭 암호화 기능 프론트엔드</summary>
   <summary xml:lang="lt">GPG simetrinio šifravimo funkcionalumo naudotojo sąsaja</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
