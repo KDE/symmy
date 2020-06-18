@@ -28,6 +28,7 @@
         "Name[sl]": "Servisni meni 'Dešifriraj'",
         "Name[sv]": "'Tjänstmeny 'Avkryptera'",
         "Name[uk]": "Службове меню «Розшифрувати»",
+        "Name[x-test]": "xx'Decrypt' service menuxx",
         "Name[zh_TW]": "「解密」服務選單",
         "ServiceTypes": [
             "KFileItemAction/Plugin"
