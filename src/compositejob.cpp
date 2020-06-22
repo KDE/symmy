@@ -105,7 +105,7 @@ void CompositeJob::slotResult(KJob *job)
 
 void CompositeJob::slotAccepted()
 {
-    for (const auto &filename : filenames()) {
+    for (const auto &filename : qAsConst(m_filenames)) {
         Symmy::Job *job = nullptr;
         if (task() == Task::Encryption) {
             job = new Symmy::EncryptJob(qobject_cast<KNewPasswordDialog*>(m_passwordDialog)->password(), filename);
