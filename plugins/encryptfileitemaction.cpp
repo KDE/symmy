@@ -20,13 +20,17 @@
 #include "encryptfileitemaction.h"
 
 #include <QAction>
+#include <QApplication>
 #include <QMimeDatabase>
 #include <QUrl>
 
+#include <KDialogJobUiDelegate>
 #include <KFileItemListProperties>
+#include <KIO/ApplicationLauncherJob>
 #include <KLocalizedString>
-#include <KRun>
 #include <KPluginFactory>
+#include <KRun>
+#include <KService>
 
 K_PLUGIN_FACTORY_WITH_JSON(EncryptFileItemActionFactory, "encryptfileitemaction.json", registerPlugin<EncryptFileItemAction>();)
 
@@ -49,7 +53,11 @@ QList<QAction*> EncryptFileItemAction::actions(const KFileItemListProperties &fi
 
     auto encryptAction = new QAction {icon, i18nc("@action:inmenu Encrypt action in Dolphin context menu", "Encrypt"), parentWidget};
     connect(encryptAction, &QAction::triggered, this, [=]() {
-        KRun::run(QStringLiteral("symmy --encrypt %F"), urls, parentWidget);
+        KService::Ptr service {new KService {QGuiApplication::applicationDisplayName(), QStringLiteral("symmy --encrypt %F"), QApplication::windowIcon().name()} };
+        auto job = new KIO::ApplicationLauncherJob {service, parentWidget};
+        job->setUrls(urls);
+        job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, parentWidget));
+        job->start();
     });
 
     if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {

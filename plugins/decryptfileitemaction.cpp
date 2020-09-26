@@ -20,12 +20,15 @@
 #include "decryptfileitemaction.h"
 
 #include <QAction>
+#include <QApplication>
 #include <QUrl>
 
+#include <KDialogJobUiDelegate>
 #include <KFileItemListProperties>
+#include <KIO/ApplicationLauncherJob>
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KRun>
+#include <KService>
 
 K_PLUGIN_FACTORY_WITH_JSON(DecryptFileItemActionFactory, "decryptfileitemaction.json", registerPlugin<DecryptFileItemAction>();)
 
@@ -39,7 +42,11 @@ QList<QAction*> DecryptFileItemAction::actions(const KFileItemListProperties &fi
 
     auto decryptionAction = new QAction {icon, i18nc("@action:inmenu Decrypt action in Dolphin context menu", "Decrypt"), parentWidget};
     connect(decryptionAction, &QAction::triggered, this, [=]() {
-        KRun::run(QStringLiteral("symmy --decrypt %F"), fileItemInfos.urlList(), parentWidget);
+        KService::Ptr service {new KService {QGuiApplication::applicationDisplayName(), QStringLiteral("symmy --decrypt %F"), QApplication::windowIcon().name()} };
+        auto job = new KIO::ApplicationLauncherJob {service, parentWidget};
+        job->setUrls(fileItemInfos.urlList());
+        job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, parentWidget));
+        job->start();
     });
 
     if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {
