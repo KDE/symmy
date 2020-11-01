@@ -48,6 +48,7 @@
   <summary xml:lang="ko">GPG의 대칭 암호화 기능 프론트엔드</summary>
   <summary xml:lang="lt">GPG simetrinio šifravimo funkcionalumo naudotojo sąsaja</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
+  <summary xml:lang="nn">Brukarflate for funksjonalitet for symmetrisk kryptering i GPG</summary>
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
   <summary xml:lang="pt-BR">Interface para a funcionalidade de criptografia simétrica do GPG</summary>
@@ -73,6 +74,7 @@
     <p xml:lang="ko">Symmy는 멋지게 GPG의 대칭 암호화 기능을 래핑하는 간단한 명령행 프로그램입니다.</p>
     <p xml:lang="lt">Symmy yra paprasta komandų eilutės programa, kuri gražiai apgaubia GPG simetrinio šifravimo funkcionalumą.</p>
     <p xml:lang="nl">Symmy is een eenvoudige commandoregel toepassing die de symmetrische versleutelingsfunctionaliteit van GPG omvat.</p>
+    <p xml:lang="nn">Symmy er eit kommandolinje­program for enkel tilgang GPG-funksjonane for symmetrisk kryptering.</p>
     <p xml:lang="pl">Symmy jest prostą aplikacją wiersza poleceń, która ładnie owija funkcjonalności symetrycznego szyfrowania GPG.</p>
     <p xml:lang="pt">O Symmy é uma aplicação simples da linha de comandos que envolve de forma amigável a funcionalidade de encriptação do GPG.</p>
     <p xml:lang="pt-BR">O Symmy é um aplicativo em linha de comando que envolve a funcionalidade de criptografia simétrica do GPG.</p>
@@ -97,6 +99,7 @@
     <p xml:lang="ko">또한 Symmy는 Dolphin(암호화 및 복호화 작업 콘텍스트 메뉴)과 같은 GUI 파일 관리자와의 통합은 물론 Plasma 알림과의 통합을 제공합니다.</p>
     <p xml:lang="lt">Symmy taip pat pateikia integraciją su grafinių naudotojo sąsajų failų tvarkytuvėmis, tokiomis kaip Dolphin (Šifruoti ir Iššifruoti kontekstinio meniu veiksmai), o taip pat integraciją su Plasma pranešimais.</p>
     <p xml:lang="nl">Symmy biedt ook integratie met GUI bestandsbeheerders zoals Dolphin (versleuteling- en ontcijferingacties in het contextmenu), evenals integratie met Plasma-meldingen.</p>
+    <p xml:lang="nn">Det er òg integrert med grafiske filhandsamarar som Dolphin (krypterings- og dekrypteringsval i kontekstmenyen) og med Plasma-varslingar.</p>
     <p xml:lang="pl">Symmy zapewnia także integrację z graficznymi przeglądarkami plików takimi jak Dolphin (menu podręczne szyfrowania i odszyfrowywania), a także z powiadomieniami Plazmy.</p>
     <p xml:lang="pt">O Symmy também oferece a integração com os gestor de ficheiros gráficos, como o  Dolphin (acções do menu de contexto 'Encriptar' e 'Descodificar'), assim como a integração com as notificações do Plasma.</p>
     <p xml:lang="pt-BR">O Symmy também fornece integração com gerenciadores de arquivos como o Dolphin (ações do menu de contexto para criptografar e descriptografar), bem como integração com as notificações do Plasma.</p>
@@ -121,6 +124,7 @@
     <p xml:lang="ko">알림 Plasmoid를 사용하여 암호화/복호화 작업의 진행 상황을 추적하거나 종료할 수 있습니다.</p>
     <p xml:lang="lt">Galite sekti šifravimo/iššifravimo darbą arba jį nutraukti, naudodami pranešimų Plasma įskiepį.</p>
     <p xml:lang="nl">U kunt de voortgang van een taak voor versleutelen/ontcijferen volgen of afbreken, met de plasmoid voor meldingen.</p>
+    <p xml:lang="nn">Du kan følgja med på (de)krypterings­prosessen eller avbryta han via medfølgjande Plasma-skjermelement.</p>
     <p xml:lang="pl">Możesz śledzić postęp zadania szyfrowania/odszyfrowywania lub je przerwać przy użyciu plazmoidu powiadomień.</p>
     <p xml:lang="pt">Poderá seguir a evolução de uma tarefa de encriptação/descodificação ou interrompê-la, usando o plasmóide de notificações.</p>
     <p xml:lang="pt-BR">Você pode acompanhar o progresso da tarefa de descriptografar/criptografar ou encerrar o processo usando o plasmoide na notificação.</p>
