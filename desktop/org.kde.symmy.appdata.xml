@@ -15,6 +15,7 @@
   <name xml:lang="fi">Symmy</name>
   <name xml:lang="fr">Symmy</name>
   <name xml:lang="gl">Symmy</name>
+  <name xml:lang="ia">Symmy</name>
   <name xml:lang="id">Symmy</name>
   <name xml:lang="it">Symmy</name>
   <name xml:lang="ko">Symmy</name>
@@ -43,6 +44,7 @@
   <summary xml:lang="fi">GPG:n symmetrisen salauksen käyttöliittymä</summary>
   <summary xml:lang="fr">Interface pour les fonctionnalités de chiffrement symétrique de GPG</summary>
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
+  <summary xml:lang="ia">Interfacie per le functionalitate de cryptation symmetric de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
   <summary xml:lang="it">Interfaccia per la funzionalità di cifratura simmetrica di GPG</summary>
   <summary xml:lang="ko">GPG의 대칭 암호화 기능 프론트엔드</summary>
@@ -69,6 +71,7 @@
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
     <p xml:lang="fr">Simmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de GPG.</p>
     <p xml:lang="gl">Symmy é unha aplicación sinxela da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
+    <p xml:lang="ia">Simmy es un simple application de linea de commando que agradabilemente inveloppa le functionalitate de cryptation symmetric de GPS.</p>
     <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang mengemas secara baik si fungsionalitas enkripsi simetris GPG.</p>
     <p xml:lang="it">Symmy è una semplice applicazione da riga di comando che racchiude perfettamente la funzionalità di crittografia simmetrica di GPG.</p>
     <p xml:lang="ko">Symmy는 멋지게 GPG의 대칭 암호화 기능을 래핑하는 간단한 명령행 프로그램입니다.</p>
@@ -94,6 +97,7 @@
     <p xml:lang="fi">Symmy tarjoaa myös integroinnin graafisiin tiedostonhallintaohjelmiin kuten Dolphiniin (Salaa- ja Pura salaus -kontekstivalikkotoiminnot) sekä Plasma-ilmoituksiin.</p>
     <p xml:lang="fr">Simmy s'intègre également aux gestionnaires de fichiers graphiques comme Dolphin (actions de menus contextuels Chiffrer et Déchiffrer), ainsi qu'aux notifications du bureau Plasma.</p>
     <p xml:lang="gl">Symmy tamén fornece integración con xestores de ficheiros gráficos como Dolphin (as accións «Cifrar» e «Descifrar» do menú de contexto) e coas notificacións de Plasma.</p>
+    <p xml:lang="ia">Simmy anque provide integration con gerentes de file de GUI tal como Dolphin (actiones de menu de contexto de cryptar e decryptar) tanto ben como integration con notificationes de Plasma.</p>
     <p xml:lang="id">Symmy juga menyediakan integrasi dengan pengelola file GUI sepertihalnya Dolphin (aksi menu konteks Enkripsi dan Dekripsi), serta integrasi dengan notifikasi Plasma.</p>
     <p xml:lang="it">Symmy fornisce anche un'integrazione con gestori di file grafici come Dolphin (azioni Cifra e Decifra dal menu contestuale) ed anche un'integrazione con le notifiche di Plasma.</p>
     <p xml:lang="ko">또한 Symmy는 Dolphin(암호화 및 복호화 작업 콘텍스트 메뉴)과 같은 GUI 파일 관리자와의 통합은 물론 Plasma 알림과의 통합을 제공합니다.</p>
@@ -119,6 +123,7 @@
     <p xml:lang="fi">Salaus- tai purkutyön edistymistä voi seurata tai työn tappaa ilmoitussovelmasta.</p>
     <p xml:lang="fr">Vous pouvez suivre l'avancée d'une tâche de chiffrement / déchiffrement ou l'annuler, grâce au composant graphique de notifications.</p>
     <p xml:lang="gl">Pode facer un seguimento do progreso dunha tarefa de cifraxe ou descifraxe ou cancelara mediante o plasmoide de notificacións.</p>
+    <p xml:lang="ia">Tu pote traciar le progresso de un labor de cryptar(decryptar o  occider lo, usante le plasmoid de notificationes.</p>
     <p xml:lang="id">Kamu bisa melacak progres tugas enkripsi/dekripsi atau mematikannya, menggunakan plasmoid notifikasi.</p>
     <p xml:lang="it">Puoi vedere i progressi di un lavoro di cifratura o di decifratura oppure ucciderlo usando il plasmoide di notifica.</p>
     <p xml:lang="ko">알림 Plasmoid를 사용하여 암호화/복호화 작업의 진행 상황을 추적하거나 종료할 수 있습니다.</p>
