@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 set (CMAKE_CXX_STANDARD 11)
 
-set(SYMMY_VERSION 0.70.0)
+set(SYMMY_VERSION 1.70.0)
 project(symmy VERSION ${SYMMY_VERSION})
 
 set(KF5_MIN_VERSION 5.71.0)
