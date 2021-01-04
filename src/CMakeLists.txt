@@ -20,6 +20,7 @@ target_link_libraries(symmy
     KF5::KIOCore
     KF5::I18n
     KF5::WidgetsAddons
-    QGpgme)
+    QGpgme
+    gpg-error)
 
 install(TARGETS symmy DESTINATION ${KDE_INSTALL_BINDIR})
