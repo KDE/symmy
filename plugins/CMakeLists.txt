@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+
 kcoreaddons_add_plugin(encryptfileitemaction
     SOURCES encryptfileitemaction.cpp
     JSON encryptfileitemaction.json
