@@ -2,7 +2,10 @@
 <!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!ENTITY % English "INCLUDE">
 ]>
-
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
 <refentry lang="&language;">
 <refentryinfo>
 <title>Symmy User's Manual</title>
