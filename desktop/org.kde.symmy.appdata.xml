@@ -47,7 +47,7 @@
   <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
   <summary xml:lang="et">GPG sümmeetrilise krüptimise võimaluse kasutajaliides</summary>
   <summary xml:lang="fi">GPG:n symmetrisen salauksen käyttöliittymä</summary>
-  <summary xml:lang="fr">Interface pour les fonctionnalités de chiffrement symétrique de GPG</summary>
+  <summary xml:lang="fr">Interface pour les fonctionnalités de chiffrement symétrique de « GPG »</summary>
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
   <summary xml:lang="ia">Interfacie per le functionalitate de cryptation symmetric de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
@@ -74,7 +74,7 @@
     <p xml:lang="es">Symmy es una sencilla aplicación de consola para usar amigablemente la función de cifrado simétrico de GPG.</p>
     <p xml:lang="et">Symmy on lihtne käsurearakendus, mis võimaldab mugavalt kasutada GPG sümmeetrilise krüptimise võimalust.</p>
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
-    <p xml:lang="fr">Simmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de GPG.</p>
+    <p xml:lang="fr">Simmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de « GPG ».</p>
     <p xml:lang="gl">Symmy é unha aplicación sinxela da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
     <p xml:lang="ia">Simmy es un simple application de linea de commando que agradabilemente inveloppa le functionalitate de cryptation symmetric de GPS.</p>
     <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang mengemas secara baik si fungsionalitas enkripsi simetris GPG.</p>
