@@ -3,7 +3,6 @@
 
 kcoreaddons_add_plugin(encryptfileitemaction
     SOURCES encryptfileitemaction.cpp
-    JSON encryptfileitemaction.json
     INSTALL_NAMESPACE "kf5/kfileitemaction")
 
 target_link_libraries(encryptfileitemaction
@@ -12,7 +11,6 @@ target_link_libraries(encryptfileitemaction
 
 kcoreaddons_add_plugin(decryptfileitemaction
     SOURCES decryptfileitemaction.cpp
-    JSON decryptfileitemaction.json
     INSTALL_NAMESPACE "kf5/kfileitemaction")
 
 target_link_libraries(decryptfileitemaction
