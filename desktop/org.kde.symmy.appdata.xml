@@ -40,7 +40,7 @@
   <name xml:lang="zh-CN">Symmy</name>
   <summary>Frontend for the symmetric encryption functionality of GPG</summary>
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
-  <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètric del GPG</summary>
+  <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètric de GPG</summary>
   <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
   <summary xml:lang="de">Benutzeroberfläche für die symmetrische GPG-Verschlüsselung</summary>
   <summary xml:lang="el">Περιβάλλον χρήσης για τη λειτουργία συμμετρικής κρυπτογραφίας του GPG</summary>
@@ -69,7 +69,7 @@
   <description>
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
-    <p xml:lang="ca-valencia">Symmy és una aplicació senzilla de línia d'ordres que ajusta la funcionalitat d'encriptació simètric del GPG.</p>
+    <p xml:lang="ca-valencia">Symmy és una aplicació senzilla de línia d'ordres que ajusta la funcionalitat d'encriptació simètric de GPG.</p>
     <p xml:lang="de">Symmy ist ein einfaches Befehlszeilenprogramm für die symmetrische GPG-Verschlüsselung.</p>
     <p xml:lang="el">Το Symmy είναι μια απλή εφαρμογή από τη γραμμή εντολών, η οποία καλύπτει κομψά τη λειτουργία συμμετρικής κρυπτογραφίας του GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
