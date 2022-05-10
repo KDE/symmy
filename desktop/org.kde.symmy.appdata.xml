@@ -123,7 +123,7 @@
     <p xml:lang="x-test">xxSymmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.xx</p>
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, utilitzant el plasmoide de les notificacions.</p>
-    <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptatge o matar-lo, utilitzant el plasmoide de les notificacions.</p>
+    <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, utilitzant el plasmoide de les notificacions.</p>
     <p xml:lang="de">Mit dem Benachrichtigungs-Plasmoid können Sie eine Verschlüsselung oder Entschlüsselung überwachen oder abbrechen.</p>
     <p xml:lang="el">Μπορείτε να παρακολουθείτε την πρόοδο μιας εργασίας (απο)κρυπτογράφησης ή να τη διαγράψετε με χρήση του πλασμοειδούς για τις ειδοποιήσεις.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
