@@ -99,7 +99,7 @@
     <p xml:lang="x-test">xxSymmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.xx</p>
     <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers amb IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
-    <p xml:lang="ca-valencia">Symmy també proporciona la integració amb els gestors de fichers amb IGU com Dolphin (accions de menú contextual Encripta i Desencripta), aixina com la integració amb les notificacions de Plasma.</p>
+    <p xml:lang="ca-valencia">Symmy també proporciona la integració amb els gestors de fitxers amb IGU com Dolphin (accions de menú contextual Encripta i Desencripta), aixina com la integració amb les notificacions de Plasma.</p>
     <p xml:lang="de">Symmy kann über die Kontextmenüeinträge Verschlüsseln/Entschlüsseln in Dateiverwaltungsprogramme wie Dolphin und in Plasma-Benachrichtigungen integriert werden.</p>
     <p xml:lang="el">Το Symmy παρέχει και ενσωμάτωση με γραφικού περιβάλλοντος διαχειριστές αρχείων όπως το Dolphin (ενέργειες κρυπτογράφησης και αποκρυπτογράφησης), καθώς επίσης και ενσωμάτωση με τις ειδοποιήσεις Plasma.</p>
     <p xml:lang="en-GB">Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
