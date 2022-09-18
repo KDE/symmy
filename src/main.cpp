@@ -21,6 +21,8 @@ int main(int argc, char **argv)
 {
     KLocalizedString::setApplicationDomain("symmy");
 
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
     QApplication app {argc, argv};
     auto aboutData = KAboutData {QStringLiteral("symmy"), i18nc("display name for 'symmy' binary", "GPG Symmetric Encryption Frontend"), QStringLiteral(SYMMY_VERSION_STRING),
                                  i18n("Encrypt/decrypt one ore more files using GPG symmetric encryption."), KAboutLicense::GPL, i18n("(c) 2017 Elvis Angelaccio")};
