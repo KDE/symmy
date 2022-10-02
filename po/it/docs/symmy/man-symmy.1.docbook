@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Italian "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manuale utente di Symmy</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Autore di questo programma e di questo manuale</para
+></personblurb
+> </author>
+<date
+>25/11/2017</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Interfaccia per le funzionalità di cifratura simmetrica di GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>OPZIONI</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>FILE</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>DESCRIZIONE</title>
+<para
+><command
+>symmy</command
+> è una semplice applicazione che può essere usata per cifrare o per decifrare uno o più file usando le funzionalità di cifratura simmetrica di GPG. Un file cifrato con <command
+>symmy</command
+> può essere decifrato da chiunque abbia accesso al programma GPG e alla chiave di cifratura. </para>
+<para
+><command
+>symmy</command
+> può anche essere usato da &dolphin; o dalla vista delle cartelle di &plasma; grazie agli elementi del menu contestuale <guimenuitem
+>Cifra</guimenuitem
+> e <guimenuitem
+>Decifra</guimenuitem
+>. </para>
+</refsect1>
+
+<refsect1>
+<title
+>CIFRATURA</title>
+<para
+>Puoi cifrare uno o più file scrivendo il loro percorso dopo l'opzione <option
+>cifra</option
+>. Puoi anche selezionarli in &dolphin; o dalla vista delle cartelle di &plasma;, e quindi fare clic sulla voce <guimenuitem
+>Cifra</guimenuitem
+> del menu contestuale. </para>
+<para
+>Nota che non puoi cifrare una cartella. Se lo vuoi fare devi comprimerla e poi cifrare l'archivio risultante; non è nemmeno possibile cifrare dei file remoti o dei file che sono già stati cifrati. </para>
+
+<refsect2>
+<title
+>Scegliere una chiave di cifratura</title>
+<para
+><command
+>symmy</command
+> ti chiederà una parola chiave (o una frase chiave) che sarà usata come chiave di cifratura per <emphasis
+>tutti</emphasis
+> i file selezionati. Dovresti scegliere una chiave di cifratura robusta e dovresti memorizzarla in un posto sicuro (ad esempio un gestore di password). Se hai bisogno di spedire la chiave di cifratura ad un'altra persona dovresti farlo attraverso un canale sicuro (ad esempio incontrandola). </para>
+</refsect2>
+
+<refsect2>
+<title
+>Requisiti GPG</title>
+<para
+><command
+>symmy</command
+> usa GPG per eseguire effettivamente la cifratura, quindi assumiamo che il processo <command
+>gpg-agent</command
+> sia in esecuzione e correttamente configurato. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Gestire un'operazione di cifratura</title>
+<para
+>L'operazione di cifratura impiegherà del tempo, a seconda del numero dei file e della loro dimensione. Puoi monitorare l'avanzamento dell'operazione dall'applet di notifica fornita da &plasma;; dal plasmoide puoi anche, se necessario, annullare l'operazione di cifratura. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>DECIFRATURA</title>
+<para
+>Puoi decifrare uno o più file cifrati scrivendo il loro percorso dopo l'opzione <option
+>decifra</option
+>. Puoi anche selezionarli in &dolphin; o dalla vista delle cartelle di &plasma;, e quindi fare clic sulla voce <guimenuitem
+>Decifra</guimenuitem
+> del menu contestuale. Nota che questa voce sarà visibile solo quando selezioni dei file cifrati. </para>
+
+<refsect2>
+<title
+>Gestire un'operazione di decifratura</title>
+<para
+>L'operazione di decifratura impiegherà del tempo, a seconda del numero dei file e della loro dimensione. Puoi monitorare l'avanzamento dell'operazione dall'applet di notifica fornita da &plasma;; dal plasmoide puoi anche, se necessario, annullare l'operazione di decifratura. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>OPZIONI</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Cifra l'elenco dei file fornito dopo aver chiesto una frase di cifratura. Quest'opzione viene impostata implicitamente se non ce ne sono altre. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Decifra l'elenco dei file fornito dopo aver chiesto una frase di cifratura. Nota che le opzioni <option
+>cifra</option
+> e <option
+>decifra</option
+> sono mutualmente esclusive. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Mostra un breve riassunto ed una descrizione delle opzioni da linea di comando. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Mostra la versione di questo programma. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Mostra le informazioni sull'autore di questo programma. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Mostra le informazioni sulla licenza di questo programma. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>

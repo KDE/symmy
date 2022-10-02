@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Ukrainian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Підручник користувача Symmy</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Авторство цієї програми і сторінки підручника</para
+></personblurb
+> </author>
+<date
+>25 листопада 2017 року</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Оболонка до можливостей з симетричного шифрування у GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>ПАРАМЕТРИ</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>ФАЙЛИ</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>ОПИС</title>
+<para
+><command
+>symmy</command
+> — проста програма, яка може шифрувати і розшифровувати один або декілька файлів за допомогою симетричних алгоритмів шифрування GPG. Файл, який зашифровано за допомогою <command
+>symmy</command
+>, можна розшифрувати за допомогою програми GPG та ключа шифрування. </para>
+<para
+>Крім того, <command
+>symmy</command
+> можна використовувати у &dolphin; та віджеті «Перегляд тек» Плазми за допомогою пунктів контекстного меню <guimenuitem
+>Зашифрувати</guimenuitem
+> та <guimenuitem
+>Розшифрувати</guimenuitem
+>. </para>
+</refsect1>
+
+<refsect1>
+<title
+>ШИФРУВАННЯ</title>
+<para
+>Ви можете зашифрувати один або декілька файлів, якщо передасте програмі шляхи до них після параметра <option
+>encrypt</option
+>. Ви також можете позначити файли у &dolphin; або у віджеті «Перегляд тек» Плазми і вибрати пункт <guimenuitem
+>Зашифрувати</guimenuitem
+> у контекстному меню. </para>
+<para
+>Зауважте, що можливості шифрування теки не передбачено. Якщо вам потрібно зашифрувати вміст теки, вам слід запакувати теку до файла архіву, а потім зашифрувати отриманий архів. Також не передбачено можливостей із шифрування файлів у віддалених сховищах або файлів, які вже зашифровано. </para>
+
+<refsect2>
+<title
+>Вибір ключа шифрування</title>
+<para
+><command
+>symmy</command
+> попросити вказати пароль, який буде використано як ключ шифрування для <emphasis
+>усіх</emphasis
+> позначених файлів. Вам слід вибрати якісний ключ шифрування і зберігати його у безпечному місці (наприклад, у програмі для керування паролями). Якщо виникне потреба у надсиланні ключа іншій особі, вам слід скористатися безпечним каналом передавання даних (наприклад, передати ключ під час особистої зустрічі). </para>
+</refsect2>
+
+<refsect2>
+<title
+>Вимоги щодо GPG</title>
+<para
+>Для шифрування даних у <command
+>symmy</command
+> використовується GPG, тому у системі має бути встановлено дієздатну і правильно налаштовану версію програми <command
+>gpg-agent</command
+>. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Керування дією з шифрування</title>
+<para
+>Дія з шифрування може бути досить тривалою. Тривалість залежить від кількості та розміру файлів. Ви можете стежити за поступом шифрування за допомогою аплету сповіщень Плазми. За допомогою плазмоїда сповіщень програми ви також можете перервати дію з шифрування, якщо у цьому виникне потреба. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>РОЗШИФРОВУВАННЯ</title>
+<para
+>Ви можете розшифрувати один або декілька зашифрованих файлів, якщо передасте програмі шляхи до них після параметра <option
+>decrypt</option
+>. Ви також можете позначити файли у &dolphin; або у віджеті «Перегляд тек» Плазми і вибрати пункт <guimenuitem
+>Розшифрувати</guimenuitem
+> у контекстному меню. Зауважте, що цим пунктом можна буде скористатися, лише якщо позначено зашифровані файли. </para>
+
+<refsect2>
+<title
+>Керування дією із розшифровування</title>
+<para
+>Дія з розшифровування може бути досить тривалою. Тривалість залежить від кількості та розміру файлів. Ви можете стежити за поступом шифрування за допомогою аплету сповіщень Плазми. За допомогою плазмоїда сповіщень програми ви також можете перервати дію з розшифровування, якщо у цьому виникне потреба. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>ПАРАМЕТРИ</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Зашифрувати вказаний список файлів після введення пароля. Цей параметр неявним чином буде використано, якщо не вказано інших параметрів. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Розшифрувати вказаний список файлів після введення ключа дешифрування. Зауважте, що параметри <option
+>encrypt</option
+> і <option
+>decrypt</option
+> не можна використовувати одночасно. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Показати короткий опис програми та параметрів командного рядка. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Показати дані щодо версії цієї програми. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Показати дані щодо автора цієї програми. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Показати дані щодо умов ліцензування цієї програми. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Dutch "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Gebruikershandleiding van Symmy</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Is auteur van dit programma en deze manpagina</para
+></personblurb
+> </author>
+<date
+>2017-11-25</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>OPTIES</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>BESTANDEN</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>BESCHRIJVING</title>
+<para
+><command
+>symmy</command
+> is een eenvoudige toepassing die gebruikt kan worden om een of meer bestanden te versleutelen of te ontcijferen met gebruik van de symmetrische versleutelingsfunctionaliteit van GPG. Een met <command
+>symmy</command
+> versleuteld bestand kan ontcijferd worden door iedereen die toegang heeft tot het GPG-programma en de versleutelingssleutel. </para>
+<para
+><command
+>symmy</command
+> kan ook gebruikt worden vanuit mapweergave van &dolphin; of &plasma; dankzij de items <guimenuitem
+>Versleutelen</guimenuitem
+> en <guimenuitem
+>Ontcijferen</guimenuitem
+> in het contextmenu. </para>
+</refsect1>
+
+<refsect1>
+<title
+>VERSLEUTELING</title>
+<para
+>U kunt een of meer bestanden versleutelen door hun paden te schrijven achter de optie <option
+>versleutelen</option
+>. U kunt ze ook in de mapweergave van &dolphin; of &plasma; selecteren en drukken op het item <guimenuitem
+>Versleutelen</guimenuitem
+> in het contextmenu. </para>
+<para
+>Merk op dat u geen map kunt versleutelen. Als u dat nodig hebt, dan zou u de map kunnen comprimeren en dan het resulterende archief versleutelen. Het is ook niet mogelijk om bestanden op afstand of bestanden die al versleuteld zijn te versleutelen. </para>
+
+<refsect2>
+<title
+>Een versleutelingssleutel kiezen</title>
+<para
+><command
+>symmy</command
+> zal u naar een wachtwoord (of wachtwoordzin) vragen die gebruikt zal worden als versleutelingssleutel voor <emphasis
+>alle</emphasis
+> geselecteerde bestanden. U zou een sterke versleutelingssleutel moeten kiezen en u zou het op een veilige plaats moeten opslaan (zoals een wachtwoordbeheerder). Als u de sleutel naar een andere persoon moet verzenden, dan zou u dat moeten doen over een veilig kanaal (bijvoorbeeld, door een persoonlijke ontmoeting). </para>
+</refsect2>
+
+<refsect2>
+<title
+>GPG-vereisten</title>
+<para
+><command
+>symmy</command
+> gebruikt GPG om de actuele versleuteling uit te voeren, het verwacht dus dat het proces <command
+>gpg-agent</command
+> actief is en op de juiste manier geconfigureerd. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Een versleutelingsbewerking beheren</title>
+<para
+>De versleutelingsbewerking zal enige tijd nemen afhankelijk van het aantal bestanden en van hun grootte. U kunt de voortgang van de bewerking volgen vanuit het meldingen-applet geleverd door &plasma;. Vanuit de plasmoid meldingen kunt u ook de versleutelingsbewerking, indien nodig, afbreken. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>ONTCIJFEREN</title>
+<para
+>U kunt een of meer versleutelde bestanden ontcijferen door hun paden na de optie <option
+>decrypt</option
+> te schrijven. U kunt ze ook selecteren in de mapweergave van &dolphin; of &plasma; en drukken op het contextmenu-item <guimenuitem
+>Ontcijferen</guimenuitem
+>. Merk op dat dit item alleen zichtbaar zal zijn bij selecteren van versleutelde bestanden. </para>
+
+<refsect2>
+<title
+>Een ontcijferingsbewerking beheren</title>
+<para
+>De ontcijferingsbewerking zal enige tijd nemen afhankelijk van het aantal bestanden en van hun grootte. U kunt de voortgang van de bewerking volgen vanuit het meldingen-applet geleverd door &plasma;. Vanuit de plasmoid meldingen kunt u ook de ontcijferingsbewerking, indien nodig, afbreken. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>OPTIES</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Versleutel de gegeven lijst met bestanden na het vragen om een wachtwoordzin. Deze optie wordt impliciet ingezteld als er geen andere opties zijn. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Ontcijfer de gegeven lijst met bestanden na het vragen om een ontcijferingssleutel. Merk op dat opties <option
+>encrypt</option
+> en <option
+>decrypt</option
+> elkaar uitsluiten. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Toont een beknopte samenvatting en beschrijving van de opties op de opdrachtregel. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Toont de versie van dit programma. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Toont de informatie over de auteur van dit programma. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Toont de informatie over de licentie van dit programma. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>
