@@ -63,6 +63,7 @@
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
   <summary xml:lang="pt-BR">Interface para a funcionalidade de criptografia simétrica do GPG</summary>
+  <summary xml:lang="ru">Интерфейс для возможностей симметричного шифрования GPG</summary>
   <summary xml:lang="sk">Frontend pre dynamické šifrovanie GPG</summary>
   <summary xml:lang="sl">Začelje za simetrično šifriranje funkcionalnosti GPG</summary>
   <summary xml:lang="sv">Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG</summary>
@@ -92,6 +93,7 @@
     <p xml:lang="pl">Symmy jest prostą aplikacją wiersza poleceń, która ładnie owija funkcjonalności symetrycznego szyfrowania GPG.</p>
     <p xml:lang="pt">O Symmy é uma aplicação simples da linha de comandos que envolve de forma amigável a funcionalidade de encriptação do GPG.</p>
     <p xml:lang="pt-BR">O Symmy é um aplicativo em linha de comando que envolve a funcionalidade de criptografia simétrica do GPG.</p>
+    <p xml:lang="ru">Symmy — простая программа для командной строки, представляющая собой обёртку возможностей симметричного шифрования GPG.</p>
     <p xml:lang="sk">Symmy je jednoduchá konzolová aplikácia ktorá pekne zalomí symetrickú funkcionalitu GPG.</p>
     <p xml:lang="sl">Symmy je preprosta aplikacija v ukazni vrstici, ki prijazno ponuja simetrično šifriranje funkcionalnosti GPG.</p>
     <p xml:lang="sv">Symmy är ett enkelt kommandoradsprogram som omsluter den symmetriska krypteringsfunktionaliteten i GPG på ett snyggt sätt.</p>
@@ -120,6 +122,7 @@
     <p xml:lang="pl">Symmy zapewnia także integrację z graficznymi przeglądarkami plików takimi jak Dolphin (menu podręczne szyfrowania i odszyfrowywania), a także z powiadomieniami Plazmy.</p>
     <p xml:lang="pt">O Symmy também oferece a integração com os gestor de ficheiros gráficos, como o  Dolphin (acções do menu de contexto 'Encriptar' e 'Descodificar'), assim como a integração com as notificações do Plasma.</p>
     <p xml:lang="pt-BR">O Symmy também fornece integração com gerenciadores de arquivos como o Dolphin (ações do menu de contexto para criptografar e descriptografar), bem como integração com as notificações do Plasma.</p>
+    <p xml:lang="ru">Symmy предусматривает интеграцию в диспетчеры файлов с графическим интерфейсом, например, в Dolphin (пункты контекстного меню «Зашифровать» и «Расшифровать»), а также интеграцию с системой уведомлений Plasma.</p>
     <p xml:lang="sk">Symmy poskytuje aj integráciu s GUI súborovými správcami ako Dolphin (kontextové akcie šifrovanie a dešifrovanie) ako aj integráciu s Plasma pripomienkami.</p>
     <p xml:lang="sl">Symmy omogoča tudi povezovanje z upravitelji datotek GUI, kot so Dolphin (dejanja kontekstnega menija Encrypt in Decrypt), pa tudi integracijo z obvestili v plazmi.</p>
     <p xml:lang="sv">Symmy erbjuder också integrering med grafiska filhanterare som Dolphin (sammanhangsberoende menyalternativ Kryptera och Avkryptera), samt integrering med underrättelser i Plasma.</p>
@@ -148,6 +151,7 @@
     <p xml:lang="pl">Możesz śledzić postęp zadania szyfrowania/odszyfrowywania lub je przerwać przy użyciu plazmoidu powiadomień.</p>
     <p xml:lang="pt">Poderá seguir a evolução de uma tarefa de encriptação/descodificação ou interrompê-la, usando o plasmóide de notificações.</p>
     <p xml:lang="pt-BR">Você pode acompanhar o progresso da tarefa de descriptografar/criptografar ou encerrar o processo usando o plasmoide na notificação.</p>
+    <p xml:lang="ru">Плазмоид уведомлений позволяет отслеживать ход выполнения задания по шифрованию/расшифровке или прервать его.</p>
     <p xml:lang="sk">Môžete sledovať priebeh šifrovania a dešifrovania alebo úlohu zrušiť pomocou plazmoidu notifikácií.</p>
     <p xml:lang="sl">S plazmoidom za obveščanja lahko sledite napredku opravila šifriranja/dešifriranja ali ga prekinete.</p>
     <p xml:lang="sv">Förloppet för krypterings- eller avkrypteringsjobb går att följa och de kan avbrytas med Plasmoiden för underrättelser.</p>
