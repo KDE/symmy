@@ -2,31 +2,32 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Alexander Potashev <aspotashev@gmail.com>, 2017.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:49+0000\n"
-"PO-Revision-Date: 2017-12-09 17:04+0300\n"
-"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2022-10-12 16:59+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 22.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Олеся Герасименко"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "translation-team@basealt.ru"
 
 #: plugins/decryptfileitemaction.cpp:31
 #, kde-format
@@ -47,6 +48,8 @@ msgid ""
 "Encryption operation failed. Please check whether the <application>gpg-"
 "agent</application> process is running."
 msgstr ""
+"Сбой операции шифрования. Убедитесь, что процесс <application>gpg-agent</"
+"application> работает."
 
 #: src/compositejob.cpp:84
 #, kde-kuit-format
@@ -56,6 +59,9 @@ msgid ""
 "correct.<nl/>You should also check whether the <application>gpg-agent</"
 "application> process is running."
 msgstr ""
+"Сбой операции расшифровки. Убедитесь, что указан правильный ключ "
+"расшифровки. Также следует убедиться, что процесс <application>gpg-agent</"
+"application> работает."
 
 #: src/compositejob.cpp:87
 #, kde-kuit-format
@@ -64,68 +70,76 @@ msgid ""
 "Could not decrypt the following ciphertexts.<nl/>Please check whether the "
 "decryption key is correct."
 msgstr ""
+"Не удалось расшифровать зашифрованный текст.<nl/> Убедитесь, что указан "
+"правильный ключ расшифровки."
 
 #: src/compositejob.cpp:127
 #, kde-format
 msgid "Asking Passphrase"
-msgstr ""
+msgstr "Запрос пароля"
 
 #: src/compositejob.cpp:131
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
+"Укажите пароль или парольную фразу для использования в качестве ключа "
+"шифрования."
 
 #: src/compositejob.cpp:136
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
+"Укажите пароль или парольную фразу для использования в качестве ключа "
+"расшифровки."
 
 #: src/compositejob.cpp:157
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
-msgstr ""
+msgstr "Шифрование"
 
 #: src/compositejob.cpp:158
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
-msgstr ""
+msgstr "Открытый текст"
 
 #: src/compositejob.cpp:159
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Зашифрованный текст"
 
 #: src/compositejob.cpp:161
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
-msgstr ""
+msgstr "Расшифровка"
 
 #: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Зашифрованный текст"
 
 #: src/compositejob.cpp:163
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"
-msgstr ""
+msgstr "Открытый текст"
 
 #: src/main.cpp:27
 #, kde-format
 msgctxt "display name for 'symmy' binary"
 msgid "GPG Symmetric Encryption Frontend"
-msgstr ""
+msgstr "Интерфейс для симметричного шифрования GPG"
 
 #: src/main.cpp:28
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
 msgstr ""
+"Зашифровать или расшифровать один или несколько файлов с помощью "
+"симметричного шифрования GPG."
 
 #: src/main.cpp:28
 #, kde-format
@@ -140,7 +154,7 @@ msgstr "Elvis Angelaccio"
 #: src/main.cpp:33
 #, kde-format
 msgid "List of files to encrypt or decrypt."
-msgstr ""
+msgstr "Список файлов для шифрования или расшифровки."
 
 #: src/main.cpp:35
 #, kde-format
@@ -148,14 +162,16 @@ msgid ""
 "Encrypt the given list of files (this is the default if there are no other "
 "options)."
 msgstr ""
+"Зашифровать файлы из указанного списка (выполняется по умолчанию, если нет "
+"других параметров)."
 
 #: src/main.cpp:37
 #, kde-format
 msgid "Decrypt the given list of files."
-msgstr ""
+msgstr "Расшифровать файлы из указанного списка."
 
 #: src/main.cpp:46
 #, kde-format
 msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
 msgid "Error: either --encrypt or --decrypt, not both."
-msgstr ""
+msgstr "Ошибка: возможно указать --encrypt или --decrypt, но не оба параметра."
