@@ -83,15 +83,15 @@ msgstr "Es demana la frase de pas"
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
-"Proporcioneu una contrasenya o una frase de pas a utilitzar com a clau "
+"Proporcioneu una contrasenya o una frase de pas que s'utilitzarà com a clau "
 "d'encriptació."
 
 #: src/compositejob.cpp:136
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
-"Proporcioneu una contrasenya o una frase de pas a utilitzar com a clau de "
-"desencriptació."
+"Proporcioneu una contrasenya o una frase de pas que s'utilitzarà com a clau "
+"de desencriptació."
 
 #: src/compositejob.cpp:157
 #, kde-format
