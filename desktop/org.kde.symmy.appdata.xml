@@ -25,6 +25,7 @@
   <name xml:lang="ia">Symmy</name>
   <name xml:lang="id">Symmy</name>
   <name xml:lang="it">Symmy</name>
+  <name xml:lang="ka">Symmy</name>
   <name xml:lang="ko">Symmy</name>
   <name xml:lang="lt">Symmy</name>
   <name xml:lang="nl">Symmy</name>
@@ -56,6 +57,7 @@
   <summary xml:lang="ia">Interfacie per le functionalitate de cryptation symmetric de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
   <summary xml:lang="it">Interfaccia per la funzionalità di cifratura simmetrica di GPG</summary>
+  <summary xml:lang="ka">GPG-ის სიმეტრიული დაშიფვრის ფუნქციონალის ინტერფეისი</summary>
   <summary xml:lang="ko">GPG의 대칭 암호화 기능 프론트엔드</summary>
   <summary xml:lang="lt">GPG simetrinio šifravimo funkcionalumo naudotojo sąsaja</summary>
   <summary xml:lang="nl">Frontend voor de symmetrische versleutelingsfunctionaliteit van GPG</summary>
