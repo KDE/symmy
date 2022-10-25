@@ -155,7 +155,7 @@ msgstr "Elvis Angelaccio"
 #: src/main.cpp:33
 #, kde-format
 msgid "List of files to encrypt or decrypt."
-msgstr "Llista de fitxers a encriptar o desencriptar."
+msgstr "Llista de fitxers que s'encriptaran o desencriptaran."
 
 #: src/main.cpp:35
 #, kde-format
