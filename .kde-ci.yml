@@ -9,3 +9,6 @@ Dependencies:
     'frameworks/kio': '@stable'
     'frameworks/ki18n': '@stable'
     'frameworks/kwidgetsaddons': '@stable'
+
+Options:
+  require-passing-tests-on: [ '@all' ]
