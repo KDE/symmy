@@ -44,8 +44,12 @@ ecm_setup_version(PROJECT
 add_definitions(-DTRANSLATION_DOMAIN=\"symmy\")
 
 add_subdirectory(desktop)
-add_subdirectory(doc)
 add_subdirectory(src)
 add_subdirectory(plugins)
+
+add_subdirectory(doc)
+kdoctools_install(po)
+
+ki18n_install(po)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
