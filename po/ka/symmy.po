@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:49+0000\n"
-"PO-Revision-Date: 2022-09-30 13:09+0200\n"
+"PO-Revision-Date: 2022-11-27 11:32+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -47,6 +47,8 @@ msgid ""
 "Encryption operation failed. Please check whether the <application>gpg-"
 "agent</application> process is running."
 msgstr ""
+"დაშიფვრის ოპერაციის შეცდომა. შეამოწმეთ, პროცესი <application>gpg-agent</"
+"application> გაშვებულია, თუ არა."
 
 #: src/compositejob.cpp:84
 #, kde-kuit-format
@@ -56,6 +58,8 @@ msgid ""
 "correct.<nl/>You should also check whether the <application>gpg-agent</"
 "application> process is running."
 msgstr ""
+"გაშიფვრის ოპერაციის შეცდომა. გადაამოწმეთ გაშიფვრის გასაღების სისწორე. ასევე "
+"შეამოწმეთ, პროცესი <application>gpg-agent</application> გაშვებულია, თუ არა."
 
 #: src/compositejob.cpp:87
 #, kde-kuit-format
@@ -64,6 +68,8 @@ msgid ""
 "Could not decrypt the following ciphertexts.<nl/>Please check whether the "
 "decryption key is correct."
 msgstr ""
+"შეცდომა შემდეგი ciphertexts-ების გაშიფვრისას. <nl/> გადაამოწმეთ გაშიფვრის "
+"გასაღების სისწორე."
 
 #: src/compositejob.cpp:127
 #, kde-format
@@ -74,11 +80,13 @@ msgstr "კოდური ფრაზის კითხვა"
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
+"შეიყვანეთ პაროლი ან დაშიფვრის გასაღების სახით გამოყენებული საიდუმლო ფრაზა."
 
 #: src/compositejob.cpp:136
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
+"შეიყვანეთ პაროლი ან გაშიფვრის გასაღების სახით გამოყენებული საიდუმლო ფრაზა."
 
 #: src/compositejob.cpp:157
 #, kde-format
@@ -125,7 +133,7 @@ msgstr "GPG-ის სიმეტრიული დაშიფვრის �
 #: src/main.cpp:28
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
-msgstr ""
+msgstr "ერთი ან მეტი ფაილის GPG სიმეტრიული დაშიფვრით გაშიფვრა/დაშიფვრა."
 
 #: src/main.cpp:28
 #, kde-format
@@ -160,4 +168,4 @@ msgstr "მოცემული სიიდან ფაილების გ
 #, kde-format
 msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
 msgid "Error: either --encrypt or --decrypt, not both."
-msgstr ""
+msgstr "შეცდომა: გამოიყენეთ --encrypt ან --decrypt, მაგრამ არა ორივე."
