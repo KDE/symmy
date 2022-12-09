@@ -32,7 +32,7 @@ QList<QAction*> EncryptFileItemAction::actions(const KFileItemListProperties &fi
     QMimeDatabase mimeDb;
     for (const auto &url : urls) {
         const auto mimeType = mimeDb.mimeTypeForUrl(url).name();
-        if (mimeType == QLatin1String {"application/pgp-encrypted"} or mimeType == QLatin1String {"inode/directory"}) {
+        if (mimeType == QLatin1String {"application/pgp-encrypted"} || mimeType == QLatin1String {"inode/directory"}) {
             return {};
         }
     }
@@ -48,7 +48,7 @@ QList<QAction*> EncryptFileItemAction::actions(const KFileItemListProperties &fi
         job->start();
     });
 
-    if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {
+    if (!fileItemInfos.supportsWriting() || !fileItemInfos.isLocal()) {
         encryptAction->setEnabled(false);
     }
 

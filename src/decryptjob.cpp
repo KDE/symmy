@@ -56,13 +56,13 @@ QString DecryptJob::plaintextFilename() const
 
 void DecryptJob::doWork()
 {
-    if (not m_ciphertext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
+    if (!m_ciphertext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
         qCDebug(SYMMY) << "Could not open ciphertext file" << ciphertextFilename();
         emitResult();
         return;
     }
 
-    if (not m_plaintext->open()) {
+    if (!m_plaintext->open()) {
         qCDebug(SYMMY) << "Could not open plaintext file" << m_plaintext->fileName();
         emitResult();
         return;

@@ -45,13 +45,13 @@ QString EncryptJob::plaintextFilename() const
 
 void EncryptJob::doWork()
 {
-    if (not m_plaintext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
+    if (!m_plaintext->open(QIODevice::ReadOnly | QIODevice::Unbuffered)) {
         qCDebug(SYMMY) << "Could not open plaintext file" << m_plaintext->fileName();
         emitResult();
         return;
     }
 
-    if (not m_ciphertext->open()) {
+    if (!m_ciphertext->open()) {
         qCDebug(SYMMY) << "Could not open ciphertext file" << m_ciphertext->fileName();
         emitResult();
         return;

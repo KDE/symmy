@@ -20,9 +20,6 @@ include(ECMSetupVersion)
 include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 
-# ecm >= 5.31 disables alternative operators, but we use them.
-string(REPLACE "-fno-operator-names" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
-
 find_package(Qt5 CONFIG REQUIRED
     Core
     Gui

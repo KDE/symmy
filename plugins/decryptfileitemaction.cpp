@@ -37,7 +37,7 @@ QList<QAction*> DecryptFileItemAction::actions(const KFileItemListProperties &fi
         job->start();
     });
 
-    if (not fileItemInfos.supportsWriting() or not fileItemInfos.isLocal()) {
+    if (!fileItemInfos.supportsWriting() || !fileItemInfos.isLocal()) {
         decryptionAction->setEnabled(false);
     }
 

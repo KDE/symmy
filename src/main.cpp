@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    if (parser.isSet(QStringLiteral("encrypt")) and parser.isSet(QStringLiteral("decrypt"))) {
+    if (parser.isSet(QStringLiteral("encrypt")) && parser.isSet(QStringLiteral("decrypt"))) {
         std::cerr << qPrintable(i18nc("--encrypt and --decrypt are CLI args, don't translate them", "Error: either --encrypt or --decrypt, not both.")) << '\n';
         parser.showHelp(-1);
     }
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 
     const auto files = parser.positionalArguments();
 
-    if (parser.isSet(QStringLiteral("encrypt")) or not parser.isSet(QStringLiteral("decrypt"))) {
+    if (parser.isSet(QStringLiteral("encrypt")) || !parser.isSet(QStringLiteral("decrypt"))) {
         qCDebug(SYMMY) << "Going to encrypt:" << files;
         auto job = new Symmy::CompositeJob {files, Symmy::CompositeJob::Task::Encryption};
         QObject::connect(job, &KJob::result, &app, &QCoreApplication::quit, Qt::QueuedConnection);
