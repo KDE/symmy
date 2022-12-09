@@ -42,8 +42,11 @@ void CompositeJob::start()
 
 bool CompositeJob::doKill()
 {
+    qCDebug(SYMMY) << "Killing composite job...";
+
     if (!hasSubjobs()) {
-        return false;
+        const bool canBeKilled = !m_passwordDialog.isNull() && m_passwordDialog->isVisible();
+        return canBeKilled;
     }
 
     return subjobs().at(0)->kill();

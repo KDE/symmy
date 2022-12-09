@@ -9,7 +9,8 @@
 
 #include <KCompositeJob>
 
-class QDialog;
+#include <QDialog>
+#include <QPointer>
 
 namespace Symmy
 {
@@ -51,7 +52,7 @@ private:
     QStringList m_filenames;
     QStringList m_failedDecryptions;
     Task m_task;
-    QDialog *m_passwordDialog = nullptr;
+    QPointer<QDialog> m_passwordDialog;
 };
 
 }
