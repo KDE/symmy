@@ -26,16 +26,21 @@ namespace Symmy
 EncryptJob::EncryptJob(const QString &passphrase, const QString &plaintextFilename) : Job {passphrase}
 {
     m_plaintext = std::make_shared<QFile>(plaintextFilename);
-    m_ciphertext = std::make_shared<QTemporaryFile>(ciphertextFilename());
+    m_ciphertext = std::make_shared<QTemporaryFile>(ciphertextFilenameFrom(plaintextFilename));
 }
 
 EncryptJob::~EncryptJob()
 {
 }
 
+QUrl EncryptJob::destinationUrl() const
+{
+    return QUrl::fromLocalFile(ciphertextFilename());
+}
+
 QString EncryptJob::ciphertextFilename() const
 {
-    return QStringLiteral("%1.gpg").arg(plaintextFilename());
+    return ciphertextFilenameFrom(plaintextFilename());
 }
 
 QString EncryptJob::plaintextFilename() const
@@ -84,11 +89,8 @@ void EncryptJob::slotResult(const EncryptionResult &, const QByteArray &, const 
         return;
     }
 
-    auto ciphertextPath = m_ciphertext->fileName();
-    // Drop the ".XXXXXX" suffix of QTemporaryFile.
-    ciphertextPath.chop(7);
-    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_ciphertext->fileName()) << "to" << QUrl::fromLocalFile(ciphertextPath);
-    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), QUrl::fromLocalFile(ciphertextPath));
+    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_ciphertext->fileName()) << "to" << destinationUrl();
+    auto job = KIO::move(QUrl::fromLocalFile(m_ciphertext->fileName()), destinationUrl());
     connect(job, &KJob::result, this, &EncryptJob::emitResult);
 }
 

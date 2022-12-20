@@ -8,6 +8,7 @@
 #include "job.h"
 #include "symmydebug.h"
 
+#include <QMimeDatabase>
 #include <QTimer>
 
 #include <QGpgME/Job>
@@ -56,6 +57,25 @@ void Job::setJob(QGpgME::Job *job)
 QString Job::passphrase() const
 {
     return m_passphrase;
+}
+
+QString ciphertextFilenameFrom(const QString &plaintextFilename)
+{
+    return QStringLiteral("%1.gpg").arg(plaintextFilename);
+}
+
+QString plaintextFilenameFrom(const QString &ciphertextFilename)
+{
+    auto filename = ciphertextFilename;
+    const auto pgpSuffixes = QMimeDatabase{}.mimeTypeForName(QStringLiteral("application/pgp-encrypted")).suffixes();
+    for (const auto &suffix : pgpSuffixes) {
+        if (filename.endsWith(suffix)) {
+            filename.chop(suffix.length() + 1); // dot is not included in the suffix
+            break;
+        }
+    }
+
+    return filename;
 }
 
 }

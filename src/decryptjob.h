@@ -26,6 +26,7 @@ public:
     explicit DecryptJob(const QString &passphrase, const QString &ciphertextFilename);
     ~DecryptJob() override;
 
+    QUrl destinationUrl() const override;
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;
 

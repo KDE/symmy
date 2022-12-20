@@ -26,6 +26,7 @@ public:
     explicit EncryptJob(const QString &passphrase, const QString &plaintextFilename);
     ~EncryptJob() override;
 
+    QUrl destinationUrl() const override;
     QString ciphertextFilename() const override;
     QString plaintextFilename() const override;
 

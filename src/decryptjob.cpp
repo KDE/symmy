@@ -10,7 +10,6 @@
 
 #include <KIO/CopyJob>
 
-#include <QMimeDatabase>
 #include <QTemporaryFile>
 
 #include <QGpgME/DecryptJob>
@@ -28,11 +27,16 @@ namespace Symmy
 DecryptJob::DecryptJob(const QString &passphrase, const QString &ciphertextFilename) : Job {passphrase}
 {
     m_ciphertext = std::make_shared<QFile>(ciphertextFilename);
-    m_plaintext = std::make_shared<QTemporaryFile>(plaintextFilename());
+    m_plaintext = std::make_shared<QTemporaryFile>(plaintextFilenameFrom(ciphertextFilename));
 }
 
 DecryptJob::~DecryptJob()
 {
+}
+
+QUrl DecryptJob::destinationUrl() const
+{
+    return QUrl::fromLocalFile(plaintextFilename());
 }
 
 QString DecryptJob::ciphertextFilename() const
@@ -42,16 +46,7 @@ QString DecryptJob::ciphertextFilename() const
 
 QString DecryptJob::plaintextFilename() const
 {
-    auto filename = ciphertextFilename();
-    const auto pgpSuffixes = QMimeDatabase{}.mimeTypeForName(QStringLiteral("application/pgp-encrypted")).suffixes();
-    for (const auto &suffix : pgpSuffixes) {
-        if (filename.endsWith(suffix)) {
-            filename.chop(suffix.length() + 1); // dot is not included in the suffix
-            break;
-        }
-    }
-
-    return filename;
+    return plaintextFilenameFrom(ciphertextFilename());
 }
 
 void DecryptJob::doWork()
@@ -94,11 +89,8 @@ void DecryptJob::slotResult(const DecryptionResult &, const QByteArray &, const 
         return;
     }
 
-    auto plaintextPath = m_plaintext->fileName();
-    // Drop the ".XXXXXX" suffix of QTemporaryFile.
-    plaintextPath.chop(7);
-    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_plaintext->fileName()) << "to" << QUrl::fromLocalFile(plaintextPath);
-    auto job = KIO::move(QUrl::fromLocalFile(m_plaintext->fileName()), QUrl::fromLocalFile(plaintextPath));
+    qCDebug(SYMMY) << "Moving temporary file" << QUrl::fromLocalFile(m_plaintext->fileName()) << "to" << destinationUrl();
+    auto job = KIO::move(QUrl::fromLocalFile(m_plaintext->fileName()), destinationUrl());
     connect(job, &KJob::result, this, &DecryptJob::emitResult);
 }
 

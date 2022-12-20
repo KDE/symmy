@@ -27,6 +27,14 @@ CompositeJob::CompositeJob(const QStringList &filenames, Task task)
     , m_filenames {filenames}
     , m_task {task}
 {
+    // We need to set the "destUrl" property also from the constructor (it will be too late if we only set it in startSubjob()).
+    // FIXME: however, setting the destUrl for the first file here "shadows" every following filenames...
+    // I'm beginning to think that destUrl is not well supported from KCompositeJob...
+    if (m_task == Task::Encryption) {
+        setProperty("destUrl", QUrl::fromLocalFile(ciphertextFilenameFrom(filenames.at(0))).toString());
+    } else {
+        setProperty("destUrl", QUrl::fromLocalFile(plaintextFilenameFrom(filenames.at(0))).toString());
+    }
     setCapabilities(Killable);
     KIO::getJobTracker()->registerJob(this);
 }
@@ -157,10 +165,12 @@ void CompositeJob::startSubjob()
     auto job = qobject_cast<Symmy::Job*>(subjobs().at(0));
 
     if (task() == Task::Encryption) {
+        setProperty("destUrl", job->destinationUrl().toString());
         emit description(this, i18nc("description of an encryption job", "Encrypting"),
                          qMakePair(i18nc("File used as input of the encryption algorithm", "Plaintext"), job->plaintextFilename()),
                          qMakePair(i18nc("File created by the encryption algorithm", "Ciphertext"), job->ciphertextFilename()));
     } else {
+        setProperty("destUrl", job->destinationUrl().toString());
         emit description(this, i18nc("description of a decryption job", "Decrypting"),
                          qMakePair(i18nc("File used as input of the decryption algorithm", "Ciphertext"), job->ciphertextFilename()),
                          qMakePair(i18nc("File created by the decryption algorithm", "Plaintext"), job->plaintextFilename()));
