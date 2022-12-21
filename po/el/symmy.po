@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:49+0000\n"
+"POT-Creation-Date: 2022-12-21 00:50+0000\n"
 "PO-Revision-Date: 2019-08-14 10:12+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -39,7 +39,7 @@ msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
 msgid "Encrypt"
 msgstr "Κρυπτογράφηση"
 
-#: src/compositejob.cpp:58
+#: src/compositejob.cpp:61
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 "Αποτυχία κρυπτογράφησης. Ελέγξτε αν η διεργασία <application>gpg-agent</"
 "application> εκτελείται."
 
-#: src/compositejob.cpp:84
+#: src/compositejob.cpp:87
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 "σωστό.<nl/>Επίσης πρέπει να ελέγξετε αν η διεργασία <application>gpg-agent</"
 "application> εκτελείται."
 
-#: src/compositejob.cpp:87
+#: src/compositejob.cpp:90
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -71,56 +71,56 @@ msgstr ""
 "Αδυναμία αποκρυπτογράφησης των ακόλουθων κειμένων.<nl/>Ελέγξτε αν το κλειδί "
 "αποκρυπτογράφησης είναι σωστό."
 
-#: src/compositejob.cpp:127
+#: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
 msgstr "Ερώτηση συνθηματικού"
 
-#: src/compositejob.cpp:131
+#: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
 "Δώστε έναν κωδικό πρόσβασης ή συνθημτικό για να χρησιμοποιηθεί ως κλειδί "
 "κρυπτογράφησης."
 
-#: src/compositejob.cpp:136
+#: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
 "Δώστε έναν κωδικό πρόσβασης ή συνθημτικό για να χρησιμοποιηθεί ως κλειδί "
 "αποκρυπτογράφησης."
 
-#: src/compositejob.cpp:157
+#: src/compositejob.cpp:160
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
 msgstr "Κρυπτογράφηση"
 
-#: src/compositejob.cpp:158
+#: src/compositejob.cpp:161
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
 msgstr "Απλό κείμενο"
 
-#: src/compositejob.cpp:159
+#: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
 msgstr "Κρυπτογραφημένο κείμενο"
 
-#: src/compositejob.cpp:161
+#: src/compositejob.cpp:164
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
 msgstr "Αποκρυπτογράφηση"
 
-#: src/compositejob.cpp:162
+#: src/compositejob.cpp:165
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
 msgstr "Κωδικοποιημένο είμενο"
 
-#: src/compositejob.cpp:163
+#: src/compositejob.cpp:166
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"

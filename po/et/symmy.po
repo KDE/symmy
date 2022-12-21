@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:49+0000\n"
+"POT-Creation-Date: 2022-12-21 00:50+0000\n"
 "PO-Revision-Date: 2019-12-05 16:30+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -39,7 +39,7 @@ msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
 msgid "Encrypt"
 msgstr "Krüpti"
 
-#: src/compositejob.cpp:58
+#: src/compositejob.cpp:61
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 "Krüptimine nurjus. Palun kontrolli, kas <application>gpg-agent</application> "
 "ikka töötab."
 
-#: src/compositejob.cpp:84
+#: src/compositejob.cpp:87
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 "korras.<nl/>Ühtlasi tasuks kontrollida, kas <application>gpg-agent</"
 "application> ikka töötab."
 
-#: src/compositejob.cpp:87
+#: src/compositejob.cpp:90
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -71,53 +71,53 @@ msgstr ""
 "Järgmisi šifreid ei õnnestunud lahti krüptida.<nl/>Palun kontrolli, kas "
 "lahtikrüptimisvõti on ikka korras."
 
-#: src/compositejob.cpp:127
+#: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
 msgstr "Paroolifraasi küsimine"
 
-#: src/compositejob.cpp:131
+#: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr "Palun anna parool või paroolifraas, mida krüptimisvõtmena kasutada."
 
-#: src/compositejob.cpp:136
+#: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
 "Palun anna parool või paroolifraas, mida lahtikrüptimisvõtmena kasutada."
 
-#: src/compositejob.cpp:157
+#: src/compositejob.cpp:160
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
 msgstr "Krüptimine"
 
-#: src/compositejob.cpp:158
+#: src/compositejob.cpp:161
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
 msgstr "Lihttekst"
 
-#: src/compositejob.cpp:159
+#: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
 msgstr "Šiffer"
 
-#: src/compositejob.cpp:161
+#: src/compositejob.cpp:164
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
 msgstr "Lahtikrüptimine"
 
-#: src/compositejob.cpp:162
+#: src/compositejob.cpp:165
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
 msgstr "Šiffer"
 
-#: src/compositejob.cpp:163
+#: src/compositejob.cpp:166
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"

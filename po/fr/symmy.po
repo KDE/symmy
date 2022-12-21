@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:49+0000\n"
+"POT-Creation-Date: 2022-12-21 00:50+0000\n"
 "PO-Revision-Date: 2021-01-14 17:47+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -41,7 +41,7 @@ msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
 msgid "Encrypt"
 msgstr "Chiffrer"
 
-#: src/compositejob.cpp:58
+#: src/compositejob.cpp:61
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 "Échec de l'opération de chiffrement. Veuillez vérifier que le processus "
 "<application>gpg-agent</application> soit en cours d'exécution."
 
-#: src/compositejob.cpp:84
+#: src/compositejob.cpp:87
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 "déchiffrement soit correcte.<nl/> Vous devriez également vérifier que "
 "l'application <application>gpg-agent</application> soit en cours d'exécution."
 
-#: src/compositejob.cpp:87
+#: src/compositejob.cpp:90
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -73,56 +73,56 @@ msgstr ""
 "Impossible de déchiffrer les textes chiffrés suivants.<nl/> Vérifiez que la "
 "clé de déchiffrement soit correcte."
 
-#: src/compositejob.cpp:127
+#: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
 msgstr "Demande de phrase de passe"
 
-#: src/compositejob.cpp:131
+#: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
 "Veuillez renseigner un mot de passe ou une phrase de passe à utiliser comme "
 "clé de chiffrement."
 
-#: src/compositejob.cpp:136
+#: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
 "Veuillez renseigner un mot de passe ou une phrase de passe à utiliser comme "
 "clé de déchiffrement."
 
-#: src/compositejob.cpp:157
+#: src/compositejob.cpp:160
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
 msgstr "Chiffrement"
 
-#: src/compositejob.cpp:158
+#: src/compositejob.cpp:161
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
 msgstr "Texte en clair"
 
-#: src/compositejob.cpp:159
+#: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
 msgstr "Texte chiffré"
 
-#: src/compositejob.cpp:161
+#: src/compositejob.cpp:164
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
 msgstr "Déchiffrement"
 
-#: src/compositejob.cpp:162
+#: src/compositejob.cpp:165
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
 msgstr "Texte chiffré"
 
-#: src/compositejob.cpp:163
+#: src/compositejob.cpp:166
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"

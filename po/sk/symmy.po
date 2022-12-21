@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:49+0000\n"
+"POT-Creation-Date: 2022-12-21 00:50+0000\n"
 "PO-Revision-Date: 2022-04-19 18:30+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -37,7 +37,7 @@ msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
 msgid "Encrypt"
 msgstr "Šifrovať"
 
-#: src/compositejob.cpp:58
+#: src/compositejob.cpp:61
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 "Operácia šifrovania zlyhala. Skontrolujte, či beží proces <application>gpg-"
 "agent</application>."
 
-#: src/compositejob.cpp:84
+#: src/compositejob.cpp:87
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 "správny.<nl/>Mali by ste tiež skontrolovať, či beží proces <application>gpg-"
 "agent</application>."
 
-#: src/compositejob.cpp:87
+#: src/compositejob.cpp:90
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -69,54 +69,54 @@ msgstr ""
 "Nemôžem dešifrovať daný zašifrovaný text.<nl/>Prosím, skontrolujte, či "
 "dešifrovací kľúč je správny."
 
-#: src/compositejob.cpp:127
+#: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
 msgstr "Výzva na heslo"
 
-#: src/compositejob.cpp:131
+#: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
 "Prosím, zadajte heslo alebo frázu, ktorá sa použije ako šifrovací kľúč."
 
-#: src/compositejob.cpp:136
+#: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
 "Prosím, zadajte heslo alebo frázu, ktorá sa použije ako dešifrovací kľúč."
 
-#: src/compositejob.cpp:157
+#: src/compositejob.cpp:160
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
 msgstr "Šifrovanie"
 
-#: src/compositejob.cpp:158
+#: src/compositejob.cpp:161
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
 msgstr "Čistý text"
 
-#: src/compositejob.cpp:159
+#: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
 msgstr "Šifrový text"
 
-#: src/compositejob.cpp:161
+#: src/compositejob.cpp:164
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
 msgstr "Dešifrujem"
 
-#: src/compositejob.cpp:162
+#: src/compositejob.cpp:165
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
 msgstr "Šifrový text"
 
-#: src/compositejob.cpp:163
+#: src/compositejob.cpp:166
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"
