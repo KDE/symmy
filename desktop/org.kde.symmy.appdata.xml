@@ -84,7 +84,7 @@
     <p xml:lang="et">Symmy on lihtne käsurearakendus, mis võimaldab mugavalt kasutada GPG sümmeetrilise krüptimise võimalust.</p>
     <p xml:lang="eu">Symmy GPGren zifratze simetrikoaren funtzionaltasuna ezin hobeto biltzen duen komando-lerroko aplikazio sinple bat da.</p>
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
-    <p xml:lang="fr">Simmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de « GPG ».</p>
+    <p xml:lang="fr">Symmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de « GPG ».</p>
     <p xml:lang="gl">Symmy é unha aplicación sinxela da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
     <p xml:lang="hu">A Symmy egy egyszerű parancssori alkalmazás, amely könnyen kezelhetően csomagolja a GPG szimmetrikus titkosítási funkcióit.</p>
     <p xml:lang="ia">Simmy es un simple application de linea de commando que agradabilemente inveloppa le functionalitate de cryptation symmetric de GPS.</p>
@@ -115,7 +115,7 @@
     <p xml:lang="et">Samuti on Symmy lõimitud graafiliste failihalduritega, nagu näiteks Dolphin (krüptimise ja lahtikrüptimise võimalused kontekstimenüüs), samuti Plasma märguannete süsteemiga.</p>
     <p xml:lang="eu">Symmy, Dolphin bezalako GUI fitxategi-kudeatzaileekin bateratzen da (Zifratzea eta Deszifratzea testuinguru-menuko ekintzak), baita Plasma Jakinarazpenekin ere.</p>
     <p xml:lang="fi">Symmy tarjoaa myös integroinnin graafisiin tiedostonhallintaohjelmiin kuten Dolphiniin (Salaa- ja Pura salaus -kontekstivalikkotoiminnot) sekä Plasma-ilmoituksiin.</p>
-    <p xml:lang="fr">Simmy s'intègre également aux gestionnaires de fichiers graphiques comme Dolphin (actions de menus contextuels Chiffrer et Déchiffrer), ainsi qu'aux notifications du bureau Plasma.</p>
+    <p xml:lang="fr">Symmy s'intègre également aux gestionnaires de fichiers graphiques comme Dolphin (actions de menus contextuels Chiffrer et Déchiffrer), ainsi qu'aux notifications du bureau Plasma.</p>
     <p xml:lang="gl">Symmy tamén fornece integración con xestores de ficheiros gráficos como Dolphin (as accións «Cifrar» e «Descifrar» do menú de contexto) e coas notificacións de Plasma.</p>
     <p xml:lang="hu">A Symmy további integrálódik a grafikus fájlkezelőkbe, például a Dolphinba (Titkosítás és Visszafejtés műveletek a helyi menüben), valamint a Plasma értesítéseibe.</p>
     <p xml:lang="ia">Simmy anque provide integration con gerentes de file de GUI tal como Dolphin (actiones de menu de contexto de cryptar e decryptar) tanto ben como integration con notificationes de Plasma.</p>
