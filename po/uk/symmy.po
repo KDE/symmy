@@ -1,0 +1,177 @@
+# Translation of symmy.po to Ukrainian
+# Copyright (C) 2017 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: symmy\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-01-05 02:44+0100\n"
+"PO-Revision-Date: 2017-11-24 07:38+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "Розшифрувати"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "Зашифрувати"
+
+#: src/compositejob.cpp:58
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+"Не вдалося виконати дію з шифрування. Будь ласка, перевірте, чи запущено "
+"<application>gpg-agent</application>."
+
+#: src/compositejob.cpp:84
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+"Не вдалося виконати дію із розшифровування. Будь ласка, перевірте, чи "
+"правильно вказано ключ для розшифровування.<nl/>Також варто перевірити, чи "
+"запущено <application>gpg-agent</application>."
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+"Не вдалося розшифрувати зашифрований текст.<nl/>Будь ласка, перевірте, чи "
+"правильно вказано ключ шифрування."
+
+#: src/compositejob.cpp:127
+#, kde-format
+msgid "Asking Passphrase"
+msgstr "Запит щодо пароля"
+
+#: src/compositejob.cpp:131
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr "Будь ласка, вкажіть пароль, який буде використано як ключ шифрування."
+
+#: src/compositejob.cpp:136
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr ""
+"Будь ласка, вкажіть пароль, який буде використано як ключ для "
+"розшифровування."
+
+#: src/compositejob.cpp:157
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "Шифрування"
+
+#: src/compositejob.cpp:158
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr "Текст"
+
+#: src/compositejob.cpp:159
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr "Зашифрований текст"
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "Розшифрування"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr "Зашифрований текст"
+
+#: src/compositejob.cpp:163
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr "Текст"
+
+#: src/main.cpp:25
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr "Оболонка симетричного шифрування GPG"
+
+#: src/main.cpp:26
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr ""
+"Зашифрувати або розшифрувати один або декілька файлів за допомогою "
+"симетричних алгоритмів шифрування GPG."
+
+#: src/main.cpp:26
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "© Elvis Angelaccio, 2017"
+
+#: src/main.cpp:27
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "Elvis Angelaccio"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr "Список файлів для шифрування або розшифровування."
+
+#: src/main.cpp:33
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+"Зашифрувати файли із вказаного списку (типова дія, якщо не вказано "
+"параметрів)."
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr "Розшифрувати файли із вказаного списку."
+
+#: src/main.cpp:44
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr ""
+"Помилка: можна вказувати --encrypt або --decrypt, але не обидва параметри."

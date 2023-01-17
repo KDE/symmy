@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Swedish "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Symmy användarhandbok</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Skrev programmet och den här manualsidan</para
+></personblurb
+> </author>
+<date
+>2017-11-25</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>VÄLJARE</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>FILER</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>BESKRIVNING</title>
+<para
+><command
+>symmy</command
+> är ett enkelt program som kan användas för att kryptera eller avkryptera en eller flera filer genom att använda den symmetriska krypteringsfunktionaliteten i GPG. En fil som krypterats av <command
+>symmy</command
+> kan avkrypteras av vem som helst som har tillgång till GPG-programmet och krypteringsnyckeln. </para>
+<para
+><command
+>symmy</command
+> kan också användas från &dolphin; eller &plasma;s katalogvy tack vare alternativen <guimenuitem
+>Kryptera</guimenuitem
+> och <guimenuitem
+>Avkryptera</guimenuitem
+> i den sammanhangsberoende menyn. </para>
+</refsect1>
+
+<refsect1>
+<title
+>KRYPTERING</title>
+<para
+>Det går att kryptera en eller flera filer genom att skriva in deras sökvägar efter väljaren <option
+>encrypt</option
+>. Det går också att markera dem i &dolphin; eller &plasma;s katalogvy och klicka på alternativet <guimenuitem
+>Kryptera</guimenuitem
+> i den sammanhangsberoende menyn. </para>
+<para
+>Observera att det inte går att kryptera en katalog. Om du behöver göra det, måste du komprimera katalogen och därefter kryptera det resulterande arkivet. Det är inte heller möjligt att kryptera fjärrfiler eller filer som redan är krypterade. </para>
+
+<refsect2>
+<title
+>Välja en krypteringsnyckel:</title>
+<para
+><command
+>symmy</command
+> frågar efter ett lösenord (eller lösenordsfras) som används som krypteringsnyckel för <emphasis
+>alla</emphasis
+> markerade filer. Du bör välja en stark krypteringsnyckel och du bör lagra den på ett säkert ställe (som en lösenordshanterare). Om du behöver skicka nyckeln till en annan person, bör du göra det via en säker kanal (till exempel genom att träffas personligen). </para>
+</refsect2>
+
+<refsect2>
+<title
+>Krav på GPG</title>
+<para
+><command
+>symmy</command
+> använder GPG för att utföra själva krypteringen, och antar alltså att processen <command
+>gpg-agent</command
+> kör och är riktigt inställd. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Hantera en krypteringsåtgärd</title>
+<para
+>Krypteringsåtgärden tar en viss tid beroende på antalet filer och deras storlek. Du kan följa åtgärdsförloppet från underrättelseminiprogrammet som tillhandahålls av &plasma;. Det går också att avbryta krypteringsåtgärden från underrättelseplasmoiden vid behov. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>AVKRYPTERING</title>
+<para
+>Det går att avkryptera en eller flera filer genom att skriva in deras sökvägar efter väljaren <option
+>decrypt</option
+>. Det går också att markera dem i &dolphin; eller &plasma;s katalogvy och klicka på alternativet <guimenuitem
+>Avkryptera</guimenuitem
+> i den sammanhangsberoende menyn. Observera att alternativet bara är synligt när krypterade filer är markerade. </para>
+
+<refsect2>
+<title
+>Hantera en avkrypteringsåtgärd</title>
+<para
+>Avkrypteringsåtgärden tar en viss tid beroende på antalet filer och deras storlek. Du kan följa åtgärdsförloppet från underrättelseminiprogrammet som tillhandahålls av &plasma;. Det går också att avbryta avkrypteringsåtgärden från underrättelseplasmoiden vid behov. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>VÄLJARE</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Krypterar angiven lista av filer efter att ha frågat efter en lösenordsfras. Väljaren gäller implicit om inga andra väljare anges. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Avkrypterar angiven lista av filer efter att ha frågat efter en avkrypteringsnyckeln. Observera att <option
+>encrypt</option
+> och <option
+>decrypt</option
+> är ömsesidigt uteslutande. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Visar en kort sammanfattning och beskrivning av kommandoradsväljarna. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Visar programmets version. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Visar information om programmets upphovsman. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Visar information om programmets licens. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>

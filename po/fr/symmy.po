@@ -1,0 +1,177 @@
+# Simon Depiets <sdepiets@gmail.com>, 2019.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: symmy\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-01-05 02:44+0100\n"
+"PO-Revision-Date: 2021-01-14 17:47+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 20.12.0\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Geoffray Levasseur, Matthieu Robin, Simon Depiets"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"geoffray.levasseurbrandin@numericable.fr, kde@macolu.org, sdepiets@gmail.com"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "Déchiffrer"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "Chiffrer"
+
+#: src/compositejob.cpp:58
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+"Échec de l'opération de chiffrement. Veuillez vérifier que le processus "
+"<application>gpg-agent</application> soit en cours d'exécution."
+
+#: src/compositejob.cpp:84
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+"Échec de l'opération de déchiffrement. Veuillez vérifier que la clé de "
+"déchiffrement soit correcte.<nl/> Vous devriez également vérifier que "
+"l'application <application>gpg-agent</application> soit en cours d'exécution."
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+"Impossible de déchiffrer les textes chiffrés suivants.<nl/> Vérifiez que la "
+"clé de déchiffrement soit correcte."
+
+#: src/compositejob.cpp:127
+#, kde-format
+msgid "Asking Passphrase"
+msgstr "Demande de phrase de passe"
+
+#: src/compositejob.cpp:131
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr ""
+"Veuillez renseigner un mot de passe ou une phrase de passe à utiliser comme "
+"clé de chiffrement."
+
+#: src/compositejob.cpp:136
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr ""
+"Veuillez renseigner un mot de passe ou une phrase de passe à utiliser comme "
+"clé de déchiffrement."
+
+#: src/compositejob.cpp:157
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "Chiffrement"
+
+#: src/compositejob.cpp:158
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr "Texte en clair"
+
+#: src/compositejob.cpp:159
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr "Texte chiffré"
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "Déchiffrement"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr "Texte chiffré"
+
+#: src/compositejob.cpp:163
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr "Texte en clair"
+
+#: src/main.cpp:25
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr "Interface graphique de chiffrement symétrique GPG"
+
+#: src/main.cpp:26
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr ""
+"Chiffrer / déchiffrer un ou plusieurs fichiers à l'aide du chiffrement "
+"symétrique GPG."
+
+#: src/main.cpp:26
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "(c) 2017 Elvis Angelaccio"
+
+#: src/main.cpp:27
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "Elvis Angelaccio"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr "Liste de fichiers à chiffrer ou à déchiffrer."
+
+#: src/main.cpp:33
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+"Chiffrer la liste de fichiers donnée (comportement par défaut si aucune "
+"option supplémentaire n'est communiquée)."
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr "Déchiffrer la liste de fichiers donnée."
+
+#: src/main.cpp:44
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr "Erreur : soit --encrypt, soit --decrypt, mais pas les deux."

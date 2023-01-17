@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-01-05 02:44+0100\n"
+"PO-Revision-Date: 2023-01-15 15:27\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-stable/messages/symmy/symmy.pot\n"
+"X-Crowdin-File-ID: 25200\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "解密"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "加密"
+
+#: src/compositejob.cpp:58
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+
+#: src/compositejob.cpp:84
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+
+#: src/compositejob.cpp:127
+#, kde-format
+msgid "Asking Passphrase"
+msgstr ""
+
+#: src/compositejob.cpp:131
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr ""
+
+#: src/compositejob.cpp:136
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr ""
+
+#: src/compositejob.cpp:157
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "加密"
+
+#: src/compositejob.cpp:158
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr ""
+
+#: src/compositejob.cpp:159
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr ""
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "正在解密"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr ""
+
+#: src/compositejob.cpp:163
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr ""
+
+#: src/main.cpp:25
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr ""
+
+#: src/main.cpp:26
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr ""
+
+#: src/main.cpp:26
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "(c) 2017 Elvis Angelaccio"
+
+#: src/main.cpp:27
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "Elvis Angelaccio"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr ""
+
+#: src/main.cpp:33
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr ""
+
+#: src/main.cpp:44
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr ""

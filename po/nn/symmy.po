@@ -1,0 +1,173 @@
+# Translation of symmy to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: symmy\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-01-05 02:44+0100\n"
+"PO-Revision-Date: 2020-10-31 11:11+0100\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.2\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Karl Ove Hufthammer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "karl@huftis.org"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "Dekrypter"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "Krypter"
+
+#: src/compositejob.cpp:58
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+"Feil ved dekryptering. Sjå til at programmet <application>gpg-agent</"
+"application> køyrer."
+
+#: src/compositejob.cpp:84
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+"Feil ved dekryptering. Kontroller at du har brukt rett dekrypteringsnøkkel."
+"<nl/>Du bør òg sjå til at programmet <application>gpg-agent</application> "
+"køyrer."
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+"Klarte ikkje dekryptera følgjande chiffertekstar.<nl/>Kontroller at du har "
+"brukt rett dekrypteringsnøkkel."
+
+#: src/compositejob.cpp:127
+#, kde-format
+msgid "Asking Passphrase"
+msgstr "Ber om passfrase"
+
+#: src/compositejob.cpp:131
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr ""
+"Skriv inn passord eller passfrase som skal brukast som krypteringsnøkkel."
+
+#: src/compositejob.cpp:136
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr ""
+"Skriv inn passord eller passfrase som skal brukast som dekrypteringsnøkkel."
+
+#: src/compositejob.cpp:157
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "Krypterer"
+
+#: src/compositejob.cpp:158
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr "Reintekst"
+
+#: src/compositejob.cpp:159
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr "Chiffertekst"
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "Dekrypterer"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr "Chiffertekst"
+
+#: src/compositejob.cpp:163
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr "Reintekst"
+
+#: src/main.cpp:25
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr "Brukarflate for GPG-basert symmetrisk kryptering"
+
+#: src/main.cpp:26
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr "Krypter/dekrypter filer med GPG-basert symmetrisk kryptering."
+
+#: src/main.cpp:26
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "© 2017 Elvis Angelaccio"
+
+#: src/main.cpp:27
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "Elvis Angelaccio"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr "Liste over filer som skal (de)krypterast."
+
+#: src/main.cpp:33
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+"Krypter dei oppgjevne filene (dette er standard­handling om ingen andre val "
+"er oppgjevne)."
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr "Dekrypter dei oppgjevne filene."
+
+#: src/main.cpp:44
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr "Feil: Må oppgje anten --encrypt eller --decrypt, men ikkje begge."

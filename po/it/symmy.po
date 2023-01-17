@@ -1,0 +1,171 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the symmy package.
+# Paolo Zamponi <zapaolo@email.it>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-01-05 02:44+0100\n"
+"PO-Revision-Date: 2018-05-15 18:54+0100\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Paolo Zamponi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zapaolo@email.it"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "Decifra"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "Cifra"
+
+#: src/compositejob.cpp:58
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+"Operazione di cifratura non riuscita. Controlla se il processo "
+"<application>gpg-agent</application> è in esecuzione."
+
+#: src/compositejob.cpp:84
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+"Operazione di decifratura non riuscita. Controlla se la chiave di "
+"decifratura è corretta.<nl/>Controlla anche se il processo <application>gpg-"
+"agent</application> è in esecuzione."
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+"Impossibile decifrare i seguenti testi cifrati.<nl/>Controlla che la chiave "
+"di cifratura sia corretta."
+
+#: src/compositejob.cpp:127
+#, kde-format
+msgid "Asking Passphrase"
+msgstr "Richiesta della frase segreta"
+
+#: src/compositejob.cpp:131
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr ""
+"Fornisci una chiave o una frase segreta da usare come chiave di cifratura."
+
+#: src/compositejob.cpp:136
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr ""
+"Fornisci una chiave o una frase segreta da usare come chiave di decifratura."
+
+#: src/compositejob.cpp:157
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "Cifratura"
+
+#: src/compositejob.cpp:158
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr "Testo semplice"
+
+#: src/compositejob.cpp:159
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr "Testo cifrato"
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "Decifratura"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr "Testo cifrato"
+
+#: src/compositejob.cpp:163
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr "Testo semplice"
+
+#: src/main.cpp:25
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr "Interfaccia per la cifratura simmetrica GPG"
+
+#: src/main.cpp:26
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr "Cifra/decifra uno o più file usando la cifratura simmetrica GPG."
+
+#: src/main.cpp:26
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "(c) 2017 Elvis Angelaccio"
+
+#: src/main.cpp:27
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "Elvis Angelaccio"
+
+#: src/main.cpp:31
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr "Elenco dei file da cifrare o da decifrare."
+
+#: src/main.cpp:33
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+"Cifra l'elenco dei file fornito (opzione predefinita se non ce ne sono "
+"altre)."
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr "Decifra l'elenco dei file fornito."
+
+#: src/main.cpp:44
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr "Errore: o --encrypt o --decrypt, non entrambi."
