@@ -67,7 +67,7 @@ msgid ""
 "Could not decrypt the following ciphertexts.<nl/>Please check whether the "
 "decryption key is correct."
 msgstr ""
-"Non se puideron descifrar os seguintes textos cifrados.<nl/> Comprobe se a "
+"Non foi posíbel descifrar os seguintes textos cifrados.<nl/> Comprobe se a "
 "chave de descifraxe é correcta."
 
 #: src/compositejob.cpp:127
