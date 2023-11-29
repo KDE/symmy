@@ -15,6 +15,7 @@
   <name xml:lang="de">Symmy</name>
   <name xml:lang="el">Symmy</name>
   <name xml:lang="en-GB">Symmy</name>
+  <name xml:lang="eo">Symmy</name>
   <name xml:lang="es">Symmy</name>
   <name xml:lang="et">Symmy</name>
   <name xml:lang="eu">Symmy</name>
@@ -48,6 +49,7 @@
   <summary xml:lang="de">Benutzeroberfläche für die symmetrische GPG-Verschlüsselung</summary>
   <summary xml:lang="el">Περιβάλλον χρήσης για τη λειτουργία συμμετρικής κρυπτογραφίας του GPG</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
+  <summary xml:lang="eo">Fasado por la simetria ĉifrada funkcieco de GPG</summary>
   <summary xml:lang="es">Interfaz para la función de cifrado simétrico de GPG</summary>
   <summary xml:lang="et">GPG sümmeetrilise krüptimise võimaluse kasutajaliides</summary>
   <summary xml:lang="eu">GPGren zifratze simetrikoaren funtzionaltasunerako aurrealdekoa</summary>
