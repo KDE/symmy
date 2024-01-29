@@ -61,7 +61,7 @@
 <para
 >El <command
 >symmy</command
-> és una aplicació simple que es pot utilitzar per encriptar o desencriptar un o més fitxers utilitzant la funcionalitat d'encriptació simètrica de GPG. Qualsevol persona que tingui accés al programa GPG i la clau d'encriptatge podrà desencriptar un fitxer encriptat per <command
+> és una aplicació simple que es pot utilitzar per a encriptar o desencriptar un o més fitxers utilitzant la funcionalitat d'encriptació simètrica de GPG. Qualsevol persona que tingui accés al programa GPG i la clau d'encriptatge podrà desencriptar un fitxer encriptat per <command
 >symmy</command
 >. </para>
 <para
@@ -103,7 +103,7 @@
 <para
 >El <command
 >symmy</command
-> utilitza GPG per executar l'encriptatge real, de manera que s'assumeix que el procés del <command
+> utilitza GPG per a executar l'encriptatge real, de manera que s'assumeix que el procés del <command
 >gpg-agent</command
 > s'està executant i que està correctament configurat. </para>
 </refsect2>
