@@ -37,7 +37,7 @@
 >symmy</command
 ></refname>
 <refpurpose
->GPG'nin simetrik şifreleme işlevi için ön yüz.</refpurpose>
+>GPG’nin simetrik şifreleme işlevi için ön yüz.</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv id="_synopsis">
@@ -61,7 +61,7 @@
 <para
 ><command
 >symmy</command
-> GPG'nin simetrik şifreleme işlevini kullanarak bir ya da daha fazla dosyayı şifreleme veya dosya şifresini çözmek için kullanılan basit bir uygulamadır. <command
+> GPG’nin simetrik şifreleme işlevini kullanarak bir ya da daha fazla dosyayı şifreleme veya dosya şifresini çözmek için kullanılan basit bir uygulamadır. <command
 >symmy</command
 > tarafından şifrelenen bir dosya GPG programına ve şifreleme anahtarına sahip herkes tarafından çözülebilir. </para>
 <para
@@ -112,7 +112,7 @@
 <title
 >Bir Şifreleme İşlemini Yönetmek</title>
 <para
->Şifreleme işlevi dosya sayısı ve boyutuna bağlı olarak biraz zaman alır. İşlemin ilerleyişini &plasma; tarafından sağlanan bir bilgilendirme uygulamacığı ile izleyebilirsiniz. Bilgilendirme Plasmoid'inden şifreleme işlemini de gerektiğinde iptal edebilirsiniz. </para>
+>Şifreleme işlevi dosya sayısı ve boyutuna bağlı olarak biraz zaman alır. İşlemin ilerleyişini &plasma; tarafından sağlanan bir bilgilendirme uygulamacığı ile izleyebilirsiniz. Bilgilendirme Plasmoid’inden şifreleme işlemini de gerektiğinde iptal edebilirsiniz. </para>
 </refsect2>
 </refsect1>
 
@@ -122,7 +122,7 @@
 <para
 >Bir ya da daha fazla dosyayı <option
 >decrypt</option
-> seçeneğinden sonra vererek şifresini çözebilirsiniz. Ayrıca dosyaları &dolphin; veya &plasma; Klasör Görünümü'nde seçerek içerik menüsündeki <guimenuitem
+> seçeneğinden sonra vererek şifresini çözebilirsiniz. Ayrıca dosyaları &dolphin; veya &plasma; Klasör Görünümü’nde seçerek içerik menüsündeki <guimenuitem
 >Şifre Aç</guimenuitem
 >a tıklayabilirsiniz. Bu girdinin yalnızca şifreli dosyaları seçtiğinizde görüneceğini unutmayın. </para>
 
@@ -130,7 +130,7 @@
 <title
 >Bir Şifre Çözme İşleminin Yönetilmesi</title>
 <para
->Şifre çözme işlemi dosya sayısı ve boyutuna göre belirli bir zaman alır. İşlemin ilerleyişini &plasma; tarafından sağlanan bilgilendirme uygulamacığıyla takip edebilirsiniz. Bilgilendirme Plasmoid'inden gerekirse şifre çözme işlemini iptal edebilirsiniz. </para>
+>Şifre çözme işlemi dosya sayısı ve boyutuna göre belirli bir zaman alır. İşlemin ilerleyişini &plasma; tarafından sağlanan bilgilendirme uygulamacığıyla takip edebilirsiniz. Bilgilendirme Plasmoid’inden gerekirse şifre çözme işlemini iptal edebilirsiniz. </para>
 </refsect2>
 
 </refsect1>
