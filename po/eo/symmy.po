@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:42+0000\n"
-"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"PO-Revision-Date: 2024-03-24 10:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -68,69 +68,71 @@ msgstr ""
 #: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
-msgstr ""
+msgstr "Demandante Pasfrazon"
 
 #: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
+"Bonvolu provizi pasvorton aŭ pasfrazon por esti uzata kiel ĉifrada ŝlosilo."
 
 #: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
+"Bonvolu provizi pasvorton aŭ pasfrazon por esti uzata kiel deĉifra ŝlosilo."
 
 #: src/compositejob.cpp:160
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
-msgstr ""
+msgstr "Ĉifrado"
 
 #: src/compositejob.cpp:161
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
-msgstr ""
+msgstr "Plata teksto"
 
 #: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Ĉifrteksto"
 
 #: src/compositejob.cpp:164
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
-msgstr ""
+msgstr "Malĉifri"
 
 #: src/compositejob.cpp:165
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Ĉifrteksto"
 
 #: src/compositejob.cpp:166
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"
-msgstr ""
+msgstr "Plata teksto"
 
 #: src/main.cpp:27
 #, kde-format
 msgctxt "display name for 'symmy' binary"
 msgid "GPG Symmetric Encryption Frontend"
-msgstr ""
+msgstr "GPG Simetria Ĉifrado Frontend"
 
 #: src/main.cpp:28
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
-msgstr ""
+msgstr "Ĉifri/malĉifri unu aŭ plurajn dosierojn per GPG-simetria ĉifrado."
 
 #: src/main.cpp:28
 #, kde-format
 msgid "(c) 2017 Elvis Angelaccio"
-msgstr ""
+msgstr "(c) 2017 Elvis Angelaccio"
 
 #: src/main.cpp:29
 #, kde-format
@@ -140,7 +142,7 @@ msgstr "Elvis Angelaccio"
 #: src/main.cpp:33
 #, kde-format
 msgid "List of files to encrypt or decrypt."
-msgstr ""
+msgstr "Listo de dosieroj por ĉifri aŭ malĉifri."
 
 #: src/main.cpp:35
 #, kde-format
@@ -152,10 +154,10 @@ msgstr ""
 #: src/main.cpp:37
 #, kde-format
 msgid "Decrypt the given list of files."
-msgstr ""
+msgstr "Malĉifri la donitan liston de dosieroj."
 
 #: src/main.cpp:46
 #, kde-format
 msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
 msgid "Error: either --encrypt or --decrypt, not both."
-msgstr ""
+msgstr "Eraro: aŭ --encrypt aŭ --decrypt, ne ambaŭ."
