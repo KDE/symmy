@@ -192,4 +192,5 @@
     <category>System</category>
   </categories>
   <icon type="stock">security-high</icon>
+  <url type="homepage">https://kde.org</url>
 </component>
