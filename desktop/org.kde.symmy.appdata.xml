@@ -34,6 +34,7 @@
   <name xml:lang="pl">Symmy</name>
   <name xml:lang="pt">Symmy</name>
   <name xml:lang="pt-BR">Symmy</name>
+  <name xml:lang="ro">Symmy</name>
   <name xml:lang="ru">Symmy</name>
   <name xml:lang="sk">Symmy</name>
   <name xml:lang="sl">Symmy</name>
@@ -69,6 +70,7 @@
   <summary xml:lang="pl">Nakładka do funkcjonalności symetrycznego szyfrowania GPG</summary>
   <summary xml:lang="pt">Interface para a funcionalidade de encriptação simétrica do GPG</summary>
   <summary xml:lang="pt-BR">Interface para a funcionalidade de criptografia simétrica do GPG</summary>
+  <summary xml:lang="ro">Interfață pentru funcționalitatea de criptare simetrică din GPG</summary>
   <summary xml:lang="ru">Интерфейс для возможностей симметричного шифрования GPG</summary>
   <summary xml:lang="sk">Frontend pre dynamické šifrovanie GPG</summary>
   <summary xml:lang="sl">Začelje za simetrično šifriranje funkcionalnosti GPG</summary>
