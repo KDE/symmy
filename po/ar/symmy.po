@@ -1,0 +1,170 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the symmy package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: symmy\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-05 12:42+0000\n"
+"PO-Revision-Date: 2025-05-14 18:29+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "زايد السعيدي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zayed.alsaidi@gmail.com"
+
+#: plugins/decryptfileitemaction.cpp:31
+#, kde-format
+msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
+msgid "Decrypt"
+msgstr "فكّ التّعمية"
+
+#: plugins/encryptfileitemaction.cpp:42
+#, kde-format
+msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
+msgid "Encrypt"
+msgstr "عمِّ"
+
+#: src/compositejob.cpp:61
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Encryption operation failed. Please check whether the <application>gpg-"
+"agent</application> process is running."
+msgstr ""
+"فشلت عملية التعمية. يُرجى التحقق مما إذا كانت عملية <application>gpg-agent</"
+"application>> تعمل."
+
+#: src/compositejob.cpp:87
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Decryption operation failed. Please check whether the decryption key is "
+"correct.<nl/>You should also check whether the <application>gpg-agent</"
+"application> process is running."
+msgstr ""
+"فشلت عملية فك التعمية. يرجى التحقق مما إذا كان مفتاح فك التعمية صحيحًا.<nl/"
+">يجب عليك أيضًا التحقق مما إذا كانت عملية <application>gpg-agent</"
+"application>تعمل."
+
+#: src/compositejob.cpp:90
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Could not decrypt the following ciphertexts.<nl/>Please check whether the "
+"decryption key is correct."
+msgstr ""
+"تعذر فك تعمية النصوص المعمى التالية.<nl/>يرجى التحقق مما إذا كان مفتاح فك "
+"التعمية صحيحًا."
+
+#: src/compositejob.cpp:130
+#, kde-format
+msgid "Asking Passphrase"
+msgstr "يسـل هم عبارة مرور"
+
+#: src/compositejob.cpp:134
+#, kde-format
+msgid "Please supply a password or passphrase to be used as encryption key."
+msgstr "يرجى توفير كلمة السر أو عبارة مرور لاستخدامها كمفتاح تعمية."
+
+#: src/compositejob.cpp:139
+#, kde-format
+msgid "Please supply a password or passphrase to be used as decryption key."
+msgstr "يرجى توفير كلمة السر أو عبارة مرور لاستخدامها كمفتاح فك تعمية."
+
+#: src/compositejob.cpp:160
+#, kde-format
+msgctxt "description of an encryption job"
+msgid "Encrypting"
+msgstr "يعمي"
+
+#: src/compositejob.cpp:161
+#, kde-format
+msgctxt "File used as input of the encryption algorithm"
+msgid "Plaintext"
+msgstr "نصّ صِرف"
+
+#: src/compositejob.cpp:162
+#, kde-format
+msgctxt "File created by the encryption algorithm"
+msgid "Ciphertext"
+msgstr "نص مشفر"
+
+#: src/compositejob.cpp:164
+#, kde-format
+msgctxt "description of a decryption job"
+msgid "Decrypting"
+msgstr "يفك تعمية"
+
+#: src/compositejob.cpp:165
+#, kde-format
+msgctxt "File used as input of the decryption algorithm"
+msgid "Ciphertext"
+msgstr "نص مشفر"
+
+#: src/compositejob.cpp:166
+#, kde-format
+msgctxt "File created by the decryption algorithm"
+msgid "Plaintext"
+msgstr "نصّ صِرف"
+
+#: src/main.cpp:27
+#, kde-format
+msgctxt "display name for 'symmy' binary"
+msgid "GPG Symmetric Encryption Frontend"
+msgstr "الواجهة الأمامية للتعمية المتماثلة GPG"
+
+#: src/main.cpp:28
+#, kde-format
+msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
+msgstr "تعمية/فك تعمية ملف واحد أو أكثر باستخدام التشفير المتماثل GPG."
+
+#: src/main.cpp:28
+#, kde-format
+msgid "(c) 2017 Elvis Angelaccio"
+msgstr "(ج) 2017 إلفيس أنجيلاتشيو"
+
+#: src/main.cpp:29
+#, kde-format
+msgid "Elvis Angelaccio"
+msgstr "إلفيس أنجيلاتشيو"
+
+#: src/main.cpp:33
+#, kde-format
+msgid "List of files to encrypt or decrypt."
+msgstr "قائمة الملفات المطلوب تعميتها أو فك تعميتها."
+
+#: src/main.cpp:35
+#, kde-format
+msgid ""
+"Encrypt the given list of files (this is the default if there are no other "
+"options)."
+msgstr ""
+"تعمية قائمة الملفات المحددة (هذا هو الخيار المبدئيّ في حال عدم وجود خيارات "
+"أخرى)."
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Decrypt the given list of files."
+msgstr "فك تعمية قائمة الملفات المعطاة."
+
+#: src/main.cpp:46
+#, kde-format
+msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
+msgid "Error: either --encrypt or --decrypt, not both."
+msgstr "خطأ: إما --encrypt أو --decrypt، وليس كليهما."
