@@ -9,6 +9,7 @@
   <project_license>GPL-2.0+</project_license>
   <extends>org.kde.dolphin</extends>
   <name>Symmy</name>
+  <name xml:lang="ar">سيمى</name>
   <name xml:lang="ca">Symmy</name>
   <name xml:lang="ca-valencia">Symmy</name>
   <name xml:lang="cs">Symmy</name>
@@ -44,6 +45,7 @@
   <name xml:lang="zh-CN">Symmy</name>
   <name xml:lang="zh-TW">Symmy</name>
   <summary>Frontend for the symmetric encryption functionality of GPG</summary>
+  <summary xml:lang="ar">واجهة أمامية لوظيفة التعمية المتماثلة لـ GPG</summary>
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
   <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètrica de GPG</summary>
   <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
@@ -79,6 +81,7 @@
   <summary xml:lang="zh-TW">GPG 對稱加密功能的前端介面</summary>
   <description>
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
+    <p xml:lang="ar">سيمي هو تطبيق بسيط لسطر الأوامر يغلف بشكل جيد وظيفة التعمية المتماثلة لـ GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="ca-valencia">Symmy és una aplicació senzilla de línia d'ordres que ajusta la funcionalitat d'encriptació simètrica de GPG.</p>
     <p xml:lang="de">Symmy ist ein einfaches Befehlszeilenprogramm für die symmetrische GPG-Verschlüsselung.</p>
@@ -112,6 +115,7 @@
     <p xml:lang="x-test">xxSymmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.xx</p>
     <p xml:lang="zh-TW">Symmy 是一個簡單的命令列應用程式，簡化 GPG 的對稱加密功能。</p>
     <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
+    <p xml:lang="ar">كما يوفر سيمي أيضًا التكامل مع مديري ملفات واجهة المستخدم الرسومية مثل دولفين (إجراءات قائمة السياق للتعمية وفك التعمية)، بالإضافة إلى التكامل مع إشعارات بلازما.</p>
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers amb IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="ca-valencia">Symmy també proporciona la integració amb els gestors de fitxers amb IGU com Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions de Plasma.</p>
     <p xml:lang="de">Symmy kann über die Kontextmenüeinträge Verschlüsseln/Entschlüsseln in Dateiverwaltungsprogramme wie Dolphin und in Plasma-Benachrichtigungen integriert werden.</p>
@@ -145,6 +149,7 @@
     <p xml:lang="x-test">xxSymmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.xx</p>
     <p xml:lang="zh-TW">Symmy 也提供與圖形介面檔案管理員的整合（例如 Dolphin 內文選單的加密與介面動作），以及與 Plasma 通知的整合。</p>
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
+    <p xml:lang="ar">يمكنك تتبع تقدم مهمة التعمية/فك التعمية أو إيقافها باستخدام بلازمويد الإشعارات.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, utilitzant el plasmoide de les notificacions.</p>
     <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, utilitzant el plasmoide de les notificacions.</p>
     <p xml:lang="de">Mit dem Benachrichtigungs-Plasmoid können Sie eine Verschlüsselung oder Entschlüsselung überwachen oder abbrechen.</p>
