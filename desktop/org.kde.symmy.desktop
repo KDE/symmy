@@ -5,6 +5,7 @@
 Categories=Qt;KDE;
 Comment=
 GenericName=Frontend for the symmetric encryption functionality of GPG
+GenericName[ar]=واجهة أمامية لوظيفة التعمية المتماثلة لـ GPG
 GenericName[ast]=Frontal pa la funcionalidá de cifráu simétricu de GPG
 GenericName[ca]=Frontal per a la funcionalitat d'encriptatge simètric del GPG
 GenericName[ca@valencia]=Frontal per a la funcionalitat d'encriptació simètrica de GPG
@@ -41,6 +42,7 @@ GenericName[x-test]=xxFrontend for the symmetric encryption functionality of GPG
 GenericName[zh_TW]=GPG 對稱加密功能前端
 Icon=security-high
 Name=Symmy
+Name[ar]=سيمى
 Name[ast]=Symmy
 Name[ca]=Symmy
 Name[ca@valencia]=Symmy
