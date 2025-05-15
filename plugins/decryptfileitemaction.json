@@ -4,6 +4,7 @@
             "application/pgp-encrypted"
         ],
         "Name": "'Decrypt' service menu",
+        "Name[ar]": "قائمة خدمة \"فك التعمية\"",
         "Name[ca@valencia]": "Menú de servei «Desencripta»",
         "Name[ca]": "Menú de servei «Desencripta»",
         "Name[cs]": "'Servisní nabídka 'dešifrování'",
