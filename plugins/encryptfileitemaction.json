@@ -4,6 +4,7 @@
             "application/octet-stream"
         ],
         "Name": "'Encrypt' service menu",
+        "Name[ar]": "قائمة خدمة \"عمِّ\"",
         "Name[ca@valencia]": "Menú de servei «Encripta»",
         "Name[ca]": "Menú de servei «Encripta»",
         "Name[cs]": "'Servisní nabídka 'šifrování'",
