@@ -7,12 +7,13 @@ set (CMAKE_CXX_STANDARD 11)
 set(SYMMY_VERSION 1.0.70)
 project(symmy VERSION ${SYMMY_VERSION})
 
-set(KF5_MIN_VERSION 5.71.0)
+set(KF_MIN_VERSION 6.0.0)
 set(GPGME_MIN_VERSION 1.7.1)
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
+set(KDE_COMPILERSETTINGS_LEVEL 5.82.0)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -20,19 +21,19 @@ include(ECMSetupVersion)
 include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 
-find_package(Qt5 CONFIG REQUIRED
+find_package(Qt6 CONFIG REQUIRED
     Core
     Gui
     Widgets)
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     KIO
     I18n
     WidgetsAddons)
 
 find_package(Gpgmepp ${GPGME_MIN_VERSION} CONFIG REQUIRED)
-find_package(QGpgme ${GPGME_MIN_VERSION} CONFIG REQUIRED)
+find_package(QGpgmeQt6 ${GPGME_MIN_VERSION} CONFIG REQUIRED)
 
 ecm_setup_version(PROJECT
     VARIABLE_PREFIX SYMMY

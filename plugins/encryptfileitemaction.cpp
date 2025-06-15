@@ -11,13 +11,13 @@
 #include <QApplication>
 #include <QMimeDatabase>
 #include <QUrl>
+#include <QWidget>
 
 #include <KDialogJobUiDelegate>
 #include <KFileItemListProperties>
 #include <KIO/ApplicationLauncherJob>
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KRun>
 #include <KService>
 
 K_PLUGIN_FACTORY_WITH_JSON(EncryptFileItemActionFactory, "encryptfileitemaction.json", registerPlugin<EncryptFileItemAction>();)

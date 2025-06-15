@@ -10,6 +10,7 @@
 #include <QAction>
 #include <QApplication>
 #include <QUrl>
+#include <QWidget>
 
 #include <KDialogJobUiDelegate>
 #include <KFileItemListProperties>

@@ -18,12 +18,12 @@ ecm_qt_declare_logging_category(symmy_SRCS
 add_executable(symmy ${symmy_SRCS})
 
 target_link_libraries(symmy
-    Qt5::Widgets
-    KF5::CoreAddons
-    KF5::KIOCore
-    KF5::I18n
-    KF5::WidgetsAddons
-    QGpgme
+    Qt6::Widgets
+    KF6::CoreAddons
+    KF6::KIOCore
+    KF6::I18n
+    KF6::WidgetsAddons
+    QGpgmeQt6
     gpg-error)
 
 install(TARGETS symmy DESTINATION ${KDE_INSTALL_BINDIR})
