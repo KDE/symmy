@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:42+0000\n"
+"POT-Creation-Date: 2025-06-16 00:46+0000\n"
 "PO-Revision-Date: 2024-04-23 19:31\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/symmy/symmy.pot\n"
-"X-Crowdin-File-ID: 10486\n"
+"X-Crowdin-File: /kf6-trunk/messages/symmy/symmy.pot\n"
+"X-Crowdin-File-ID: 57986\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: plugins/decryptfileitemaction.cpp:31
+#: plugins/decryptfileitemaction.cpp:32
 #, kde-format
 msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
 msgid "Decrypt"

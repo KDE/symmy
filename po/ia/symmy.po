@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:42+0000\n"
+"POT-Creation-Date: 2025-06-16 00:46+0000\n"
 "PO-Revision-Date: 2021-12-13 23:24+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "g.sora@tiscali.it"
 
-#: plugins/decryptfileitemaction.cpp:31
+#: plugins/decryptfileitemaction.cpp:32
 #, kde-format
 msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
 msgid "Decrypt"
