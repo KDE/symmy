@@ -77,7 +77,7 @@
   <summary xml:lang="sk">Frontend pre dynamické šifrovanie GPG</summary>
   <summary xml:lang="sl">Začelje za simetrično šifriranje funkcionalnosti GPG</summary>
   <summary xml:lang="sv">Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG</summary>
-  <summary xml:lang="tr">GPG'nin simetrik şifreleme işlevi için ön yüz</summary>
+  <summary xml:lang="tr">GPG’nin simetrik şifreleme işlevi için ön yüz</summary>
   <summary xml:lang="uk">Оболонка до можливостей з симетричного шифрування у GPG</summary>
   <summary xml:lang="x-test">xxFrontend for the symmetric encryption functionality of GPGxx</summary>
   <summary xml:lang="zh-TW">GPG 對稱加密功能的前端介面</summary>
@@ -113,7 +113,7 @@
     <p xml:lang="sk">Symmy je jednoduchá konzolová aplikácia ktorá pekne zalomí symetrickú funkcionalitu GPG.</p>
     <p xml:lang="sl">Symmy je preprosta aplikacija v ukazni vrstici, ki prijazno ponuja simetrično šifriranje funkcionalnosti GPG.</p>
     <p xml:lang="sv">Symmy är ett enkelt kommandoradsprogram som omsluter den symmetriska krypteringsfunktionaliteten i GPG på ett snyggt sätt.</p>
-    <p xml:lang="tr">Symmy, GPG'nin simetrik şifreleme işlevini güzelce sunan bir komut satırı uygulamasıdır.</p>
+    <p xml:lang="tr">Symmy, GPG’nin simetrik şifreleme işlevini güzelce sunan bir komut satırı uygulamasıdır.</p>
     <p xml:lang="uk">Symmy — проста програма із інтерфейсом командного рядка, яка є зручною обгорткою до функціональних можливостей із симетричного шифрування GPG.</p>
     <p xml:lang="x-test">xxSymmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.xx</p>
     <p xml:lang="zh-TW">Symmy 是一個簡單的命令列應用程式，簡化 GPG 的對稱加密功能。</p>
@@ -183,7 +183,7 @@
     <p xml:lang="sk">Môžete sledovať priebeh šifrovania a dešifrovania alebo úlohu zrušiť pomocou plazmoidu notifikácií.</p>
     <p xml:lang="sl">S plazmoidom za obveščanja lahko sledite napredku opravila šifriranja/dešifriranja ali ga prekinete.</p>
     <p xml:lang="sv">Förloppet för krypterings- eller avkrypteringsjobb går att följa och de kan avbrytas med Plasmoiden för underrättelser.</p>
-    <p xml:lang="tr">Bildirim Plasmoid'ini kullanarak şifreleme/şifre çözme işlerinin durumunu izleyebilir, onları sonlandırabilirsiniz.</p>
+    <p xml:lang="tr">Bildirim Plasmoid’ini kullanarak şifreleme/şifre çözme işlerinin durumunu izleyebilir, onları sonlandırabilirsiniz.</p>
     <p xml:lang="uk">Ви зможете стежити за поступом завдання із шифрування або розшифровування і переривати його за допомогою плазмоїда сповіщень.</p>
     <p xml:lang="x-test">xxYou can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.xx</p>
     <p xml:lang="zh-TW">您可以用通知 Plasma 元件來追蹤加密/解密工作的進度，或是強制中止它。</p>
