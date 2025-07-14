@@ -156,7 +156,7 @@ msgid ""
 "Encrypt the given list of files (this is the default if there are no other "
 "options)."
 msgstr ""
-"მოცემული სიიდან ფაილების დაშიფვრა (ეს ნაგულისხმები ქმედებაა, თუ სხვა რამაც "
+"მოცემული სიიდან ფაილების დაშიფვრა (ეს ნაგულისხმევი ქმედებაა, თუ სხვა რამაც "
 "არ ხდება)."
 
 #: src/main.cpp:37
