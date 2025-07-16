@@ -1,44 +1,43 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the symmy package.
-# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-01-05 02:44+0100\n"
-"PO-Revision-Date: 2025-05-14 18:29+0400\n"
-"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
-"Language-Team: ar\n"
-"Language: ar\n"
+"PO-Revision-Date: 2025-07-13 10:31+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "زايد السعيدي"
+msgstr "צוות התרגום של KDE ישראל"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "zayed.alsaidi@gmail.com"
+msgstr "kde-l10n-he@kde.org"
 
 #: plugins/decryptfileitemaction.cpp:31
 #, kde-format
 msgctxt "@action:inmenu Decrypt action in Dolphin context menu"
 msgid "Decrypt"
-msgstr "فكّ التّعمية"
+msgstr "פענוח"
 
 #: plugins/encryptfileitemaction.cpp:42
 #, kde-format
 msgctxt "@action:inmenu Encrypt action in Dolphin context menu"
 msgid "Encrypt"
-msgstr "عمِّ"
+msgstr "הצפנה"
 
 #: src/compositejob.cpp:58
 #, kde-kuit-format
@@ -47,8 +46,8 @@ msgid ""
 "Encryption operation failed. Please check whether the <application>gpg-"
 "agent</application> process is running."
 msgstr ""
-"فشلت عملية التعمية. يُرجى التحقق مما إذا كانت عملية <application>gpg-agent</"
-"application>> تعمل."
+"פעולת ההצפנה נכשלה. נא לבדוק האם התהליך <application>gpg-agent</application> "
+"פעיל."
 
 #: src/compositejob.cpp:84
 #, kde-kuit-format
@@ -58,9 +57,8 @@ msgid ""
 "correct.<nl/>You should also check whether the <application>gpg-agent</"
 "application> process is running."
 msgstr ""
-"فشلت عملية فك التعمية. يرجى التحقق مما إذا كان مفتاح فك التعمية صحيحًا.<nl/"
-">يجب عليك أيضًا التحقق مما إذا كانت عملية <application>gpg-agent</"
-"application>تعمل."
+"פעולת הפענוח נכשלה. נא לבדוק האם מפתח הפענוח נכון.<nl/>צריך גם לבדוק האם "
+"התהליך <application>gpg-agent</application> פעיל."
 
 #: src/compositejob.cpp:87
 #, kde-kuit-format
@@ -69,102 +67,99 @@ msgid ""
 "Could not decrypt the following ciphertexts.<nl/>Please check whether the "
 "decryption key is correct."
 msgstr ""
-"تعذر فك تعمية النصوص المعمى التالية.<nl/>يرجى التحقق مما إذا كان مفتاح فك "
-"التعمية صحيحًا."
+"לא ניתן לפענח את הטקסטים המוצפנים הבאים.<nl/>נא לבדוק האם מפתח הפענוח נכון."
 
 #: src/compositejob.cpp:127
 #, kde-format
 msgid "Asking Passphrase"
-msgstr "يسـل هم عبارة مرور"
+msgstr "בקשת מילת צופן"
 
 #: src/compositejob.cpp:131
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
-msgstr "يرجى توفير كلمة السر أو عبارة مرور لاستخدامها كمفتاح تعمية."
+msgstr "נא לספק סיסמה או מילת צופן שישמשו כמפתח הצפנה."
 
 #: src/compositejob.cpp:136
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
-msgstr "يرجى توفير كلمة السر أو عبارة مرور لاستخدامها كمفتاح فك تعمية."
+msgstr "נא לספק סיסמה או מילת צופן שישמשו כמפתח פענוח."
 
 #: src/compositejob.cpp:157
 #, kde-format
 msgctxt "description of an encryption job"
 msgid "Encrypting"
-msgstr "يعمي"
+msgstr "מתבצעת הצפנה"
 
 #: src/compositejob.cpp:158
 #, kde-format
 msgctxt "File used as input of the encryption algorithm"
 msgid "Plaintext"
-msgstr "نصّ صِرف"
+msgstr "טקסט גלוי"
 
 #: src/compositejob.cpp:159
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
-msgstr "نص مشفر"
+msgstr "טקסט מוצפן"
 
 #: src/compositejob.cpp:161
 #, kde-format
 msgctxt "description of a decryption job"
 msgid "Decrypting"
-msgstr "يفك تعمية"
+msgstr "מתבצע פענוח"
 
 #: src/compositejob.cpp:162
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
-msgstr "نص مشفر"
+msgstr "טקסט מוצפן"
 
 #: src/compositejob.cpp:163
 #, kde-format
 msgctxt "File created by the decryption algorithm"
 msgid "Plaintext"
-msgstr "نصّ صِرف"
+msgstr "טקסט גלוי"
 
 #: src/main.cpp:25
 #, kde-format
 msgctxt "display name for 'symmy' binary"
 msgid "GPG Symmetric Encryption Frontend"
-msgstr "الواجهة الأمامية للتعمية المتماثلة GPG"
+msgstr "ממשק הצפנה סימטרית ל־GPG"
 
 #: src/main.cpp:26
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
-msgstr "تعمية/فك تعمية ملف واحد أو أكثر باستخدام التشفير المتماثل GPG."
+msgstr "הצפנת/פענוח קובץ או יותר באמצעות הצפנת GPG סימטרית."
 
 #: src/main.cpp:26
 #, kde-format
 msgid "(c) 2017 Elvis Angelaccio"
-msgstr "(ج) 2017 إلفيس أنجيلاتشيو"
+msgstr "‏(c) 2017 אלביס אנגלצ׳יו"
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Elvis Angelaccio"
-msgstr "إلفيس أنجيلاتشيو"
+msgstr "אלביס אנגלצ׳יו"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "List of files to encrypt or decrypt."
-msgstr "قائمة الملفات المطلوب تعميتها أو فك تعميتها."
+msgstr "רשימת הקבצים להצפנה או פענוח."
 
 #: src/main.cpp:33
 #, kde-format
 msgid ""
 "Encrypt the given list of files (this is the default if there are no other "
 "options)."
-msgstr ""
-"تعمية قائمة الملفات المحددة (هذا هو الخيار المبدئيّ في حال عدم وجود خيارات "
-"أخرى)."
+msgstr "הצפנת רשימת הקבצים שסופקה (זאת ברירת המחדל אם אין אפשרויות אחרות)."
 
 #: src/main.cpp:35
 #, kde-format
 msgid "Decrypt the given list of files."
-msgstr "فك تعمية قائمة الملفات المعطاة."
+msgstr "פענוח רשימת הקבצים שסופקה."
 
 #: src/main.cpp:44
 #, kde-format
 msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
 msgid "Error: either --encrypt or --decrypt, not both."
-msgstr "خطأ: إما --encrypt أو --decrypt، وليس كليهما."
+msgstr "שגיאה: אמור להיות ‎--encrypt או ‎--decrypt, אבל לא את שניהם."
