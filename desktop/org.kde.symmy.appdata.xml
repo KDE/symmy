@@ -23,6 +23,7 @@
   <name xml:lang="fi">Symmy</name>
   <name xml:lang="fr">Symmy</name>
   <name xml:lang="gl">Symmy</name>
+  <name xml:lang="he">Symmy</name>
   <name xml:lang="hu">Symmy</name>
   <name xml:lang="ia">Symmy</name>
   <name xml:lang="id">Symmy</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="fi">GPG:n symmetrisen salauksen käyttöliittymä</summary>
   <summary xml:lang="fr">Interface pour les fonctionnalités de chiffrement symétrique de « GPG »</summary>
   <summary xml:lang="gl">Interface para a funcionalidade de cifraxe simétrica de GPG</summary>
+  <summary xml:lang="he">ממשק משתמש לפונקציית ההצפנה הסימטרית של GPG</summary>
   <summary xml:lang="hu">Felület a GPG szimmetrikus titkosítási funkcióihoz</summary>
   <summary xml:lang="ia">Interfacie per le functionalitate de cryptation symmetric de GPG</summary>
   <summary xml:lang="id">Frontend untuk fungsionalitas enkripsi simetrik GPG</summary>
@@ -96,6 +98,7 @@
     <p xml:lang="fi">Symmy on yksinkertainen komentorivisovellus, joka paketoi GPG:n symmetrisen salaustoiminnon.</p>
     <p xml:lang="fr">Symmy est une application simple en ligne de commande qui encapsule élégamment les fonctionnalités de chiffrement symétrique de « GPG ».</p>
     <p xml:lang="gl">Symmy é unha aplicación sinxela da liña de ordes que expón a funcionalidade de cifraxe simétrica de GPG.</p>
+    <p xml:lang="he">Symmy הוא יישום שורת פקודות פשוט שעוטף בצורה נוחה את פונקצייה ההצפנה הסימטרית של GPG.</p>
     <p xml:lang="hu">A Symmy egy egyszerű parancssori alkalmazás, amely könnyen kezelhetően csomagolja a GPG szimmetrikus titkosítási funkcióit.</p>
     <p xml:lang="ia">Simmy es un simple application de linea de commando que agradabilemente inveloppa le functionalitate de cryptation symmetric de GPS.</p>
     <p xml:lang="id">Symmy adalah sebuah aplikasi command-line sederhana yang mengemas secara baik si fungsionalitas enkripsi simetris GPG.</p>
@@ -130,6 +133,7 @@
     <p xml:lang="fi">Symmy tarjoaa myös integroinnin graafisiin tiedostonhallintaohjelmiin kuten Dolphiniin (Salaa- ja Pura salaus -kontekstivalikkotoiminnot) sekä Plasma-ilmoituksiin.</p>
     <p xml:lang="fr">Symmy s'intègre également aux gestionnaires de fichiers graphiques comme Dolphin (actions de menus contextuels Chiffrer et Déchiffrer), ainsi qu'aux notifications du bureau Plasma.</p>
     <p xml:lang="gl">Symmy tamén fornece integración con xestores de ficheiros gráficos como Dolphin (as accións «Cifrar» e «Descifrar» do menú de contexto) e coas notificacións de Plasma.</p>
+    <p xml:lang="he">Symmy גם מספקת שילוב מול מנהלי קבצים עם ממשק משתמש כגון Dolphin (פעולות תפריט הקשר להצפנה ופענוח), לרבות שילוב מול ההתראות של פלזמה.</p>
     <p xml:lang="hu">A Symmy további integrálódik a grafikus fájlkezelőkbe, például a Dolphinba (Titkosítás és Visszafejtés műveletek a helyi menüben), valamint a Plasma értesítéseibe.</p>
     <p xml:lang="ia">Simmy anque provide integration con gerentes de file de GUI tal como Dolphin (actiones de menu de contexto de cryptar e decryptar) tanto ben como integration con notificationes de Plasma.</p>
     <p xml:lang="id">Symmy juga menyediakan integrasi dengan pengelola file GUI sepertihalnya Dolphin (aksi menu konteks Enkripsi dan Dekripsi), serta integrasi dengan notifikasi Plasma.</p>
@@ -164,6 +168,7 @@
     <p xml:lang="fi">Salaus- tai purkutyön edistymistä voi seurata tai työn tappaa ilmoitussovelmasta.</p>
     <p xml:lang="fr">Vous pouvez suivre l'avancée d'une tâche de chiffrement / déchiffrement ou l'annuler, grâce au composant graphique de notifications.</p>
     <p xml:lang="gl">Pode facer un seguimento do progreso dunha tarefa de cifraxe ou descifraxe ou cancelara mediante o trebello de notificacións.</p>
+    <p xml:lang="he">אפשר לעקוב אחר התקדמות משימת ההצפנה/פענוח או לחסל אותה, בעזרת פלזמואיד ההתראות.</p>
     <p xml:lang="hu">Követheti a titkosítási és visszafejtési folyamatokat és ki is lőheti azokat az értesítések használatával.</p>
     <p xml:lang="ia">Tu pote traciar le progresso de un labor de cryptar(decryptar o  occider lo, usante le plasmoid de notificationes.</p>
     <p xml:lang="id">Kamu bisa melacak progres tugas enkripsi/dekripsi atau mematikannya, menggunakan plasmoid notifikasi.</p>
