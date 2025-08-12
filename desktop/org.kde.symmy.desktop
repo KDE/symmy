@@ -78,3 +78,4 @@ Name[zh_TW]=Symmy
 StartupNotify=false
 Terminal=false
 Type=Application
+Exec=symmy
