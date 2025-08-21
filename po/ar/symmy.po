@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: symmy\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-01-05 02:44+0100\n"
-"PO-Revision-Date: 2025-05-14 18:29+0400\n"
+"PO-Revision-Date: 2025-08-20 21:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -132,7 +132,7 @@ msgstr "الواجهة الأمامية للتعمية المتماثلة GPG"
 #: src/main.cpp:26
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
-msgstr "تعمية/فك تعمية ملف واحد أو أكثر باستخدام التشفير المتماثل GPG."
+msgstr "تعمية/فك تعمية ملف واحد أو أكثر باستخدام التعمية المتماثلة GPG."
 
 #: src/main.cpp:26
 #, kde-format
