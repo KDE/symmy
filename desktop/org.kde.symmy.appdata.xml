@@ -43,7 +43,6 @@
   <name xml:lang="sv">Symmy</name>
   <name xml:lang="tr">Symmy</name>
   <name xml:lang="uk">Symmy</name>
-  <name xml:lang="x-test">xxSymmyxx</name>
   <name xml:lang="zh-CN">Symmy</name>
   <name xml:lang="zh-TW">Symmy</name>
   <summary>Frontend for the symmetric encryption functionality of GPG</summary>
@@ -81,7 +80,6 @@
   <summary xml:lang="sv">Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG</summary>
   <summary xml:lang="tr">GPG'nin simetrik şifreleme işlevi için ön yüz</summary>
   <summary xml:lang="uk">Оболонка до можливостей з симетричного шифрування у GPG</summary>
-  <summary xml:lang="x-test">xxFrontend for the symmetric encryption functionality of GPGxx</summary>
   <summary xml:lang="zh-TW">GPG 對稱加密功能的前端介面</summary>
   <description>
     <p>Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
@@ -117,7 +115,6 @@
     <p xml:lang="sv">Symmy är ett enkelt kommandoradsprogram som omsluter den symmetriska krypteringsfunktionaliteten i GPG på ett snyggt sätt.</p>
     <p xml:lang="tr">Symmy, GPG'nin simetrik şifreleme işlevini güzelce sunan bir komut satırı uygulamasıdır.</p>
     <p xml:lang="uk">Symmy — проста програма із інтерфейсом командного рядка, яка є зручною обгорткою до функціональних можливостей із симетричного шифрування GPG.</p>
-    <p xml:lang="x-test">xxSymmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.xx</p>
     <p xml:lang="zh-TW">Symmy 是一個簡單的命令列應用程式，簡化 GPG 的對稱加密功能。</p>
     <p>Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
     <p xml:lang="ar">كما يوفر سيمي أيضًا التكامل مع مديري ملفات واجهة المستخدم الرسومية مثل دولفين (إجراءات قائمة السياق للتعمية وفك التعمية)، بالإضافة إلى التكامل مع إشعارات بلازما.</p>
@@ -152,7 +149,6 @@
     <p xml:lang="sv">Symmy erbjuder också integrering med grafiska filhanterare som Dolphin (sammanhangsberoende menyalternativ Kryptera och Avkryptera), samt integrering med underrättelser i Plasma.</p>
     <p xml:lang="tr">Symmy, aynı zamanda Dolphin gibi dosya yöneticileriyle (Şifrele ve Şifre Çöz bağlam menüsü eylemleri) ve Plasma bildirimleriyle güzelce tümleşir.</p>
     <p xml:lang="uk">У Symmy передбачено можливості інтеграції до програм із графічним інтерфейсом для керування файлами, зокрема Dolphin (пункти контекстного меню «Зашифрувати» і «Розшифрувати»), а також інтеграцію із системою сповіщень Плазми.</p>
-    <p xml:lang="x-test">xxSymmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.xx</p>
     <p xml:lang="zh-TW">Symmy 也提供與圖形介面檔案管理員的整合（例如 Dolphin 內文選單的加密與介面動作），以及與 Plasma 通知的整合。</p>
     <p>You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
     <p xml:lang="ar">يمكنك تتبع تقدم مهمة التعمية/فك التعمية أو إيقافها باستخدام بلازمويد الإشعارات.</p>
@@ -187,7 +183,6 @@
     <p xml:lang="sv">Förloppet för krypterings- eller avkrypteringsjobb går att följa och de kan avbrytas med Plasmoiden för underrättelser.</p>
     <p xml:lang="tr">Bildirim Plasmoid'ini kullanarak şifreleme/şifre çözme işlerinin durumunu izleyebilir, onları sonlandırabilirsiniz.</p>
     <p xml:lang="uk">Ви зможете стежити за поступом завдання із шифрування або розшифровування і переривати його за допомогою плазмоїда сповіщень.</p>
-    <p xml:lang="x-test">xxYou can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.xx</p>
     <p xml:lang="zh-TW">您可以用通知 Plasma 元件來追蹤加密/解密工作的進度，或是強制中止它。</p>
   </description>
   <provides>
