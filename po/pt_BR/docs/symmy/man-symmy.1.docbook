@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Brazilian-Portuguese "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manual do Usuário do Symmy</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Escreveu este programa e esta página de manual</para
+></personblurb
+> </author>
+<date
+>25/11/2017</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Interface para a funcionalidade de criptografia simétrica do GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>OPÇÕES</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>ARQUIVOS</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>DESCRIÇÃO</title>
+<para
+>O <command
+>symmy</command
+> é um aplicativo simples que pode ser usado para criptografar ou descriptografar um ou mais arquivos usando a funcionalidade de criptografia simétrica do GPG. Um arquivo criptografado pelo <command
+>symmy</command
+> pode ser descriptografado por qualquer pessoa que tenha acesso ao programa GPG e à chave de criptografia. </para>
+<para
+>O <command
+>symmy</command
+> também pode ser usado a partir do &dolphin; ou a visualização de pasta do &plasma; graças aos itens <guimenuitem
+>Criptografar</guimenuitem
+> e <guimenuitem
+>Descriptografar</guimenuitem
+> no menu de contexto. </para>
+</refsect1>
+
+<refsect1>
+<title
+>CRIPTOGRAFIA</title>
+<para
+>Você pode criptografar um ou mais arquivos digitando seus caminhos após a opção <option
+>encrypt</option
+>. Você também pode selecioná-los no &dolphin; ou na visualização de pastas do &plasma; e clicar na entrada <guimenuitem
+>Criptografar</guimenuitem
+> no menu de contexto. </para>
+<para
+>Observe que não é possível criptografar uma pasta. Se precisar fazer isso, você deve compactar a pasta e, em seguida, criptografar o arquivo resultante. Também não é possível criptografar arquivos remotos ou arquivos que já estejam criptografados. </para>
+
+<refsect2>
+<title
+>Escolher uma chave de criptografia</title>
+<para
+>O <command
+>symmy</command
+> solicitará uma senha (ou frase secreta) que será usada como chave de criptografia para <emphasis
+>todos</emphasis
+> os arquivos selecionados. Você deve escolher uma chave de criptografia forte e armazená-la em um local seguro (como um gerenciador de senhas). Se precisar enviar a chave para outra pessoa, faça isso por um canal seguro (por exemplo, encontrando-se pessoalmente). </para>
+</refsect2>
+
+<refsect2>
+<title
+>Requisitos do GPG</title>
+<para
+>O <command
+>symmy</command
+> usa o GPG para realizar a criptografia propriamente dita, portanto, pressupõe que o processo <command
+>gpg-agent</command
+> esteja em execução e devidamente configurado. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Gerenciar uma operação de criptografia</title>
+<para
+>A operação de criptografia levará algum tempo, dependendo do número de arquivos e de seus tamanhos. Você pode acompanhar o progresso da operação no applet de notificação fornecido pelo &plasma;. No plasmoide de notificação, você também pode cancelar a operação de criptografia, se necessário. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>DESCRIPTOGRAFIA</title>
+<para
+>Você pode descriptografar um ou mais arquivos criptografados digitando seus caminhos após a opção <option
+>decrypt</option
+>. Você também pode selecioná-los no &dolphin; ou na visualização de pastas do &plasma; e clicar na entrada <guimenuitem
+>Descriptografar</guimenuitem
+> no menu de contexto. Observe que esta entrada ficará visível somente ao selecionar arquivos criptografados. </para>
+
+<refsect2>
+<title
+>Gerenciar uma operação de descriptografia</title>
+<para
+>A operação de descriptografia levará algum tempo, dependendo do número de arquivos e de seus tamanhos. Você pode acompanhar o progresso da operação no applet de notificação fornecido pelo &plasma;. No plasmoide de notificação, você também pode cancelar a operação de descriptografia, se necessário. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>OPÇÕES</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Criptografa a lista de arquivos fornecida após solicitar uma senha. Esta opção é definida implicitamente se não houver outras opções. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Descriptografa a lista de arquivos fornecida após solicitar a chave de descriptografia. Observe que <option
+>encrypt</option
+> e <option
+>decrypt</option
+> são mutuamente exclusivas. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Mostra um breve resumo e descrição das opções da linha de comando. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Exibe a versão deste programa. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Exibe informações sobre o autor deste programa. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Exibe informações sobre a licença deste programa. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>
