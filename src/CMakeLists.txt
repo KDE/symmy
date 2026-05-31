@@ -23,7 +23,6 @@ target_link_libraries(symmy
     KF6::KIOCore
     KF6::I18n
     KF6::WidgetsAddons
-    QGpgmeQt6
-    gpg-error)
+    QGpgmeQt6)
 
 install(TARGETS symmy DESTINATION ${KDE_INSTALL_BINDIR})
