@@ -42,6 +42,7 @@
   <name xml:lang="sl">Symmy</name>
   <name xml:lang="sv">Symmy</name>
   <name xml:lang="tr">Symmy</name>
+  <name xml:lang="ug">Symmy</name>
   <name xml:lang="uk">Symmy</name>
   <name xml:lang="zh-CN">Symmy</name>
   <name xml:lang="zh-TW">Symmy</name>
@@ -79,6 +80,7 @@
   <summary xml:lang="sl">Začelje za simetrično šifriranje funkcionalnosti GPG</summary>
   <summary xml:lang="sv">Gränssnitt för den symmetriska krypteringsfunktionaliteten i GPG</summary>
   <summary xml:lang="tr">GPG’nin simetrik şifreleme işlevi için ön yüz</summary>
+  <summary xml:lang="ug">GPG نىڭ سىممېتىرىك شىفىرلاش ئىقتىدارى ئالدى ئۇچى</summary>
   <summary xml:lang="uk">Оболонка до можливостей з симетричного шифрування у GPG</summary>
   <summary xml:lang="zh-TW">GPG 對稱加密功能的前端介面</summary>
   <description>
