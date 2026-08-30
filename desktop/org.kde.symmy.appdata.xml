@@ -49,7 +49,7 @@
   <summary xml:lang="ar">واجهة أمامية لوظيفة التعمية المتماثلة لـ GPG</summary>
   <summary xml:lang="ca">Frontal per a la funcionalitat d'encriptatge simètric del GPG</summary>
   <summary xml:lang="ca-valencia">Frontal per a la funcionalitat d'encriptació simètrica de GPG</summary>
-  <summary xml:lang="cs">Rozhraní pro symetrickou funkčnost šifrování GPG</summary>
+  <summary xml:lang="cs">Uživatelské rozhraní pro funkci symetrického šifrování v GPG</summary>
   <summary xml:lang="de">Benutzeroberfläche für die symmetrische GPG-Verschlüsselung</summary>
   <summary xml:lang="el">Περιβάλλον χρήσης για τη λειτουργία συμμετρικής κρυπτογραφίας του GPG</summary>
   <summary xml:lang="en-GB">Frontend for the symmetric encryption functionality of GPG</summary>
@@ -86,6 +86,7 @@
     <p xml:lang="ar">سيمي هو تطبيق بسيط لسطر الأوامر يغلف بشكل جيد وظيفة التعمية المتماثلة لـ GPG.</p>
     <p xml:lang="ca">El Symmy és una aplicació senzilla de línia d'ordres que embolcalla la funcionalitat d'encriptatge simètric del GPG.</p>
     <p xml:lang="ca-valencia">Symmy és una aplicació senzilla de línia d'ordres que ajusta la funcionalitat d'encriptació simètrica de GPG.</p>
+    <p xml:lang="cs">Symmy je jednoduchá aplikace pro příkazový řádek, která elegantně využívá symetrické šifrování v rámci GPG.</p>
     <p xml:lang="de">Symmy ist ein einfaches Befehlszeilenprogramm für die symmetrische GPG-Verschlüsselung.</p>
     <p xml:lang="el">Το Symmy είναι μια απλή εφαρμογή από τη γραμμή εντολών, η οποία καλύπτει κομψά τη λειτουργία συμμετρικής κρυπτογραφίας του GPG.</p>
     <p xml:lang="en-GB">Symmy is a simple command-line application that nicely wraps the symmetric encryption functionality of GPG.</p>
@@ -120,6 +121,7 @@
     <p xml:lang="ar">كما يوفر سيمي أيضًا التكامل مع مديري ملفات واجهة المستخدم الرسومية مثل دولفين (إجراءات قائمة السياق للتعمية وفك التعمية)، بالإضافة إلى التكامل مع إشعارات بلازما.</p>
     <p xml:lang="ca">El Symmy també proporciona la integració amb els gestors de fitxers amb IGU com el Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions del Plasma.</p>
     <p xml:lang="ca-valencia">Symmy també proporciona la integració amb els gestors de fitxers amb IGU com Dolphin (accions de menú contextual Encripta i Desencripta), així com la integració amb les notificacions de Plasma.</p>
+    <p xml:lang="cs">Symmy také nabízí integraci s grafickými správci souborů, jako je například Dolphin (položky kontextového menu pro šifrování a dešifrování), a také integraci s oznámeními v Plasma.</p>
     <p xml:lang="de">Symmy kann über die Kontextmenüeinträge Verschlüsseln/Entschlüsseln in Dateiverwaltungsprogramme wie Dolphin und in Plasma-Benachrichtigungen integriert werden.</p>
     <p xml:lang="el">Το Symmy παρέχει και ενσωμάτωση με γραφικού περιβάλλοντος διαχειριστές αρχείων όπως το Dolphin (ενέργειες κρυπτογράφησης και αποκρυπτογράφησης), καθώς επίσης και ενσωμάτωση με τις ειδοποιήσεις Plasma.</p>
     <p xml:lang="en-GB">Symmy also provides integration with GUI file managers such as Dolphin (Encrypt and Decrypt context menu actions), as well as integration with Plasma notifications.</p>
@@ -154,6 +156,7 @@
     <p xml:lang="ar">يمكنك تتبع تقدم مهمة التعمية/فك التعمية أو إيقافها باستخدام بلازمويد الإشعارات.</p>
     <p xml:lang="ca">Podeu seguir el progrés d'un treball d'encriptatge/desencriptatge o matar-lo, utilitzant el plasmoide de les notificacions.</p>
     <p xml:lang="ca-valencia">Podeu seguir el progrés d'un treball d'encriptació/desencriptació o matar-lo, utilitzant el plasmoide de les notificacions.</p>
+    <p xml:lang="cs">Pomocí plasmoidu oznámení můžete sledovat průběh úlohy šifrování/dešifrování nebo ji ukončit.</p>
     <p xml:lang="de">Mit dem Benachrichtigungs-Plasmoid können Sie eine Verschlüsselung oder Entschlüsselung überwachen oder abbrechen.</p>
     <p xml:lang="el">Μπορείτε να παρακολουθείτε την πρόοδο μιας εργασίας (απο)κρυπτογράφησης ή να τη διαγράψετε με χρήση του πλασμοειδούς για τις ειδοποιήσεις.</p>
     <p xml:lang="en-GB">You can track the progress of an encryption/decryption job or kill it, using the notifications plasmoid.</p>
