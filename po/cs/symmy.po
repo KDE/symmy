@@ -1,31 +1,32 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Vit Pelcak <vit@pelcak.org>, 2018.
+# SPDX-FileCopyrightText: 2026 Libor Filipek <libor.filipek@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2018-01-03 18:44+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-08-30 11:40+0200\n"
+"Last-Translator: Libor Filipek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vít Pelčák"
+msgstr "Vít Pelčák,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "vit@pelcak.org"
+msgstr "vit@pelcak.org,libor.filipek@gmail.com"
 
 #: plugins/decryptfileitemaction.cpp:32
 #, kde-format
@@ -46,6 +47,8 @@ msgid ""
 "Encryption operation failed. Please check whether the <application>gpg-"
 "agent</application> process is running."
 msgstr ""
+"Šifrování se nezdařilo. Zkontrolujte, zda běží proces <application>gpg-"
+"agent</application>."
 
 #: src/compositejob.cpp:87
 #, kde-kuit-format
@@ -55,6 +58,9 @@ msgid ""
 "correct.<nl/>You should also check whether the <application>gpg-agent</"
 "application> process is running."
 msgstr ""
+"Operace dešifrování se nezdařila. Zkontrolujte, zda je dešifrovací klíč "
+"správný.<nl/>Měli byste také zkontrolovat, zda běží proces <application>gpg-"
+"agent</application>."
 
 #: src/compositejob.cpp:90
 #, kde-kuit-format
@@ -63,21 +69,27 @@ msgid ""
 "Could not decrypt the following ciphertexts.<nl/>Please check whether the "
 "decryption key is correct."
 msgstr ""
+"Následující šifrované texty se nepodařilo dešifrovat.<nl/>Zkontrolujte "
+"prosím, zda je dešifrovací klíč správný."
 
 #: src/compositejob.cpp:130
 #, kde-format
 msgid "Asking Passphrase"
-msgstr ""
+msgstr "Požadavek na heslo"
 
 #: src/compositejob.cpp:134
 #, kde-format
 msgid "Please supply a password or passphrase to be used as encryption key."
 msgstr ""
+"Zadejte prosím heslo nebo heslovou frázi, která bude použita jako šifrovací "
+"klíč."
 
 #: src/compositejob.cpp:139
 #, kde-format
 msgid "Please supply a password or passphrase to be used as decryption key."
 msgstr ""
+"Zadejte prosím heslo nebo heslovou frázi, která bude použita jako "
+"dešifrovací klíč."
 
 #: src/compositejob.cpp:160
 #, kde-format
@@ -95,7 +107,7 @@ msgstr "Čistý text"
 #, kde-format
 msgctxt "File created by the encryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Šifrovaný text"
 
 #: src/compositejob.cpp:164
 #, kde-format
@@ -107,7 +119,7 @@ msgstr "Dešifrování"
 #, kde-format
 msgctxt "File used as input of the decryption algorithm"
 msgid "Ciphertext"
-msgstr ""
+msgstr "Šifrovaný text"
 
 #: src/compositejob.cpp:166
 #, kde-format
@@ -119,12 +131,14 @@ msgstr "Čistý text"
 #, kde-format
 msgctxt "display name for 'symmy' binary"
 msgid "GPG Symmetric Encryption Frontend"
-msgstr ""
+msgstr "Rozhraní pro symetrické šifrování GPG"
 
 #: src/main.cpp:28
 #, kde-format
 msgid "Encrypt/decrypt one ore more files using GPG symmetric encryption."
 msgstr ""
+"Zašifrujte nebo dešifrujte jeden nebo více souborů pomocí symetrického "
+"šifrování GPG."
 
 #: src/main.cpp:28
 #, kde-format
@@ -139,7 +153,7 @@ msgstr "Elvis Angelaccio"
 #: src/main.cpp:33
 #, kde-format
 msgid "List of files to encrypt or decrypt."
-msgstr ""
+msgstr "Seznam souborů k zašifrování nebo dešifrování."
 
 #: src/main.cpp:35
 #, kde-format
@@ -147,14 +161,16 @@ msgid ""
 "Encrypt the given list of files (this is the default if there are no other "
 "options)."
 msgstr ""
+"Zašifrovat zadaný seznam souborů (toto je výchozí nastavení, pokud nejsou "
+"zadány žádné jiné parametry)."
 
 #: src/main.cpp:37
 #, kde-format
 msgid "Decrypt the given list of files."
-msgstr ""
+msgstr "Dešifrovat zadaný seznam souborů."
 
 #: src/main.cpp:46
 #, kde-format
 msgctxt "--encrypt and --decrypt are CLI args, don't translate them"
 msgid "Error: either --encrypt or --decrypt, not both."
-msgstr ""
+msgstr "Chyba: zadejte buď --encrypt, nebo --decrypt, ne obojí."
