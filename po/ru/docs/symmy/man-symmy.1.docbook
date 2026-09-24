@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Russian "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Руководство пользователя Symmy</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>Автор этой программы и этой страницы руководства</para
+></personblurb
+> </author>
+<date
+>25 ноября 2017 г.</date>
+<releaseinfo
+>symmy 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>Интерфейс для возможностей симметричного шифрования GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>параметры</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>файлы</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Описание</title>
+<para
+><command
+>symmy</command
+> — простое приложение, позволяющее зашифровать или расшифровать один или несколько файлов с помощью функции симметричного шифрования GPG. Файл, зашифрованный с помощью <command
+>symmy</command
+>, сможет расшифровать любой, у кого есть доступ к программе GPG и ключу шифрования. </para>
+<para
+><command
+>symmy</command
+> также можно использовать из &dolphin; или виджета &plasma; «Просмотр папки» благодаря пунктам <guimenuitem
+>Зашифровать</guimenuitem
+> и <guimenuitem
+>Расшифровать</guimenuitem
+> в контекстном меню. </para>
+</refsect1>
+
+<refsect1>
+<title
+>Шифрование</title>
+<para
+>Зашифровать один или несколько файлов можно, указав их пути после параметра <option
+>encrypt</option
+>. Их также можно выделить в &dolphin; или в виджете &plasma; «Просмотр папки» и выбрать в контекстном меню пункт <guimenuitem
+>Зашифровать</guimenuitem
+>. </para>
+<para
+>Обратите внимание, что папку зашифровать нельзя. Если это требуется, сожмите папку, а затем зашифруйте полученный архив. Также невозможно зашифровать удалённые файлы или файлы, которые уже зашифрованы. </para>
+
+<refsect2>
+<title
+>Выбор ключа шифрования</title>
+<para
+><command
+>symmy</command
+> запросит пароль (или парольную фразу), который будет использоваться как ключ шифрования для <emphasis
+>всех</emphasis
+> выбранных файлов. Следует выбрать надёжный ключ шифрования и хранить его в безопасном месте (например, в диспетчере паролей). Если необходимо передать ключ другому человеку, это следует делать по защищённому каналу (например, при личной встрече). </para>
+</refsect2>
+
+<refsect2>
+<title
+>Требования к GPG</title>
+<para
+><command
+>symmy</command
+> использует GPG для выполнения шифрования, поэтому предполагается, что процесс <command
+>gpg-agent</command
+> запущен и правильно настроен. </para>
+</refsect2>
+
+<refsect2>
+<title
+>Управление операцией шифрования</title>
+<para
+>Операция шифрования займёт некоторое время в зависимости от количества файлов и их размера. Следить за ходом операции можно из виджета уведомлений, предоставляемого &plasma;. Из этого виджета также можно прервать операцию шифрования при необходимости. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>Расшифровка</title>
+<para
+>Чтобы расшифровать один или несколько зашифрованных файлов, укажите их пути после параметра <option
+>decrypt</option
+>. Их также можно выбрать в &dolphin; или в виджете &plasma; «Просмотр папки» и выбрать в контекстном меню пункт <guimenuitem
+>Расшифровать</guimenuitem
+>. Этот пункт показывается только при выборе зашифрованных файлов. </para>
+
+<refsect2>
+<title
+>Управление операцией расшифровки</title>
+<para
+>Операция расшифровки может занять некоторое время в зависимости от количества файлов и их размера. Ход операции можно отслеживать в виджете уведомлений, предоставляемом &plasma;. В виджете уведомлений при необходимости можно также прервать операцию расшифровки. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>Параметры</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>Шифрует указанный список файлов, запросив парольную фразу. Этот параметр устанавливается неявно, если не заданы другие параметры. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>Расшифровывает заданный список файлов после запроса ключа расшифровки. Обратите внимание, что параметры <option
+>encrypt</option
+> и <option
+>decrypt</option
+> взаимоисключающие. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>Показывает краткую сводку и описание параметров командной строки. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Показывает версию этой программы. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Показывает сведения об авторе этой программы. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Показывает сведения о лицензии этой программы. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>
