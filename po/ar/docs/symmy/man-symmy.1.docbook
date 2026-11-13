@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Arabic "INCLUDE">
+]>
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2017 Elvis Angelaccio <elvis.angelaccio@kde.org>
+-->
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>دليل مستخدم سيمى</title>
+<author
+>&Elvis.Angelaccio; &Elvis.Angelaccio.mail; <personblurb
+><para
+>ألّف هذا البرنامج وصفحة الدليل هذه</para
+></personblurb
+> </author>
+<date
+>2017-11-25</date>
+<releaseinfo
+>سيمى 0.70</releaseinfo>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>symmy</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>symmy</command
+></refname>
+<refpurpose
+>واجهة أمامية لوظيفة التعمية المتماثلة لـ GPG.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="_synopsis">
+<cmdsynopsis
+><command
+>symmy</command
+> <arg rep="repeat"
+><replaceable
+>خيارات</replaceable
+></arg
+> <arg rep="repeat"
+><replaceable
+>ملفات</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>الوصف</title>
+<para
+><command
+>symmy</command
+> هو تطبيق بسيط يُستخدم لتعمية ملف أو أكثر أو فك تعميتها باستخدام وظيفة التعمية المتناظرة لـ GPG. يمكن لأي شخص لديه إمكانية الوصول إلى برنامج GPG ومفتاح التعمية فك تعمية ملف عُمّي بواسطة <command
+>symmy</command
+>. </para>
+<para
+>يمكن أيضًا استخدام <command
+>symmy</command
+> من &dolphin; أو عرض مجلدات &plasma; بفضل عنصري <guimenuitem
+>عَمِّ</guimenuitem
+> و<guimenuitem
+>فك التعمية</guimenuitem
+> في قائمة السياق. </para>
+</refsect1>
+
+<refsect1>
+<title
+>التعمية</title>
+<para
+>يمكنك تعمية ملف أو أكثر بكتابة مساراتها بعد الخيار <option
+>encrypt</option
+>. يمكنك أيضًا تحديدها في &dolphin; أو عرض مجلدات &plasma; والنقر على المدخل <guimenuitem
+>عَمِّ</guimenuitem
+> في قائمة السياق. </para>
+<para
+>لاحظ أنه لا يمكنك تعمية مجلد. إذا احتجت إلى فعل ذلك، فيجب عليك ضغط المجلد ثم تعمية الأرشيف الناتج. كما لا يمكن تعمية ملفات بعيدة أو ملفات معمّاة مسبقًا. </para>
+
+<refsect2>
+<title
+>اختيار مفتاح تعمية</title>
+<para
+>سيطلب منك <command
+>symmy</command
+> كلمة مرور (أو عبارة مرور) ستُستخدم كمفتاح تعمية لـ<emphasis
+>جميع</emphasis
+> الملفات المحددة. ينبغي عليك اختيار مفتاح تعمية قوي وتخزينه في مكان آمن (مثل مدير كلمات المرور). إذا احتجت إلى إرسال المفتاح إلى شخص آخر، فينبغي فعل ذلك عبر قناة آمنة (مثل اللقاء شخصيًا). </para>
+</refsect2>
+
+<refsect2>
+<title
+>متطلب GPG</title>
+<para
+>يستخدم <command
+>symmy</command
+> GPG لتنفيذ التعمية الفعلية، لذا يفترض أن عملية <command
+>gpg-agent</command
+> قيد التشغيل ومهيأة بشكل صحيح. </para>
+</refsect2>
+
+<refsect2>
+<title
+>إدارة عملية تعمية</title>
+<para
+>ستستغرق عملية التعمية بعض الوقت حسب عدد الملفات وحجمها. يمكنك تتبع تقدم العملية من ملحق الإشعارات المقدم من &plasma;. من بلازما الإشعارات يمكنك أيضًا إحباط عملية التعمية إذا لزم الأمر. </para>
+</refsect2>
+</refsect1>
+
+<refsect1>
+<title
+>فك التعمية</title>
+<para
+>يمكنك فك تعمية ملف معمّى أو أكثر بكتابة مساراتها بعد الخيار <option
+>decrypt</option
+>. يمكنك أيضًا تحديدها في &dolphin; أو عرض مجلدات &plasma; والنقر على المدخل <guimenuitem
+>فك التعمية</guimenuitem
+> في قائمة السياق. لاحظ أن هذا المدخل سيكون مرئيًا فقط عند تحديد ملفات معمّاة. </para>
+
+<refsect2>
+<title
+>إدارة عملية فك تعمية</title>
+<para
+>ستستغرق عملية فك التعمية بعض الوقت حسب عدد الملفات وحجمها. يمكنك تتبع تقدم العملية من ملحق الإشعارات المقدم من &plasma;. من بلازما الإشعارات يمكنك أيضًا إحباط عملية فك التعمية إذا لزم الأمر. </para>
+</refsect2>
+
+</refsect1>
+
+<refsect1>
+<title
+>خيارات</title>
+<variablelist>
+
+<varlistentry>
+<term>
+<option
+>-e, --encrypt</option>
+</term>
+<listitem>
+<para
+>يُعمّي قائمة الملفات المعطاة بعد طلب عبارة مرور. هذا الخيار مُعيَّن ضمنيًا إذا لم تكن هناك خيارات أخرى. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-d, --decrypt</option>
+</term>
+<listitem>
+<para
+>يفك تعمية قائمة الملفات المعطاة بعد طلب مفتاح فك التعمية. لاحظ أن <option
+>encrypt</option
+> و<option
+>decrypt</option
+> متنافيان. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-h, --help</option>
+</term>
+<listitem>
+<para
+>يُظهر موجزًا ووصفًا مختصرًا لخيارات سطر الأوامر. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>يُظهر إصدار هذا البرنامج. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>يُظهر معلومات عن مؤلف هذا البرنامج. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>يُظهر معلومات عن ترخيص هذا البرنامج. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+</refentry>
